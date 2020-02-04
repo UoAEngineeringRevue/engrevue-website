@@ -1,5 +1,5 @@
 html {
-  font-family: Roboto, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: Trueno, Roboto, "Segoe UI", Helvetica, Arial, sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -12,7 +12,7 @@ h1 {
   margin: 0 0 1.45rem 0;
   padding: 0;
   font-size: 2.25rem;
-  font-weight: bold;
+  font-weight: 600;
   text-rendering: optimizeLegibility;
   line-height: 1.1;
 }
@@ -21,7 +21,7 @@ h2 {
   margin: 0 0 1.45rem 0;
   padding: 0;
   font-size: 1.62671rem;
-  font-weight: bold;
+  font-weight: 600;
   text-rendering: optimizeLegibility;
   line-height: 1.1;
 }
@@ -65,6 +65,7 @@ h6 {
 p {
   margin: 0 0 1.45rem 0;
   padding: 0;
+  font-weight: 300;
 }
 
 li {
