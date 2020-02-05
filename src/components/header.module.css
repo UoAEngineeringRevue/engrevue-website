@@ -1,0 +1,43 @@
+header {
+  background-color: #343a40;
+  display: flex;
+}
+
+header a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 18px;
+  z-index: 10;
+}
+
+nav {
+  flex: 1;
+}
+
+.logoArea {
+  height: 60px;
+  vertical-align: middle;
+}
+
+.navList {
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navListItem {
+  margin: 0;
+}
+
+.navLink:hover {
+  background: rgba(158, 158, 158, 0.20);
+}
+
+.navLinkPrimary {
+  background-color: #cc0000;
+}
+
+.navLinkPrimary:hover {
+  background: rgb(187, 34, 34);
+}
