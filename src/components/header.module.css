@@ -1,6 +1,9 @@
 header {
   background-color: #343a40;
   display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 
 header a {
