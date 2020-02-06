@@ -2,31 +2,61 @@ import { Link } from "gatsby"
 import React from "react"
 import styles from "./header.module.css"
 
-const Header = () => (
-  <header>
-    <div className={styles.logoArea}>
-      <h3 style={{ margin: 0 }}>
-        <Link to="/">ENGINEERING REVUE</Link>
-      </h3>
-    </div>
+class Header extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      navExpanded: false,
+    }
+  }
 
-    <nav>
-      <ul className={styles.navList}>
-        {/* The last non-primary link in this list should have extra
-            margin-right between it and the primary link */}
-        <li className={styles.navListItem} style={{ marginRight: `18px` }}>
-          <Link to="/" className={styles.navLink}>
-            PREVIOUS SHOWS
-          </Link>
-        </li>
-        <li className={styles.navListItem}>
-          <Link to="/page-2/" className={styles.navLinkPrimary}>
-            WATCH NOW
-          </Link>
-        </li>
-      </ul>
-    </nav>
-  </header>
-)
+  toggleNavbar(e) {
+    e.preventDefault()
+    this.setState({
+      navExpanded: !this.state.navExpanded,
+    })
+  }
+
+  render() {
+
+    const navState = (this.state.navExpanded ? styles.navExpanded : styles.navCollapsed);
+
+    return (
+      <header>
+        <div className={styles.logoArea}>
+          <h3 style={{ margin: 0 }}>
+            <Link to="/">ENGINEERING REVUE</Link>
+          </h3>
+          <button className={styles.menuBtn} onClick={this.toggleNavbar} />
+        </div>
+
+        <nav className={navState}>
+          <ul className={styles.navList}>
+            {/* <li className={styles.navListItem}>
+              <Link to="/" className={styles.navLink}>
+                HISTORY
+              </Link>
+            </li>
+            <li className={styles.navListItem}>
+              <Link to="/" className={styles.navLink}>
+                SPONSOR US
+              </Link>
+            </li> */}
+            <li className={styles.navListItemPenultimate}>
+              <Link to="/" className={styles.navLink}>
+                PREVIOUS SHOWS
+              </Link>
+            </li>
+            <li className={styles.navListItem}>
+              <Link to="/page-2/" className={styles.navLinkPrimary}>
+                WATCH NOW
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    )
+  }
+}
 
 export default Header

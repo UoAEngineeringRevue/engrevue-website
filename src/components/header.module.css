@@ -16,25 +16,51 @@ header a {
 
 nav {
   flex: 1;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .logoArea {
   height: 60px;
   vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+}
+
+.menuBtn {
+  display: none;
+  margin-left: auto;
+  background: #343a40;
+  background-image: url(../assets/images/icons/ic_menu_white_48dp.png);
+  background-size: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(158, 158, 158, 0.2);
 }
 
 .navList {
   margin: 0;
   display: flex;
-  justify-content: flex-end;
 }
 
 .navListItem {
   margin: 0;
 }
 
+.navListItemPenultimate {
+  margin: 0;
+  margin-right: 18px;
+}
+
 .navLink:hover {
-  background: rgba(158, 158, 158, 0.20);
+  background: rgba(158, 158, 158, 0.2);
 }
 
 .navLinkPrimary {
@@ -43,4 +69,36 @@ nav {
 
 .navLinkPrimary:hover {
   background: rgb(187, 34, 34);
+}
+
+@media only screen and (max-width: 880px) {
+  .menuBtn {
+    display: inline-block;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .navCollapsed {
+    display: none;
+  }
+
+  .navExpanded {
+    display: block;
+  }
+
+  .navList {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navListItemPenultimate {
+    margin-right: 0;
+  }
 }
