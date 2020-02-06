@@ -86,11 +86,17 @@ button:hover {
   }
 
   .navCollapsed {
-    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.3s ease-in;
   }
 
+  /* max-height is proportional to the number of the items in the
+     navbar, where each item is 60px tall, so num * 60. */
   .navExpanded {
-    display: block;
+    overflow: hidden;
+    max-height: 240px;
+    transition: all 0.3s ease-out;
   }
 
   .navList {
