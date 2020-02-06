@@ -8,6 +8,7 @@ class Header extends React.Component {
     this.state = {
       navExpanded: false,
     }
+    this.toggleNavbar = this.toggleNavbar.bind(this);
   }
 
   toggleNavbar(e) {
