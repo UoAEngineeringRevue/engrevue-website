@@ -108,3 +108,13 @@ button:hover {
     margin-right: 0;
   }
 }
+
+/**
+ * iPhone SE ... sad sad
+ * TODO: this text is actually slightly off-vertical-centre
+ */
+@media only screen and (max-width: 375px) {
+  .logoArea > h3 {
+    font-size: 1.25rem;
+  }
+}
