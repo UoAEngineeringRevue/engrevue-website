@@ -1,4 +1,3 @@
-// import { Link } from "gatsby"
 import React from "react"
 import styles from "./footer.module.css"
 import emailIcon from "../assets/images/icons/email-white-144px.png"
@@ -33,7 +32,7 @@ const Footer = () => (
       </a>
       <a
         href="https://www.snapchat.com/add/engrevue"
-        className={`${styles.socialIcon} ${styles.snapchat}`}
+        className={`${styles.socialIcon} ${styles.socialIconLast} ${styles.snapchat}`}
       >
         <img src={scIcon} className={styles.socialImg} alt="Snapchat" />
       </a>

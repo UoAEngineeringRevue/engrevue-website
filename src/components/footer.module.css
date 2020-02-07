@@ -57,8 +57,41 @@ footer {
   vertical-align: middle;
 }
 
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 768px) {
   footer {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .socialIcon {
+    margin-bottom: 18px;
+  }
+
+  .socialIconLast {
+    margin-right: 0px;
+  }
+}
+
+/**
+ * iPhone SE, why do you still exist?
+ */
+@media only screen and (max-width: 375px) {
+  .copyrightText {
+    font-size: 0.8rem;
+  }
+
+  .socialIcon {
+    margin-right: 12px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .socialIconLast {
+    margin-right: 0px;
+  }
+
+  .socialImg {
+    width: 18px;
+    height: 18px;
   }
 }
