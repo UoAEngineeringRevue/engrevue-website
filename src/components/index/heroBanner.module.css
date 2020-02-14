@@ -1,6 +1,6 @@
 .hero {
   color: white;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.6) 50%),
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.6) 50%),
     url(../../assets/images/index/IMG_0798_crop.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -28,7 +28,8 @@
 }
 
 .heroLogo {
-  width: 300px;
+  max-width: 300px;
+  height: auto;
   margin-bottom: 48px;
 }
 
@@ -38,10 +39,10 @@
 
 .heroBtn {
   width: fit-content;
-  margin: 18px 0;
 }
 
 .heroBtn a {
+  display: block;
   padding: 20px;
   color: white;
   background-color: #cc0000;
@@ -49,4 +50,46 @@
 
 .heroBtn a:hover {
   background: rgb(187, 34, 34);
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../assets/images/index/IMG_0798.jpg);
+  }
+
+  .heroContainer {
+    justify-content: center;
+  }
+
+  /* For some reason this margin isn't getting respected when the
+   * screen gets smaller than the logo image. Need to investigate.
+   */
+  .heroTextArea {
+    align-items: center;
+    text-align: center;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .heroBtn {
+    width: 100%;
+  }
+
+  .heroBtn a {
+    width: 100%;
+  }
+}
+
+/**
+ * This isn't actually for the iPhone SE.
+ * It's an ugly workaround for the heroTextArea margin being ignored
+ * when it gets smaller than the image - make the image even smaller.
+ */
+@media only screen and (max-width: 354px) {
+  .heroLogo {
+    max-width: 270px;
+  }
 }
