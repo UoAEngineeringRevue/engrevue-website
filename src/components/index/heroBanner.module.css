@@ -8,7 +8,6 @@
   background-attachment: fixed;
   min-height: 465px;
   height: 75vh;
-  margin-bottom: 48px;
 }
 
 .heroContainer {
@@ -43,7 +42,7 @@
 
 .heroBtn a {
   display: block;
-  padding: 20px;
+  padding: 18px;
   color: white;
   background-color: #cc0000;
 }
@@ -75,10 +74,6 @@
 
 @media only screen and (max-width: 425px) {
   .heroBtn {
-    width: 100%;
-  }
-
-  .heroBtn a {
     width: 100%;
   }
 }
