@@ -1,0 +1,52 @@
+.hero {
+  color: white;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.6) 50%),
+    url(../../assets/images/index/IMG_0798_crop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 465px;
+  height: 75vh;
+  margin-bottom: 48px;
+}
+
+.heroContainer {
+  margin: 0 auto;
+  max-width: 960px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.heroTextArea {
+  margin-right: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heroLogo {
+  width: 300px;
+  margin-bottom: 48px;
+}
+
+.heroText {
+  margin-bottom: 48px;
+}
+
+.heroBtn {
+  width: fit-content;
+  margin: 18px 0;
+}
+
+.heroBtn a {
+  padding: 20px;
+  color: white;
+  background-color: #cc0000;
+}
+
+.heroBtn a:hover {
+  background: rgb(187, 34, 34);
+}

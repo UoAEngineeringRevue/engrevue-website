@@ -1,22 +1,15 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import HeroBanner from "../components/index/heroBanner"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <section>
-      <div style={{ margin: `0 auto`, maxWidth: `960px` }}>
-        <h1>GAME OF LOANS</h1>
-        <h2>Now available to watch online!</h2>
-        <div>
-          <Link to="/">WATCH NOW</Link>
-        </div>
-      </div>
-    </section>
+    <HeroBanner />
     <section>
       <div style={{ margin: `0 auto`, maxWidth: `960px` }}>
         <h1>ABOUT US</h1>
