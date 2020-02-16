@@ -1,0 +1,42 @@
+.container {
+  margin: 0 auto;
+  padding: 48px 24px;
+  max-width: 960px;
+}
+
+.about-us {
+  background-color: #121212;
+  color: white;
+}
+
+.about-us--text {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-us--text > p {
+  margin: 0;
+}
+
+.about-us--image-container {
+  margin-left: 48px;
+  display: flex;
+  flex: 0 0 50%;
+}
+
+.about-us--image {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-us--text {
+    flex-direction: column;
+  }
+
+  .about-us--image-container {
+    margin-left: 0;
+    margin-top: 24px;
+  }
+}
