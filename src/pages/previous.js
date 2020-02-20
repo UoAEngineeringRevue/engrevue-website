@@ -28,12 +28,20 @@ const PreviousPage = () => (
     <div>
       
     </div>
+
+    <previousLayout title="2019" />
     
-    <previousLayout image={revue2019} year="2019">
+    <previousLayout className={styles.container} title="2019">
       <p> Hello !</p>
       <p> Another one</p>
       <img src={revue2019} className={styles.format} />
 
+    </previousLayout>
+
+    <previousLayout className={styles.container}>
+      <p> 2018 here</p>
+      <img src={revue2018} className={styles.format} />
+      
     </previousLayout>
 
   </Layout>

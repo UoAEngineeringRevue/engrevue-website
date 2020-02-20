@@ -1,11 +1,22 @@
 image {
 
-    display: flex
+    display: flex;
 }
 
 
 
 .format {
     /* Set default width and height varies. */
-    width: 200px
+    width: 200px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.color {
+    color: blue;
 }
