@@ -3,7 +3,9 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import styles from "../components/prevRevue.module.css"
+import styles from "../components/previousLayout.module.css"
+
+import previousLayout from "../components/previousLayout"
 
 import revue2019 from "../assets/images/previous/2019.jpg"
 import revue2018 from "../assets/images/previous/2018.jpg"
@@ -24,9 +26,15 @@ const PreviousPage = () => (
     <SEO title="Previous Revues" />
     {/* All my website shiet goes here */}
     <div>
-      <img src={revue2019} className={styles.format} />
+      
     </div>
     
+    <previousLayout image={revue2019} year="2019">
+      <p> Hello !</p>
+      <p> Another one</p>
+      <img src={revue2019} className={styles.format} />
+
+    </previousLayout>
 
   </Layout>
 )

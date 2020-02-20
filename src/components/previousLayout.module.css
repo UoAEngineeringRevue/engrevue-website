@@ -1,0 +1,11 @@
+image {
+
+    display: flex
+}
+
+
+
+.format {
+    /* Set default width and height varies. */
+    width: 200px
+}
