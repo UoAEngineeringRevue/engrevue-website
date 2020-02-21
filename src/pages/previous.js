@@ -24,15 +24,16 @@ import revue2008 from "../assets/images/previous/2008.gif"
 const PreviousPage = () => (
   <Layout>
     <SEO title="Previous Revues" />
-    {/* All my website shiet goes here */}
-    <div>
-      
-    </div>
-
-    <previousLayout title="2019" />
+    <h1>We are in fact rendering.</h1>
+    <previousLayout className={styles.container} myTitle={'2019'} />
     
-    <previousLayout className={styles.container} title="2019">
-      <p> Hello !</p>
+    
+  </Layout>
+)
+
+
+
+/*   <p> Hello !</p>
       <p> Another one</p>
       <img src={revue2019} className={styles.format} />
 
@@ -42,9 +43,6 @@ const PreviousPage = () => (
       <p> 2018 here</p>
       <img src={revue2018} className={styles.format} />
       
-    </previousLayout>
-
-  </Layout>
-)
+    </previousLayout> */
 
 export default PreviousPage
