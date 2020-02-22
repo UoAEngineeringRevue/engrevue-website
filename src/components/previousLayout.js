@@ -4,6 +4,7 @@ Can keep calling this to call all the info. This .js file will also store all th
 
 import React, {Component} from "react"
 import styles from "../components/previousLayout.module.css"
+import { Link } from "gatsby"
 
 
 import revue2019 from "../assets/images/previous/2019.jpg"
@@ -26,20 +27,26 @@ class PreviousLayout extends Component {
 
     render () {
 
-        let sourceImage = this.findSourceImage(this.props.year);
+        let sourceImage = this.generateSourceImage(this.props.year);
+        let webLink = this.generateWebLink(this.props.year);
+        /* Turn this in to an object call, calls one function called getData and does this. */
 
         return (
             
             <div className={styles.container}>
                 <img src={sourceImage} className={styles.format} />
-                <p> Here's some more words! And basically here are some extra words just to fill it in while I do it all.</p>
-                
+                <div className={styles.blurbText}>
+                    <h1>Game of LOANS</h1>
+                    <p> Here's some more words! And basically here are some extra words just to fill it in while I do it all.</p>
+                    <Link to={webLink}>View details.</Link>
+                </div>
             </div>
 
         )
     }
 
-    findSourceImage(year) {
+    generateSourceImage(year) {
+
         if (year == '2019') return revue2019; 
         if (year == '2018') return revue2018; 
         if (year == '2017') return revue2017; 
@@ -53,6 +60,11 @@ class PreviousLayout extends Component {
         if (year == '2009') return revue2009; 
         if (year == '2008') return revue2008; 
         return revue2019; /* default return for error handling...*/
+    }
+
+    generateWebLink(year) {
+
+        return '/engineeringrevue' + year + '/';
     }
 
 }

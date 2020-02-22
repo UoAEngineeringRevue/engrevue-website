@@ -7,14 +7,21 @@ image {
 .format {
     /* Set default width and height varies. */
     width: 200px;
+    padding-right: 30px;
+    padding-bottom: 30px;
 }
 
 .container { /* need to change because it is affecting all divs */
     display: flex;
     flex-direction: row;
     justify-content: center;
+
 }
 
+.blurbText {
+    display: flex;
+    flex-direction: column;
+}
 
 .color {
     color: blue;
