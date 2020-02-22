@@ -1,7 +1,14 @@
+div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 image {
 
-    display: flex;
+    width: 200px;
 }
+
 
 
 
