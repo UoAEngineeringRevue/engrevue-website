@@ -4,9 +4,13 @@
   max-width: 960px;
 }
 
-.about-us {
+.section-dark {
   background-color: #121212;
   color: white;
+}
+
+.section-dark a {
+  color: white; /* #cf6679 */
 }
 
 .about-us--text {
@@ -30,6 +34,32 @@
   height: auto;
 }
 
+.contact-us--social-container {
+  display: block;
+}
+
+.contact-us--social {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+}
+
+.contact-us--social:hover {
+  background-color: rgba(158, 158, 158, 0.2);
+  border-radius: 6px;
+}
+
+.contact-us--social > * {
+  margin: 0;
+}
+
+.contact-us--social-icon {
+  width: 36px;
+  height: 36px;
+  margin-right: 18px;
+}
+
 @media only screen and (max-width: 768px) {
   .about-us--text {
     flex-direction: column;
@@ -38,5 +68,23 @@
   .about-us--image-container {
     margin-left: 0;
     margin-top: 24px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .contact-us--social h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .contact-us--social h3 {
+    font-size: 1rem;
+  }
+
+  .contact-us--social-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
   }
 }

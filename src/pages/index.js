@@ -6,13 +6,19 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HeroBanner from "../components/index/heroBanner"
 import "./index.css"
+
 import AboutUsImage from "../assets/images/index/about-us.jpg"
+import emailIcon from "../assets/images/icons/email-white-144px.png"
+import fbIcon from "../assets/images/icons/facebook-logo-144px.png"
+import instaIcon from "../assets/images/icons/instagram-logo-144px.png"
+import ytIcon from "../assets/images/icons/youtube-logo-144px.png"
+import scIcon from "../assets/images/icons/snapchat-logo-144px.png"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <HeroBanner />
-    <section className="about-us">
+    <section className="section-dark">
       <div className="container">
         <h1>ABOUT US</h1>
         <div className="about-us--text">
@@ -39,13 +45,82 @@ const IndexPage = () => (
       </div>
     </section>
     <section>
-      <div style={{ margin: `0 auto`, maxWidth: `960px` }}>
-        <h1>CONTACT US</h1>
-        <p>
-          Have some questions? Email us at{" "}
-          <a href="mailto:engrevue@gmail.com">engrevue@gmail.com</a>, or check
-          out our social media pages below.
-        </p>
+      <div className="section-dark">
+        <div className="container">
+          <h1>CONTACT US</h1>
+          <p>
+            Have some questions? Email us or check out our social media pages
+            below.
+          </p>
+
+          <div className="contact-us--social-container">
+            <a href="mailto:engrevue@gmail.com" class="contact-us--social">
+              <img
+                src={emailIcon}
+                className="contact-us--social-icon"
+                alt="Email"
+              />
+              <h3>ENGREVUE@GMAIL.COM</h3>
+            </a>
+          </div>
+
+          <div className="contact-us--social-container">
+            <a
+              href="https://www.facebook.com/EngineeringRevue/"
+              class="contact-us--social"
+            >
+              <img
+                src={fbIcon}
+                className="contact-us--social-icon"
+                alt="Facebook"
+              />
+              <h3>ENGINEERING REVUE</h3>
+            </a>
+          </div>
+
+          <div className="contact-us--social-container">
+            <a
+              href="https://www.instagram.com/engrevue"
+              class="contact-us--social"
+            >
+              <img
+                src={instaIcon}
+                className="contact-us--social-icon"
+                alt="Instagram"
+              />
+              <h3>@ENGREVUE</h3>
+            </a>
+          </div>
+
+          <div className="contact-us--social-container">
+            <a
+              href="https://www.youtube.com/user/Engrevue"
+              class="contact-us--social"
+            >
+              <img
+                src={ytIcon}
+                className="contact-us--social-icon"
+                alt="YouTube"
+              />
+              <h3>ENGINEERING REVUE</h3>
+            </a>
+          </div>
+
+          <div className="contact-us--social-container">
+            <a
+              href="https://www.snapchat.com/add/engrevue"
+              class="contact-us--social"
+            >
+              <img
+                src={scIcon}
+                className="contact-us--social-icon"
+                alt="Snapchat"
+              />
+              <h3>ENGREVUE</h3>
+            </a>
+          </div>
+
+        </div>
       </div>
     </section>
   </Layout>
