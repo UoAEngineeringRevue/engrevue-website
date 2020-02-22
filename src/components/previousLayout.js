@@ -30,9 +30,10 @@ class PreviousLayout extends Component {
 
         return (
             
-            <div>
+            <div className={styles.container}>
                 <img src={sourceImage} className={styles.format} />
-                <p> Here's some more words!</p>
+                <p> Here's some more words! And basically here are some extra words just to fill it in while I do it all.</p>
+                
             </div>
 
         )

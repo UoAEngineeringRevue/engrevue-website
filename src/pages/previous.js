@@ -12,6 +12,7 @@ const PreviousPage = () => (
     <SEO title="Previous Revues" />
 
       <PreviousLayout year={'2019'} />
+      <Link to="/engineeringrevue2019/">View details.</Link>
       <PreviousLayout year={'2018'} />
       <PreviousLayout year={'2017'} />
     

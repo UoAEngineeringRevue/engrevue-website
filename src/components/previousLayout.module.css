@@ -1,15 +1,7 @@
-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
 image {
 
     width: 200px;
 }
-
-
 
 
 .format {
@@ -17,7 +9,7 @@ image {
     width: 200px;
 }
 
-.container {
+.container { /* need to change because it is affecting all divs */
     display: flex;
     flex-direction: row;
     justify-content: center;
