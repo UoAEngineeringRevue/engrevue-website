@@ -6,6 +6,8 @@ import React, {Component} from "react"
 import styles from "../components/previousLayout.module.css"
 import { Link } from "gatsby"
 
+import HistoryComponent from "../components/history.js"
+
 
 import revue2019 from "../assets/images/previous/2019.jpg"
 import revue2018 from "../assets/images/previous/2018.jpg"
@@ -30,6 +32,9 @@ class PreviousLayout extends Component {
         let sourceImage = this.generateSourceImage(this.props.year);
         let webLink = this.generateWebLink(this.props.year);
         /* Turn this in to an object call, calls one function called getData and does this. */
+        
+        let historyObject = new HistoryComponent(this.props.year)
+        /* Call new ojects to create new history module thingies. */
 
         return (
             
@@ -38,6 +43,7 @@ class PreviousLayout extends Component {
                 <div className={styles.blurbText}>
                     <h1>Game of LOANS</h1>
                     <p> Here's some more words! And basically here are some extra words just to fill it in while I do it all.</p>
+                    <p> testing words... {historyObject.getBlurb(this.props.year)} </p>
                     <Link to={webLink}>View details.</Link>
                 </div>
             </div>
