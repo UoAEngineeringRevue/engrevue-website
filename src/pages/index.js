@@ -1,8 +1,6 @@
 import React from "react"
-// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-// import Image from "../components/image"
 import SEO from "../components/seo"
 import HeroBanner from "../components/index/heroBanner"
 import "./index.css"
@@ -18,7 +16,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <HeroBanner />
-    <section className="section-dark">
+    <section className="section-regular">
       <div className="container">
         <h1>ABOUT US</h1>
         <div className="about-us--text">
@@ -45,7 +43,7 @@ const IndexPage = () => (
       </div>
     </section>
     <section>
-      <div className="section-dark">
+      <div className="section-regular">
         <div className="container">
           <h1>CONTACT US</h1>
           <p>
@@ -60,7 +58,7 @@ const IndexPage = () => (
                 className="contact-us--social-icon"
                 alt="Email"
               />
-              <h3>ENGREVUE@GMAIL.COM</h3>
+              ENGREVUE@GMAIL.COM
             </a>
           </div>
 
@@ -74,7 +72,7 @@ const IndexPage = () => (
                 className="contact-us--social-icon"
                 alt="Facebook"
               />
-              <h3>ENGINEERING REVUE</h3>
+              ENGINEERING REVUE
             </a>
           </div>
 
@@ -88,7 +86,7 @@ const IndexPage = () => (
                 className="contact-us--social-icon"
                 alt="Instagram"
               />
-              <h3>@ENGREVUE</h3>
+              @ENGREVUE
             </a>
           </div>
 
@@ -102,7 +100,7 @@ const IndexPage = () => (
                 className="contact-us--social-icon"
                 alt="YouTube"
               />
-              <h3>ENGINEERING REVUE</h3>
+              ENGINEERING REVUE
             </a>
           </div>
 
@@ -116,10 +114,9 @@ const IndexPage = () => (
                 className="contact-us--social-icon"
                 alt="Snapchat"
               />
-              <h3>ENGREVUE</h3>
+              ENGREVUE
             </a>
           </div>
-
         </div>
       </div>
     </section>

@@ -4,12 +4,12 @@
   max-width: 960px;
 }
 
-.section-dark {
+.section-regular {
   background-color: #121212;
   color: white;
 }
 
-.section-dark a {
+.section-regular a {
   color: white; /* #cf6679 */
 }
 
@@ -43,6 +43,9 @@
   flex-direction: row;
   align-items: center;
   padding: 12px;
+  font-size: 1.38316rem;
+  font-weight: 600;
+  line-height: 1.1;
 }
 
 .contact-us--social:hover {

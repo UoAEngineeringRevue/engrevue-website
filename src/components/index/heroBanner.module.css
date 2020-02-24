@@ -63,6 +63,7 @@
 
   /* For some reason this margin isn't getting respected when the
    * screen gets smaller than the logo image. Need to investigate.
+   * TODO(dikunong): Fix this.
    */
   .heroTextArea {
     align-items: center;
