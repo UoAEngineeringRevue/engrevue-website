@@ -18,11 +18,9 @@ const PreviousPage = () => (
     }}>Previous Revues</h1>
     <p>Wow, this place was recently dusted!</p>
 
-      <PreviousLayout year={'2019'} />
+      <PreviousLayout year={'2019'} />  
       <PreviousLayout year={'2018'} />
       <PreviousLayout year={'2017'} />
-
-      <HistoryComponent year={'2019'} />
     
   </Layout>
 )

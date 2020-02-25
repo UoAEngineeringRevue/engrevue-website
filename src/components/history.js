@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import styles from "../components/history.module.css"
 import { Link } from "gatsby"
 import { RevueData } from "../components/database.js"
 
@@ -30,19 +29,10 @@ class HistoryComponent extends Component {
         super(props)
     }
     
-
     render () {
-        
-        /* The visible part. */
+        /* No visible part required */
         return (
-            <div>
-                <img src={this.getCoverPicture(this.props.year)} />    
-                <p> Hello! </p>    
-                <p> Year is: {this.props.year}</p>
-                <p> Data is: {this.getBlurb(this.props.year)}</p>
-            </div>
-
-            
+            <div />
         );
     }
 
@@ -64,10 +54,10 @@ class HistoryComponent extends Component {
     }
 
     getCastPicture(year) {
-        if (year === '2019') return {revue2019Cast}; 
-        if (year === '2018') return {revue2018Cast};
-        if (year === '2017') return {revue2017Cast};
-        if (year === '2016') return {revue2016Cast}; 
+        if (year === '2019') return revue2019Cast; 
+        if (year === '2018') return revue2018Cast;
+        if (year === '2017') return revue2017Cast;
+        if (year === '2016') return revue2016Cast; 
 
         return 'null';
     }
@@ -150,11 +140,11 @@ class HistoryComponent extends Component {
         return 'null';
     }
 
-    getBlurb(year) {
+    getBlurb() {
         if (this.props.year === '2019') return "When a sudden loss sends the student kingdom into disarray, the scramble for power begins, and an undead threat emerges from the shadows. One thing's for certain; the race for the Iron Loan is a matter of life and debt."; 
-        if (year === '2018') return "When a mysterious kidnapping interrupts her very first lecture, budding engineer Billie must team up with the unlikeliest of allies, the suspicious Zach Sparrow, to rescue her friends and the faculty. Can they overcome their differences to fight dark curses, derranged academics, and dizzyingly-handsome pirates before it's too late? Since it's a comedy, yeah, probably - but you'll have to see the show to know for sure!";
-        if (year === '2017') return "When a mysterious villain threatens the students of the Engineering department, 21 Symonds Street is put on the case. Top agent James Brond must team up with bumbling techie Max Well to save the University from imminent disaster. Can they learn to work together before it's too late? Since it's a comedy, yeah, probably - but you'll have to see the show to know for sure!";
-        if (year === '2016') return "When the forces of evil and tyranny threaten the liveliehood of students in the Faculty of Engineering, a brave few will rise from the shadows to fight them. They're all great when they work on assignments solo, but will they be able to complete this group project, save the Engineering school, and still graduate on time? Since it's a comedy, yeah, probably, but you'll have to come see the show to know for sure!"; 
+        if (this.props.year === '2018') return "When a mysterious kidnapping interrupts her very first lecture, budding engineer Billie must team up with the unlikeliest of allies, the suspicious Zach Sparrow, to rescue her friends and the faculty. Can they overcome their differences to fight dark curses, derranged academics, and dizzyingly-handsome pirates before it's too late? Since it's a comedy, yeah, probably - but you'll have to see the show to know for sure!";
+        if (this.props.year === '2017') return "When a mysterious villain threatens the students of the Engineering department, 21 Symonds Street is put on the case. Top agent James Brond must team up with bumbling techie Max Well to save the University from imminent disaster. Can they learn to work together before it's too late? Since it's a comedy, yeah, probably - but you'll have to see the show to know for sure!";
+        if (this.props.year === '2016') return "When the forces of evil and tyranny threaten the liveliehood of students in the Faculty of Engineering, a brave few will rise from the shadows to fight them. They're all great when they work on assignments solo, but will they be able to complete this group project, save the Engineering school, and still graduate on time? Since it's a comedy, yeah, probably, but you'll have to come see the show to know for sure!"; 
         
         return 'null';
     }
