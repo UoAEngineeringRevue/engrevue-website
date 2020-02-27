@@ -76,10 +76,7 @@ class PreviousShow extends Component {
             <div>
                 {/* Landing page graphic. */}
                 <div className={toggleLandingPage}>
-                    <div style={{
-                        backgroundImage: revue2017Cast,
-                        height: "100%",
-                    }}>
+                    <div className={styles.hero}>
                         <p> Hello </p>
                     </div>
                     

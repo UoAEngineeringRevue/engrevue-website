@@ -3,6 +3,18 @@ image {
     width: 200px;
 }
 
+.hero {
+    color: white;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.6) 50%),
+      url(../assets/images/previous/2019/cast_2019.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 465px;
+    height: 75vh;
+  }
+
 .show {
     max-height: 100%;
 }
