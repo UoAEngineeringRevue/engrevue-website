@@ -67,15 +67,22 @@ class PreviousShow extends Component {
         
         const showDisplayType = (this.state.showSelected ? styles.allRow : styles.allColumn);
         const specificShowSelected = (this.state.showSelected ? styles.show : styles.hide);
-        const toggleLanding = (this.state.showSelected ? styles.hide : styles.show);
+        const toggleLandingPage = (this.state.showSelected ? styles.hide : styles.show);
         const imageFormat = (this.state.showSelected ? styles.smallImage : styles.largeImage);
+        const backgdCol = (this.state.showSelected ? this.getBackgroundColour() : "white");
+        
 
         return (
             <div>
                 {/* Landing page graphic. */}
-                <div className={toggleLanding}>
-
-
+                <div className={toggleLandingPage}>
+                    <div style={{
+                        backgroundImage: revue2017Cast,
+                        height: "100%",
+                    }}>
+                        <p> Hello </p>
+                    </div>
+                    
                 </div>
                 {/* Specific revue element */}
                 <div className={specificShowSelected}>
@@ -99,6 +106,9 @@ class PreviousShow extends Component {
                             <p style={{
                                 color: this.getTextColour()
                             }}>{this.getProducer()}</p>
+                            <p style={{
+                                color: this.getTextColour()
+                            }}>{this.getBlurb()}</p>
                         </div>
                         <img src={this.getCoverPicture()} className={styles.largeImage}/>
                     </div>
@@ -106,7 +116,9 @@ class PreviousShow extends Component {
                 </div>
 
                 {/* Display of all previous revue posters */}
-                <div className={showDisplayType}> {/* Toggle the display type here... */}
+                <div className={styles.allRow} style={{
+                    backgroundColor: backgdCol,
+                }}> {/* Toggle the display type here... */}
                    <img src={revue2019} className={imageFormat} onClick={() => this.selectShow("2019")} />
                    <img src={revue2018} className={imageFormat} onClick={() => this.selectShow("2018")} />
                    <img src={revue2017} className={imageFormat} onClick={() => this.selectShow("2017")} />
