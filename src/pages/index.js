@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HeroBanner from "../components/index/heroBanner"
-import "./index.css"
+import styles from "./index.module.css"
 
 import AboutUsImage from "../assets/images/index/about-us.jpg"
 import emailIcon from "../assets/images/icons/email-white-144px.png"
@@ -16,10 +16,10 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <HeroBanner />
-    <section className="section-regular">
-      <div className="container">
+    <section className={styles.sectionRegular}>
+      <div className={styles.container}>
         <h1>ABOUT US</h1>
-        <div className="about-us--text">
+        <div className={styles.aboutUsText}>
           <p>
             The Engineering Revue is an awesome show put on by the University of
             Auckland Faculty of Engineering at SkyCity Theatre. Established in
@@ -32,86 +32,89 @@ const IndexPage = () => (
             comes together for a night (or three) of acting, comedy, dancing,
             singing, and much more!
           </p>
-          <div className="about-us--image-container">
+          <div className={styles.aboutUsImageContainer}>
             <img
               src={AboutUsImage}
               alt="Game of Loans cast & crew"
-              className="about-us--image"
+              className={styles.aboutUsImage}
             />
           </div>
         </div>
       </div>
     </section>
     <section>
-      <div className="section-regular">
-        <div className="container">
+      <div className={styles.sectionRegular}>
+        <div className={styles.container}>
           <h1>CONTACT US</h1>
           <p>
             Have some questions? Email us or check out our social media pages
             below.
           </p>
 
-          <div className="contact-us--social-container">
-            <a href="mailto:engrevue@gmail.com" class="contact-us--social">
+          <div className={styles.contactUsSocialContainer}>
+            <a
+              href="mailto:engrevue@gmail.com"
+              className={styles.contactUsSocial}
+            >
               <img
                 src={emailIcon}
-                className="contact-us--social-icon"
+                className={styles.contactUsSocialIcon}
                 alt="Email"
               />
               ENGREVUE@GMAIL.COM
             </a>
           </div>
 
-          <div className="contact-us--social-container">
+          <div className={styles.contactUsSocialContainer}>
             <a
               href="https://www.facebook.com/EngineeringRevue/"
-              class="contact-us--social"
+              className={styles.contactUsSocial}
             >
               <img
                 src={fbIcon}
-                className="contact-us--social-icon"
+                className={styles.contactUsSocialIcon}
                 alt="Facebook"
               />
               ENGINEERING REVUE
             </a>
           </div>
 
-          <div className="contact-us--social-container">
+          <div className={styles.contactUsSocialContainer}>
             <a
               href="https://www.instagram.com/engrevue"
-              class="contact-us--social"
+              className={styles.contactUsSocial}
             >
               <img
                 src={instaIcon}
-                className="contact-us--social-icon"
+                className={styles.contactUsSocialIcon}
                 alt="Instagram"
               />
               @ENGREVUE
             </a>
           </div>
 
-          <div className="contact-us--social-container">
+          <div className={styles.contactUsSocialContainer}>
             <a
               href="https://www.youtube.com/user/Engrevue"
-              class="contact-us--social"
+              className={styles.contactUsSocial}
             >
               <img
                 src={ytIcon}
-                className="contact-us--social-icon"
+                className={styles.contactUsSocialIcon}
                 alt="YouTube"
               />
               ENGINEERING REVUE
             </a>
           </div>
 
-          <div className="contact-us--social-container">
+          <div className={styles.contactUsSocialContainer}>
             <a
               href="https://www.snapchat.com/add/engrevue"
-              class="contact-us--social"
+              className={styles.contactUsSocial}
             >
               <img
                 src={scIcon}
-                className="contact-us--social-icon"
+                className={styles.contactUsSocialIcon}
                 alt="Snapchat"
               />
               ENGREVUE
