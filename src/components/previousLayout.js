@@ -65,50 +65,53 @@ class PreviousShow extends Component {
 
     render () {
         
-        const showDisplayType = (this.state.showSelected ? styles.allRow : styles.allColumn);
         const specificShowSelected = (this.state.showSelected ? styles.show : styles.hide);
         const toggleLandingPage = (this.state.showSelected ? styles.hide : styles.show);
-        const imageFormat = (this.state.showSelected ? styles.smallImage : styles.largeImage);
-        const backgdCol = (this.state.showSelected ? this.getBackgroundColour() : "white");
+        const imageFormat = styles.smallImage;
+        const backgdCol = (this.state.showSelected ? this.getBackgroundColour() : "black");
         
 
         return (
-            <div>
+            <body>
                 {/* Landing page graphic. */}
                 <div className={toggleLandingPage}>
                     <div className={styles.hero}>
-                        <p> Hello </p>
+                        <div className={styles.heroContainer}>
+                            <h1 style={{
+                                color: "red",
+                            }}>Previous Revues<br/></h1>
+                            <p>Wow, this place looks like it has been adequately dusted.<br />
+                            Select from the posters below to see more details about our previous shows!</p>
+                        </div>
                     </div>
                     
                 </div>
+                
                 {/* Specific revue element */}
                 <div className={specificShowSelected}>
-                    <div style={{
-                        backgroundColor: this.getBackgroundColour(),
-                    }}>
-                    <div className={styles.showSelectView}>
-                        <div className={styles.flexColumn}>
-                            <h1 style={{
-                                color: this.getTitleColour()
-                            }}>{this.getTitle()}</h1>
-                            <h2 style={{
-                                color: this.getTitleColour()
-                            }}>{this.getSubTitle()}</h2>
-                            <p  style={{
-                                color: this.getTextColour()
-                            }}>{this.getLocation()}</p>
-                            <p style={{
-                                color: this.getTextColour()
-                            }}>{this.getDirector()}</p>
-                            <p style={{
-                                color: this.getTextColour()
-                            }}>{this.getProducer()}</p>
-                            <p style={{
-                                color: this.getTextColour()
-                            }}>{this.getBlurb()}</p>
+                    <div className={this.getBannerStyle()}>
+                        <div className={styles.heroContainer}>
+                        <h1 style={{
+                            color: this.getTitleColour(),
+                            lineHeight: "0.1em"
+                        }}>{this.getTitle()}</h1>
+                        <h3 style={{
+                            color: this.getTitleColour()
+                        }}>{this.getSubTitle()}</h3>
+                        <p  style={{
+                            color: this.getTextColour()
+                        }}>{this.getLocation()}</p>
+                        <p style={{
+                            color: this.getTextColour()
+                        }}>{this.getDirector()}</p>
+                        <p style={{
+                            color: this.getTextColour()
+                        }}>{this.getProducer()}</p>
+                        <p style={{
+                            color: this.getTextColour()
+                        }}>{this.getBlurb()}</p>
+
                         </div>
-                        <img src={this.getCoverPicture()} className={styles.largeImage}/>
-                    </div>
                     </div>
                 </div>
 
@@ -130,8 +133,26 @@ class PreviousShow extends Component {
                    <img src={revue2008} className={imageFormat} onClick={() => this.selectShow("2008")} />
                 </div>    
                 
-            </div>
+            </body>
         )
+    }
+
+    getBannerStyle() {
+        if (this.state.year === '2019') return styles.banner2019;
+        if (this.state.year === '2018') return styles.banner2018;
+        if (this.state.year === '2017') return styles.banner2017;
+        if (this.state.year === '2016') return styles.banner2016; 
+        if (this.state.year === '2015') return styles.banner2015;
+        if (this.state.year === '2014') return styles.banner2014;
+        if (this.state.year === '2013') return styles.banner2013; 
+        if (this.state.year === '2012') return styles.banner2012;
+        if (this.state.year === '2011') return styles.banner2011;
+        if (this.state.year === '2010') return styles.banner2010; 
+        if (this.state.year === '2009') return styles.banner2009;
+        if (this.state.year === '2008') return styles.banner2008;
+
+        return 'null';
+
     }
 
     getBackgroundColour() {
