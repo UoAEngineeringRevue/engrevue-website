@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
           flexDirection: `column`
         }}
       >
-        <main style={{ flexGrow: `1` }}>{children}</main>
+        <main style={{ flexGrow: `1`, backgroundColor: `#121212` }}>{children}</main>
         <Footer />
       </div>
     </>
