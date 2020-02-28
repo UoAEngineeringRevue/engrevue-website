@@ -11,7 +11,7 @@ const HeroBanner = () => (
         <img src={GoLLogo} alt="Game of Loans" className={styles.heroLogo} />
         <h2 className={styles.heroText}>Now available to watch online!</h2>
         <div className={styles.heroBtn}>
-          <Link to="/">WATCH NOW</Link>
+          <Link to="/watch/">WATCH NOW</Link>
         </div>
       </div>
     </div>
