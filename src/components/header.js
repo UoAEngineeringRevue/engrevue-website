@@ -49,7 +49,7 @@ class Header extends React.Component {
               </Link>
             </li>
             <li className={styles.navListItem}>
-              <Link to="/" className={styles.navLinkPrimary}>
+              <Link to="/watch/" className={styles.navLinkPrimary}>
                 WATCH NOW
               </Link>
             </li>
