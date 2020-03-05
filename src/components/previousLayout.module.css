@@ -1,109 +1,109 @@
 image {
-
-    width: 200px;
+  width: 200px;
 }
 
 body {
-    width: 100%;
+  width: 100%;
 }
 
 .show {
-    max-height: 100%;
+  max-height: 100%;
 }
 
 .hide {
-    height: 0;
-    visibility: hidden;
+  height: 0;
+  display: none;
 }
 
 .format {
-    /* Set default width and height varies. */
-    height: 400px;
-    padding-right: 30px;
-    padding-bottom: 30px;
+  /* Set default width and height varies. */
+  height: 400px;
+  padding-right: 30px;
+  padding-bottom: 30px;
 }
 
-.container { /* need to change because it is affecting all divs */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* width: 1500px; */
-    padding-left: 50px;
-    padding-right: 50px;
-    
-
+.container {
+  /* need to change because it is affecting all divs */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* width: 1500px; */
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .showSelectView {
-    justify-content: space-between;
-    display: flex;
-    flex-direction: row;
-    padding-top: 15px;
-    padding-left: 15px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  padding-top: 15px;
+  padding-left: 15px;
 }
 
 .flexRow {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .flexColumn {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .smallImage {
-    height: 100px;
-    margin: 15px;
+  height: 100px;
+  margin: 15px;
 }
 
 .largeImage {
-    height: 400px;
-    margin: 15px;
-    margin: 25px 10px;
-    display: block;
-    max-width: 100%;
-    max-height: 100%
-
+  height: 400px;
+  margin: 15px;
+  margin: 25px 10px;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .allColumn {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.poster-container {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
 }
 
 .allRow {
-    display: flex;
-    flex-direction: row;
-    padding-left: 50px;
-    padding-right: 50px;
-    background-color: #343a40;
-    height: 130px;
-
+  display: flex;
+  flex-direction: row;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #343a40;
+  height: 130px;
 }
 
 .blurbText {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .rowText {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .embolden {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .color {
-    color: blue;
+  color: blue;
 }
-
-
 
 /*
 ======================= 
@@ -112,222 +112,200 @@ body {
 */
 
 .hero {
-    color: white;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6) 25%, rgba(0, 0, 0, 0.6) 50%),
-        url(../assets/images/previous/websiteBanner-01.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 465px;
-    height: 75vh;
-    background-color: black;
-  }
-  
-  .heroContainer {
-    margin: 0 auto;
-    max-width: 960px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 75px;
-  }
-  
-  .heroTextArea {
-    margin-left: 36px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .heroText {
-    margin-bottom: 48px;
-  }
-  
-  
-  @media only screen and (max-width: 768px) {
-    .hero {
-      background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url(../assets/images/previous/websiteBanner-01.jpg);
-        background-color: black;
-    }
-  
-    .heroContainer {
-      justify-content: center;
-    }
-  
-    /* For some reason this margin isn't getting respected when the
-     * screen gets smaller than the logo image. Need to investigate.
-     * TODO(dikunong): Fix this.
-     */
-    .heroTextArea {
-      align-items: center;
-      text-align: center;
-      margin-left: 24px;
-      margin-right: 24px;
-    }
-  }
-  
+  color: white;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.6) 25%,
+      rgba(0, 0, 0, 0.6) 50%
+    ),
+    url(../assets/images/previous/websiteBanner-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 465px;
+  height: 75vh;
+  background-color: black;
+}
+
+.heroContainer {
+  margin: 0 auto;
+  width: 60%;
+  max-width: 800px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 75px;
+}
+
+.heroTextArea {
+  margin-left: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heroText {
+  margin-bottom: 48px;
+}
+
 /*
 =======================
     Yearly banners.
 =======================
 */
 
+.yearly-banner {
+  color: white;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(0, 0, 0, 0.6) 50%
+    ),
+    url(../assets/images/previous/websiteBanner-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 465px;
+  height: 75vh;
+  background-color: black;
+}
+
 .banner2019 {
-    color: white;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.6) 50%),
-        url(../assets/images/previous/banners/2019.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 465px;
-    height: 75vh;
-    background-color: black;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(0, 0, 0, 0.6) 50%
+    ),
+    url(../assets/images/previous/banners/2019.jpg);
 }
 
 .banner2018 {
-    color: white;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.6) 50%),
-        url(../assets/images/previous/banners/2018.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 465px;
-    height: 75vh;
-    background-color: black;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(0, 0, 0, 0.6) 50%
+    ),
+    url(../assets/images/previous/banners/2018.jpg);
 }
 
 .banner2017 {
-    color: white;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.6) 50%),
-        url(../assets/images/previous/banners/2017.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 465px;
-    height: 75vh;
-    background-color: black;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(0, 0, 0, 0.6) 50%
+    ),
+    url(../assets/images/previous/banners/2017.jpg);
 }
 
 .banner2016 {
-    color: white;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.6) 50%),
-        url(../assets/images/previous/banners/2016.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 465px;
-    height: 75vh;
-    background-color: black;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(0, 0, 0, 0.6) 50%
+    ),
+    url(../assets/images/previous/banners/2016.jpg);
 }
 
 .banner2015 {
-    color: white;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.6) 50%),
-        url(../assets/images/previous/banners/2015.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 465px;
-    height: 75vh;
-    background-color: black;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(0, 0, 0, 0.6) 50%
+    ),
+    url(../assets/images/previous/banners/2015.jpg);
 }
 
-.banner2014 {
-    color: white;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.6) 50%),
-        url(../assets/images/previous/banners/2019.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 465px;
-    height: 75vh;
-    background-color: black;
+/* .banner2014 {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(0, 0, 0, 0.6) 50%
+    ),
+    url(../assets/images/previous/banners/2019.jpg);
 }
 
 .banner2013 {
-    color: white;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.6) 50%),
-        url(../assets/images/previous/banners/2019.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 465px;
-    height: 75vh;
-    background-color: black;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(0, 0, 0, 0.6) 50%
+    ),
+    url(../assets/images/previous/banners/2019.jpg);
 }
 
 .banner2012 {
-    color: white;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.6) 50%),
-        url(../assets/images/previous/banners/2019.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 465px;
-    height: 75vh;
-    background-color: black;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(0, 0, 0, 0.6) 50%
+    ),
+    url(../assets/images/previous/banners/2019.jpg);
 }
 
 .banner2011 {
-    color: white;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.6) 50%),
-        url(../assets/images/previous/banners/2019.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 465px;
-    height: 75vh;
-    background-color: black;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(0, 0, 0, 0.6) 50%
+    ),
+    url(../assets/images/previous/banners/2019.jpg);
 }
 
 .banner2010 {
-    color: white;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.6) 50%),
-        url(../assets/images/previous/banners/2019.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 465px;
-    height: 75vh;
-    background-color: black;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(0, 0, 0, 0.6) 50%
+    ),
+    url(../assets/images/previous/banners/2019.jpg);
 }
 
 .banner2009 {
-    color: white;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.6) 50%),
-        url(../assets/images/previous/banners/2019.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 465px;
-    height: 75vh;
-    background-color: black;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(0, 0, 0, 0.6) 50%
+    ),
+    url(../assets/images/previous/banners/2019.jpg);
 }
 
 .banner2008 {
-    color: white;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.6) 50%),
-        url(../assets/images/previous/banners/2019.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 465px;
-    height: 75vh;
-    background-color: black;
-}
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(0, 0, 0, 0.6) 50%
+    ),
+    url(../assets/images/previous/banners/2019.jpg);
+} */
 
+@media only screen and (max-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url(../assets/images/previous/websiteBanner-01.jpg);
+    background-color: black;
+  }
+
+  .heroContainer {
+    justify-content: center;
+    width: 80%;
+    padding-right: 75px;
+  }
+
+  /* For some reason this margin isn't getting respected when the
+     * screen gets smaller than the logo image. Need to investigate.
+     * TODO(dikunong): Fix this.
+     */
+  .heroTextArea {
+    align-items: center;
+    text-align: center;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
