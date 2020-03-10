@@ -102,7 +102,7 @@ class PreviousShow extends Component {
                   <h1
                     style={{
                       color: this.getTitleColour(),
-                    //   lineHeight: "0.1em",
+                      //   lineHeight: "0.1em",
                     }}
                   >
                     {this.getTitle()}
@@ -156,78 +156,126 @@ class PreviousShow extends Component {
               >
                 {" "}
                 {/* Toggle the display type here... */}
-                <img
-                  src={revue2019}
-                  alt="2019 - Game of Loans"
-                  className={imageFormat}
+                <button
+                  className={styles.posterButton}
                   onClick={() => this.selectShow("2019")}
-                />
-                <img
-                  src={revue2018}
-                  alt="2018 - Pirates of the Curriculum"
-                  className={imageFormat}
+                >
+                  <img
+                    src={revue2019}
+                    alt="2019 - Game of Loans"
+                    className={imageFormat}
+                  />
+                </button>
+                <button
+                  className={styles.posterButton}
                   onClick={() => this.selectShow("2018")}
-                />
-                <img
-                  src={revue2017}
-                  alt="2017 - 21 Symonds Street"
-                  className={imageFormat}
+                >
+                  <img
+                    src={revue2018}
+                    alt="2018 - Pirates of the Curriculum"
+                    className={imageFormat}
+                  />
+                </button>
+                <button
+                  className={styles.posterButton}
                   onClick={() => this.selectShow("2017")}
-                />
-                <img
-                  src={revue2016}
-                  alt="2016 - The Avengineers"
-                  className={imageFormat}
+                >
+                  <img
+                    src={revue2017}
+                    alt="2017 - 21 Symonds Street"
+                    className={imageFormat}
+                  />
+                </button>
+                <button
+                  className={styles.posterButton}
                   onClick={() => this.selectShow("2016")}
-                />
-                <img
-                  src={revue2015}
-                  alt="2015 - Hack to the Future"
-                  className={imageFormat}
+                >
+                  <img
+                    src={revue2016}
+                    alt="2016 - The Avengineers"
+                    className={imageFormat}
+                  />
+                </button>
+                <button
+                  className={styles.posterButton}
                   onClick={() => this.selectShow("2015")}
-                />
-                <img
-                  src={revue2014}
-                  alt="2014 - The Wizard of Cos"
-                  className={imageFormat}
+                >
+                  <img
+                    src={revue2015}
+                    alt="2015 - Hack to the Future"
+                    className={imageFormat}
+                  />
+                </button>
+                <button
+                  className={styles.posterButton}
                   onClick={() => this.selectShow("2014")}
-                />
-                <img
-                  src={revue2013}
-                  alt="2013 - Finding Nano"
-                  className={imageFormat}
+                >
+                  <img
+                    src={revue2014}
+                    alt="2014 - The Wizard of Cos"
+                    className={imageFormat}
+                  />
+                </button>
+                <button
+                  className={styles.posterButton}
                   onClick={() => this.selectShow("2013")}
-                />
-                <img
-                  src={revue2012}
-                  alt="2012 - The Ion King"
-                  className={imageFormat}
+                >
+                  <img
+                    src={revue2013}
+                    alt="2013 - Finding Nano"
+                    className={imageFormat}
+                  />
+                </button>
+                <button
+                  className={styles.posterButton}
                   onClick={() => this.selectShow("2012")}
-                />
-                <img
-                  src={revue2011}
-                  alt="2011 - Degrees of Uniformity"
-                  className={imageFormat}
+                >
+                  <img
+                    src={revue2012}
+                    alt="2012 - The Ion King"
+                    className={imageFormat}
+                  />
+                </button>
+                <button
+                  className={styles.posterButton}
                   onClick={() => this.selectShow("2011")}
-                />
-                <img
-                  src={revue2010}
-                  alt="2010 - The Black Box"
-                  className={imageFormat}
+                >
+                  <img
+                    src={revue2011}
+                    alt="2011 - Degrees of Uniformity"
+                    className={imageFormat}
+                  />
+                </button>
+                <button
+                  className={styles.posterButton}
                   onClick={() => this.selectShow("2010")}
-                />
-                <img
-                  src={revue2009}
-                  alt="2009 - NZ's Next Most Smartest Top Engineer with the Stars"
-                  className={imageFormat}
+                >
+                  <img
+                    src={revue2010}
+                    alt="2010 - The Black Box"
+                    className={imageFormat}
+                  />
+                </button>
+                <button
+                  className={styles.posterButton}
                   onClick={() => this.selectShow("2009")}
-                />
-                <img
-                  src={revue2008}
-                  alt="2008 - A World Without Engineers"
-                  className={imageFormat}
+                >
+                  <img
+                    src={revue2009}
+                    alt="2009 - NZ's Next Most Smartest Top Engineer with the Stars"
+                    className={imageFormat}
+                  />
+                </button>
+                <button
+                  className={styles.posterButton}
                   onClick={() => this.selectShow("2008")}
-                />
+                >
+                  <img
+                    src={revue2008}
+                    alt="2008 - A World Without Engineers"
+                    className={imageFormat}
+                  />
+                </button>
               </div>
             </div>
           </section>

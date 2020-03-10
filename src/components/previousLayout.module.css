@@ -78,6 +78,20 @@ body {
   white-space: nowrap;
 }
 
+/*
+ * The following is a temporary solution to get a11y working on the poster carousel.
+ * In the long term, a component needs to be implemented to encapsulate this behaviour.
+ * TODO(alex-ruddell): Implement this.
+ */
+
+ .poster-button {
+   background: none;
+   border: none;
+   color: inherit;
+   cursor: pointer;
+   padding: 0;
+ }
+
 .allRow {
   display: flex;
   flex-direction: row;
