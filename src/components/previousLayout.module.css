@@ -323,3 +323,12 @@ body {
     margin-right: 24px;
   }
 }
+
+@media only screen and (max-width: 425px) {
+  .heroContainer {
+    width: 90%;
+    padding-right: 18px;
+    margin-left: 24px;
+    margin-right: 0;
+  }
+}
