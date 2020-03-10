@@ -3,27 +3,25 @@ It will use the prevRevue.module.css module to format images and data.
 Can keep calling this to call all the info. This .js file will also store all the info of prev revues in it. */
 
 import React, {Component} from "react"
-import styles from "../components/previousLayout.module.css"
-import { Link } from "gatsby"
+import styles from "./previousLayout.module.css"
 
+import revue2019 from "../../assets/images/previous/2019.jpg"
+import revue2018 from "../../assets/images/previous/2018.jpg"
+import revue2017 from "../../assets/images/previous/2017.jpg"
+import revue2016 from "../../assets/images/previous/2016.jpg"
+import revue2015 from "../../assets/images/previous/2015.jpg"
+import revue2014 from "../../assets/images/previous/2014.jpg"
+import revue2013 from "../../assets/images/previous/2013.jpg"
+import revue2012 from "../../assets/images/previous/2012.jpg"
+import revue2011 from "../../assets/images/previous/2011.jpg"
+import revue2010 from "../../assets/images/previous/2010.jpg"
+import revue2009 from "../../assets/images/previous/2009.gif"
+import revue2008 from "../../assets/images/previous/2008.gif"
 
-import revue2019 from "../assets/images/previous/2019.jpg"
-import revue2018 from "../assets/images/previous/2018.jpg"
-import revue2017 from "../assets/images/previous/2017.jpg"
-import revue2016 from "../assets/images/previous/2016.jpg"
-import revue2015 from "../assets/images/previous/2015.jpg"
-import revue2014 from "../assets/images/previous/2014.jpg"
-import revue2013 from "../assets/images/previous/2013.jpg"
-import revue2012 from "../assets/images/previous/2012.jpg"
-import revue2011 from "../assets/images/previous/2011.jpg"
-import revue2010 from "../assets/images/previous/2010.jpg"
-import revue2009 from "../assets/images/previous/2009.gif"
-import revue2008 from "../assets/images/previous/2008.gif"
-
-import revue2019Cast from "../assets/images/previous/2019/cast_2019.jpg"
-import revue2018Cast from "../assets/images/previous/2018/cast_2018.jpg"
-import revue2017Cast from "../assets/images/previous/2017/cast_2017.jpg"
-import revue2016Cast from "../assets/images/previous/2016/cast_2016.jpg"
+import revue2019Cast from "../../assets/images/previous/2019/cast_2019.jpg"
+import revue2018Cast from "../../assets/images/previous/2018/cast_2018.jpg"
+import revue2017Cast from "../../assets/images/previous/2017/cast_2017.jpg"
+import revue2016Cast from "../../assets/images/previous/2016/cast_2016.jpg"
 
 class PreviousShow extends Component {
     constructor(props) {
@@ -46,7 +44,7 @@ class PreviousShow extends Component {
     selectShow(input) {
         var sameShow;
         var newYear;
-        if (this.state.year == input) {
+        if (this.state.year === input) {
             sameShow = true;
             newYear = 'null';
         } else {
@@ -72,68 +70,215 @@ class PreviousShow extends Component {
         
 
         return (
-            <body>
-                {/* Landing page graphic. */}
-                <div className={toggleLandingPage}>
-                    <div className={styles.hero}>
-                        <div className={styles.heroContainer}>
-                            <h1 style={{
-                                color: "red",
-                            }}>Previous Revues<br/></h1>
-                            <p>Wow, this place looks like it has been adequately dusted.<br />
-                            Select from the posters below to see more details about our previous shows!</p>
-                        </div>
-                    </div>
-                    
+          <section>
+            {/* Landing page graphic. */}
+            <div className={toggleLandingPage}>
+              <div className={styles.hero}>
+                <div className={styles.heroContainer}>
+                  <h1
+                    style={{
+                      color: "red",
+                    }}
+                  >
+                    Previous Revues
+                    <br />
+                  </h1>
+                  <p>
+                    Wow, this place looks like it has been adequately dusted.
+                    <br />
+                    Select from the posters below to see more details about our
+                    previous shows!
+                  </p>
                 </div>
-                
-                {/* Specific revue element */}
-                <div className={specificShowSelected}>
-                    <div className={this.getBannerStyle()}>
-                        <div className={styles.heroContainer}>
-                        <h1 style={{
-                            color: this.getTitleColour(),
-                            lineHeight: "0.1em"
-                        }}>{this.getTitle()}</h1>
-                        <h3 style={{
-                            color: this.getTitleColour()
-                        }}>{this.getSubTitle()}</h3>
-                        <p  style={{
-                            color: this.getTextColour()
-                        }}>{this.getLocation()}</p>
-                        <p style={{
-                            color: this.getTextColour()
-                        }}>{this.getDirector()}</p>
-                        <p style={{
-                            color: this.getTextColour()
-                        }}>{this.getProducer()}</p>
-                        <p style={{
-                            color: this.getTextColour()
-                        }}>{this.getBlurb()}</p>
+              </div>
+            </div>
 
-                        </div>
-                    </div>
+            {/* Specific revue element */}
+            <div className={specificShowSelected}>
+              <div
+                className={`${styles.yearlyBanner} ${this.getBannerStyle()}`}
+              >
+                <div className={styles.heroContainer}>
+                  <h1
+                    style={{
+                      color: this.getTitleColour(),
+                      //   lineHeight: "0.1em",
+                    }}
+                  >
+                    {this.getTitle()}
+                  </h1>
+                  <h3
+                    style={{
+                      color: this.getTitleColour(),
+                    }}
+                  >
+                    {this.getSubTitle()}
+                  </h3>
+                  <p
+                    style={{
+                      color: this.getTextColour(),
+                    }}
+                  >
+                    {this.getLocation()}
+                  </p>
+                  <p
+                    style={{
+                      color: this.getTextColour(),
+                    }}
+                  >
+                    {this.getDirector()}
+                  </p>
+                  <p
+                    style={{
+                      color: this.getTextColour(),
+                    }}
+                  >
+                    {this.getProducer()}
+                  </p>
+                  <p
+                    style={{
+                      color: this.getTextColour(),
+                    }}
+                  >
+                    {this.getBlurb()}
+                  </p>
                 </div>
+              </div>
+            </div>
 
-                {/* Display of all previous revue posters */}
-                <div className={styles.allRow} style={{
-                    backgroundColor: backgdCol,
-                }}> {/* Toggle the display type here... */}
-                   <img src={revue2019} className={imageFormat} onClick={() => this.selectShow("2019")} />
-                   <img src={revue2018} className={imageFormat} onClick={() => this.selectShow("2018")} />
-                   <img src={revue2017} className={imageFormat} onClick={() => this.selectShow("2017")} />
-                   <img src={revue2016} className={imageFormat} onClick={() => this.selectShow("2016")} />
-                   <img src={revue2015} className={imageFormat} onClick={() => this.selectShow("2015")} />
-                   <img src={revue2014} className={imageFormat} onClick={() => this.selectShow("2014")} />
-                   <img src={revue2013} className={imageFormat} onClick={() => this.selectShow("2013")} />
-                   <img src={revue2012} className={imageFormat} onClick={() => this.selectShow("2012")} />
-                   <img src={revue2011} className={imageFormat} onClick={() => this.selectShow("2011")} />
-                   <img src={revue2010} className={imageFormat} onClick={() => this.selectShow("2010")} />
-                   <img src={revue2009} className={imageFormat} onClick={() => this.selectShow("2009")} />
-                   <img src={revue2008} className={imageFormat} onClick={() => this.selectShow("2008")} />
-                </div>    
-                
-            </body>
+            {/* Display of all previous revue posters */}
+            <div className={styles.posterContainer}>
+              <div
+                className={styles.allRow}
+                style={{
+                  backgroundColor: backgdCol,
+                }}
+              >
+                {" "}
+                {/* Toggle the display type here... */}
+                <button
+                  className={styles.posterButton}
+                  onClick={() => this.selectShow("2019")}
+                >
+                  <img
+                    src={revue2019}
+                    alt="2019 - Game of Loans"
+                    className={imageFormat}
+                  />
+                </button>
+                <button
+                  className={styles.posterButton}
+                  onClick={() => this.selectShow("2018")}
+                >
+                  <img
+                    src={revue2018}
+                    alt="2018 - Pirates of the Curriculum"
+                    className={imageFormat}
+                  />
+                </button>
+                <button
+                  className={styles.posterButton}
+                  onClick={() => this.selectShow("2017")}
+                >
+                  <img
+                    src={revue2017}
+                    alt="2017 - 21 Symonds Street"
+                    className={imageFormat}
+                  />
+                </button>
+                <button
+                  className={styles.posterButton}
+                  onClick={() => this.selectShow("2016")}
+                >
+                  <img
+                    src={revue2016}
+                    alt="2016 - The Avengineers"
+                    className={imageFormat}
+                  />
+                </button>
+                <button
+                  className={styles.posterButton}
+                  onClick={() => this.selectShow("2015")}
+                >
+                  <img
+                    src={revue2015}
+                    alt="2015 - Hack to the Future"
+                    className={imageFormat}
+                  />
+                </button>
+                <button
+                  className={styles.posterButton}
+                  onClick={() => this.selectShow("2014")}
+                >
+                  <img
+                    src={revue2014}
+                    alt="2014 - The Wizard of Cos"
+                    className={imageFormat}
+                  />
+                </button>
+                <button
+                  className={styles.posterButton}
+                  onClick={() => this.selectShow("2013")}
+                >
+                  <img
+                    src={revue2013}
+                    alt="2013 - Finding Nano"
+                    className={imageFormat}
+                  />
+                </button>
+                <button
+                  className={styles.posterButton}
+                  onClick={() => this.selectShow("2012")}
+                >
+                  <img
+                    src={revue2012}
+                    alt="2012 - The Ion King"
+                    className={imageFormat}
+                  />
+                </button>
+                <button
+                  className={styles.posterButton}
+                  onClick={() => this.selectShow("2011")}
+                >
+                  <img
+                    src={revue2011}
+                    alt="2011 - Degrees of Uniformity"
+                    className={imageFormat}
+                  />
+                </button>
+                <button
+                  className={styles.posterButton}
+                  onClick={() => this.selectShow("2010")}
+                >
+                  <img
+                    src={revue2010}
+                    alt="2010 - The Black Box"
+                    className={imageFormat}
+                  />
+                </button>
+                <button
+                  className={styles.posterButton}
+                  onClick={() => this.selectShow("2009")}
+                >
+                  <img
+                    src={revue2009}
+                    alt="2009 - NZ's Next Most Smartest Top Engineer with the Stars"
+                    className={imageFormat}
+                  />
+                </button>
+                <button
+                  className={styles.posterButton}
+                  onClick={() => this.selectShow("2008")}
+                >
+                  <img
+                    src={revue2008}
+                    alt="2008 - A World Without Engineers"
+                    className={imageFormat}
+                  />
+                </button>
+              </div>
+            </div>
+          </section>
         )
     }
 
@@ -156,7 +301,9 @@ class PreviousShow extends Component {
     }
 
     getBackgroundColour() {
-        if (this.state.year === '2019') return "#27221c";
+        return "#121212";
+
+        /* if (this.state.year === '2019') return "#27221c";
         if (this.state.year === '2018') return "#2b2b2b";
         if (this.state.year === '2017') return "white";
         if (this.state.year === '2016') return "black"; 
@@ -169,11 +316,13 @@ class PreviousShow extends Component {
         if (this.state.year === '2009') return "black";
         if (this.state.year === '2008') return "white";
 
-        return 'null';
+        return 'null'; */
     }
     
     getTextColour() {
-        if (this.state.year === '2019') return "white";
+        return "white";
+
+        /* if (this.state.year === '2019') return "white";
         if (this.state.year === '2018') return "white";
         if (this.state.year === '2017') return "black";
         if (this.state.year === '2016') return "white"; 
@@ -186,7 +335,7 @@ class PreviousShow extends Component {
         if (this.state.year === '2009') return "#87bcd4";
         if (this.state.year === '2008') return "black";
 
-        return 'null';
+        return 'null'; */
     }
 
     getTitleColour() {
@@ -246,7 +395,7 @@ class PreviousShow extends Component {
         if (this.state.year === '2009') return "NZ's Next Most Smartest Top Engineer With The Stars";
         if (this.state.year === '2008') return 'A World Without Engineers';
 
-        return 'null';
+        return '';
     }
 
     getSubTitle() {
@@ -304,10 +453,10 @@ class PreviousShow extends Component {
         if (this.state.year === '2012') return 'Emma Foulkes';
         if (this.state.year === '2011') return 'Andrew & Sophia Wang';
         if (this.state.year === '2010') return 'Sanna'; 
-        if (this.state.year === '2009') return 'null';
-        if (this.state.year === '2008') return 'null';
+        if (this.state.year === '2009') return '';
+        if (this.state.year === '2008') return '';
 
-        return 'null';
+        return "";
     }
 
     getBlurb() {
@@ -316,21 +465,21 @@ class PreviousShow extends Component {
         if (this.state.year === '2017') return "When a mysterious villain threatens the students of the Engineering department, 21 Symonds Street is put on the case. Top agent James Brond must team up with bumbling techie Max Well to save the University from imminent disaster. Can they learn to work together before it's too late? Since it's a comedy, yeah, probably - but you'll have to see the show to know for sure!";
         if (this.state.year === '2016') return "When the forces of evil and tyranny threaten the liveliehood of students in the Faculty of Engineering, a brave few will rise from the shadows to fight them. They're all great when they work on assignments solo, but will they be able to complete this group project, save the Engineering school, and still graduate on time? Since it's a comedy, yeah, probably, but you'll have to come see the show to know for sure!"; 
         
-        return 'null';
+        return "";
     }
 
     getQuote() {
         if (this.state.year === '2019') return 'Unbeatable'; 
         if (this.state.year === '2018') return 'Outstanding show';
         
-        return 'null';
+        return '';
     }
 
     getSubQuote() {
         if (this.state.year === '2019') return 'David Seymour (Dancing with the Stars 2018 Semi-Finalist)'; 
         if (this.state.year === '2018') return 'David Seymour (Dancing with the Stars 2018 Semi-Finalist)';
         
-        return 'null';
+        return '';
     }
 
 }

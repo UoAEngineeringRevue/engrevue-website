@@ -28,7 +28,7 @@
   flex: 0 0 50%;
 }
 
-.about-us--image {
+.about-us-image {
   object-fit: contain;
   width: 100%;
   height: auto;

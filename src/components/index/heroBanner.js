@@ -1,4 +1,4 @@
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import React from "react"
 import styles from "./heroBanner.module.css"
 
@@ -11,7 +11,7 @@ const HeroBanner = () => (
         <img src={GoLLogo} alt="Game of Loans" className={styles.heroLogo} />
         <h2 className={styles.heroText}>Now available to watch online!</h2>
         <div className={styles.heroBtn}>
-          <Link to="/">WATCH NOW</Link>
+          <a href="https://www.youtube.com/watch?v=9EsIMuKK91I">WATCH NOW</a>
         </div>
       </div>
     </div>
