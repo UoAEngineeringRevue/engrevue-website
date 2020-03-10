@@ -1,9 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import PreviousShows from "../components/previousLayout"
-import DisplayApp from "../components/displayShows"
 
 import SEO from "../components/seo"
 

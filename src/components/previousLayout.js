@@ -4,8 +4,6 @@ Can keep calling this to call all the info. This .js file will also store all th
 
 import React, {Component} from "react"
 import styles from "../components/previousLayout.module.css"
-import { Link } from "gatsby"
-
 
 import revue2019 from "../assets/images/previous/2019.jpg"
 import revue2018 from "../assets/images/previous/2018.jpg"
@@ -46,7 +44,7 @@ class PreviousShow extends Component {
     selectShow(input) {
         var sameShow;
         var newYear;
-        if (this.state.year == input) {
+        if (this.state.year === input) {
             sameShow = true;
             newYear = 'null';
         } else {
@@ -160,61 +158,73 @@ class PreviousShow extends Component {
                 {/* Toggle the display type here... */}
                 <img
                   src={revue2019}
+                  alt="2019 - Game of Loans"
                   className={imageFormat}
                   onClick={() => this.selectShow("2019")}
                 />
                 <img
                   src={revue2018}
+                  alt="2018 - Pirates of the Curriculum"
                   className={imageFormat}
                   onClick={() => this.selectShow("2018")}
                 />
                 <img
                   src={revue2017}
+                  alt="2017 - 21 Symonds Street"
                   className={imageFormat}
                   onClick={() => this.selectShow("2017")}
                 />
                 <img
                   src={revue2016}
+                  alt="2016 - The Avengineers"
                   className={imageFormat}
                   onClick={() => this.selectShow("2016")}
                 />
                 <img
                   src={revue2015}
+                  alt="2015 - Hack to the Future"
                   className={imageFormat}
                   onClick={() => this.selectShow("2015")}
                 />
                 <img
                   src={revue2014}
+                  alt="2014 - The Wizard of Cos"
                   className={imageFormat}
                   onClick={() => this.selectShow("2014")}
                 />
                 <img
                   src={revue2013}
+                  alt="2013 - Finding Nano"
                   className={imageFormat}
                   onClick={() => this.selectShow("2013")}
                 />
                 <img
                   src={revue2012}
+                  alt="2012 - The Ion King"
                   className={imageFormat}
                   onClick={() => this.selectShow("2012")}
                 />
                 <img
                   src={revue2011}
+                  alt="2011 - Degrees of Uniformity"
                   className={imageFormat}
                   onClick={() => this.selectShow("2011")}
                 />
                 <img
                   src={revue2010}
+                  alt="2010 - The Black Box"
                   className={imageFormat}
                   onClick={() => this.selectShow("2010")}
                 />
                 <img
                   src={revue2009}
+                  alt="2009 - NZ's Next Most Smartest Top Engineer with the Stars"
                   className={imageFormat}
                   onClick={() => this.selectShow("2009")}
                 />
                 <img
                   src={revue2008}
+                  alt="2008 - A World Without Engineers"
                   className={imageFormat}
                   onClick={() => this.selectShow("2008")}
                 />
