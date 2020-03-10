@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import PreviousShows from "../components/previousLayout"
+import PreviousShows from "../components/previous/previousLayout"
 
 import SEO from "../components/seo"
 

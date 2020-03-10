@@ -132,7 +132,7 @@ body {
       rgba(0, 0, 0, 0.6) 25%,
       rgba(0, 0, 0, 0.6) 50%
     ),
-    url(../assets/images/previous/websiteBanner-01.jpg);
+    url(../../assets/images/previous/websiteBanner-01.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -177,7 +177,7 @@ body {
       rgba(0, 0, 0, 0) 25%,
       rgba(0, 0, 0, 0.6) 50%
     ),
-    url(../assets/images/previous/websiteBanner-01.jpg);
+    url(../../assets/images/previous/websiteBanner-01.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -193,7 +193,7 @@ body {
       rgba(0, 0, 0, 0) 25%,
       rgba(0, 0, 0, 0.6) 50%
     ),
-    url(../assets/images/previous/banners/2019.jpg);
+    url(../../assets/images/previous/banners/2019.jpg);
 }
 
 .banner2018 {
@@ -202,7 +202,7 @@ body {
       rgba(0, 0, 0, 0) 25%,
       rgba(0, 0, 0, 0.6) 50%
     ),
-    url(../assets/images/previous/banners/2018.jpg);
+    url(../../assets/images/previous/banners/2018.jpg);
 }
 
 .banner2017 {
@@ -211,7 +211,7 @@ body {
       rgba(0, 0, 0, 0) 25%,
       rgba(0, 0, 0, 0.6) 50%
     ),
-    url(../assets/images/previous/banners/2017.jpg);
+    url(../../assets/images/previous/banners/2017.jpg);
 }
 
 .banner2016 {
@@ -220,7 +220,7 @@ body {
       rgba(0, 0, 0, 0) 25%,
       rgba(0, 0, 0, 0.6) 50%
     ),
-    url(../assets/images/previous/banners/2016.jpg);
+    url(../../assets/images/previous/banners/2016.jpg);
 }
 
 .banner2015 {
@@ -229,7 +229,7 @@ body {
       rgba(0, 0, 0, 0) 25%,
       rgba(0, 0, 0, 0.6) 50%
     ),
-    url(../assets/images/previous/banners/2015.jpg);
+    url(../../assets/images/previous/banners/2015.jpg);
 }
 
 /* .banner2014 {
@@ -238,7 +238,7 @@ body {
       rgba(0, 0, 0, 0) 25%,
       rgba(0, 0, 0, 0.6) 50%
     ),
-    url(../assets/images/previous/banners/2019.jpg);
+    url(../../assets/images/previous/banners/2019.jpg);
 }
 
 .banner2013 {
@@ -247,7 +247,7 @@ body {
       rgba(0, 0, 0, 0) 25%,
       rgba(0, 0, 0, 0.6) 50%
     ),
-    url(../assets/images/previous/banners/2019.jpg);
+    url(../../assets/images/previous/banners/2019.jpg);
 }
 
 .banner2012 {
@@ -256,7 +256,7 @@ body {
       rgba(0, 0, 0, 0) 25%,
       rgba(0, 0, 0, 0.6) 50%
     ),
-    url(../assets/images/previous/banners/2019.jpg);
+    url(../../assets/images/previous/banners/2019.jpg);
 }
 
 .banner2011 {
@@ -265,7 +265,7 @@ body {
       rgba(0, 0, 0, 0) 25%,
       rgba(0, 0, 0, 0.6) 50%
     ),
-    url(../assets/images/previous/banners/2019.jpg);
+    url(../../assets/images/previous/banners/2019.jpg);
 }
 
 .banner2010 {
@@ -274,7 +274,7 @@ body {
       rgba(0, 0, 0, 0) 25%,
       rgba(0, 0, 0, 0.6) 50%
     ),
-    url(../assets/images/previous/banners/2019.jpg);
+    url(../../assets/images/previous/banners/2019.jpg);
 }
 
 .banner2009 {
@@ -283,7 +283,7 @@ body {
       rgba(0, 0, 0, 0) 25%,
       rgba(0, 0, 0, 0.6) 50%
     ),
-    url(../assets/images/previous/banners/2019.jpg);
+    url(../../assets/images/previous/banners/2019.jpg);
 }
 
 .banner2008 {
@@ -292,7 +292,7 @@ body {
       rgba(0, 0, 0, 0) 25%,
       rgba(0, 0, 0, 0.6) 50%
     ),
-    url(../assets/images/previous/banners/2019.jpg);
+    url(../../assets/images/previous/banners/2019.jpg);
 } */
 
 @media only screen and (max-width: 768px) {
@@ -302,7 +302,7 @@ body {
         rgba(0, 0, 0, 0.6),
         rgba(0, 0, 0, 0.6)
       ),
-      url(../assets/images/previous/websiteBanner-01.jpg);
+      url(../../assets/images/previous/websiteBanner-01.jpg);
     background-color: black;
   }
 
