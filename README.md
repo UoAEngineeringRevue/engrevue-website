@@ -25,6 +25,7 @@ Changes are automatically deployed to Netlify upon committing to the `master` br
 ### Long-term future
 * **History** page: detailed historical timeline of the creation of the Revue and its changes from 2008 to today
 * Mailing list to contact potential patrons with promotional material and ticket sales information (subject to any potential cost/data privacy issues)
+* Sign-up page for Univeristy of Auckland Engineering students who want to get involved
 
 ## Authors
 
@@ -33,6 +34,6 @@ Changes are automatically deployed to Netlify upon committing to the `master` br
   * Index page
   * Watch page (under development)
 * Alex Ruddell
-  * Previous page
+  * Previous page (under development)
 
 *Special thanks to Alex Kennedy, Daniel Wong, and Michael Kemp for their contributions to the previous version of this website between 2018-2019.*
