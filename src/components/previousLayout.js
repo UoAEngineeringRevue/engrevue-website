@@ -4,8 +4,6 @@ Can keep calling this to call all the info. This .js file will also store all th
 
 import React, {Component} from "react"
 import styles from "../components/previousLayout.module.css"
-import { Link } from "gatsby"
-
 
 import revue2019 from "../assets/images/previous/2019.jpg"
 import revue2018 from "../assets/images/previous/2018.jpg"
