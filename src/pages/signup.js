@@ -1,17 +1,12 @@
-import React from "react"
-import { Redirect } from "react-router"
-import Layout from "../components/layout"
+import React from 'react'
 import SEO from "../components/seo"
+import Layout from "../components/layout"
 
 const SignUpPage = () => (
-    <Layout>
-        <SEO title="Sign Up" />
-        <div>
-            <p>This is a redirect page!</p>
-            <Redirect to='/previous' />
-        </div>
-    </Layout>
-    
+    <div>
+        <SEO title="Engineering Revue Sign Up" />
+        <meta http-equiv="refresh" content="0;url=https://forms.gle/9FeLYWBYHN2CkH5z5" />
+    </div>
 )
 
 export default SignUpPage
