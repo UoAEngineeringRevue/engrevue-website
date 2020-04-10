@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import PreviousShow from "../components/previousLayout"
 
 import HeroBanner from "../components/index/heroBanner"
 
