@@ -1,10 +1,55 @@
 .container {
-    margin: 0 auto;
-    padding: 48px 24px;
-    max-width: 960px;
-  }
+  margin: 0 auto;
+  padding: 24px 24px;
+  max-width: 960px;
+  background-color: #121212;
+}
   
-  .section-regular {
-    background-color: #121212;
-    color: white;
-  }
+.section-regular {
+  background-color: #262626;
+  color: white;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 16px;
+  display: block;
+  font-style: italic;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-image-container {
+  margin-left: 48px;
+  display: flex;
+  flex: 0 0 33%;
+
+}
+
+.about-image {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
+.catch-phrase {
+  font-style: italic;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+a {
+  color: red;
+}

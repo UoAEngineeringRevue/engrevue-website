@@ -1,0 +1,74 @@
+.hero {
+    color: white;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.75) 50%,
+        rgba(0, 0, 0, 0)
+      ),
+      url(../../assets/images/watch/curtains.jpg); /* Still stored in previous. */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100px;
+    height: 20vh;
+  }
+  
+  .heroContainer {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  
+  .heroTextArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  
+  @media only screen and (max-width: 768px) {
+    .hero {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(../../assets/images/watch/curtains.jpg);
+    }
+  
+    .heroContainer {
+      justify-content: center;
+    }
+  
+    /* For some reason this margin isn't getting respected when the
+     * screen gets smaller than the logo image. Need to investigate.
+     * TODO(dikunong): Fix this.
+     */
+    .heroTextArea {
+      align-items: center;
+      text-align: center;
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+  }
+  
+  @media only screen and (max-width: 425px) {
+    .heroBtn {
+      width: 100%;
+    }
+  }
+  
+  /**
+   * This isn't actually for the iPhone SE.
+   * It's an ugly workaround for the heroTextArea margin being ignored
+   * when it gets smaller than the image - make the image even smaller.
+   */
+  @media only screen and (max-width: 354px) {
+    .heroLogo {
+      max-width: 270px;
+    }
+  }
