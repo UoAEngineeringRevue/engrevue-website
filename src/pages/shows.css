@@ -1,0 +1,10 @@
+.container {
+    margin: 0 auto;
+    padding: 48px 24px;
+    max-width: 960px;
+  }
+  
+  .section-regular {
+    background-color: #121212;
+    color: white;
+  }
