@@ -5,8 +5,9 @@
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 0.75) 50%,
         rgba(0, 0, 0, 0)
-      ),
-      url(../../assets/images/watch/curtains.jpg); /* Still stored in previous. */
+    
+    ),
+    url(../../assets/images/watch/curtains.jpg); /* Still stored in previous. */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -13,7 +13,7 @@ import "./shows.css"
 const Shows = () => (
   <Layout>
     <SEO title="Previous Revues" />
-    <HeroBanner />
+    <HeroBanner year='null' />
     <section className="section-regular">
       <div className="container">
         {/* Have elements load */}
