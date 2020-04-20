@@ -40,14 +40,25 @@
     flex-direction: row;
 }
 
+.castText {
+    margin-left: 48px;
+}
+
 .aboutImageContainer {
+    margin-top: 30px;
     margin-left: 48px;
     display: flex;
     flex: 0 0 33%;  
 }
 
+.castImageContainer {
+    display: flex;
+    flex: 0 0 60%;  
+}
+
 .aboutImage {
     object-fit: contain;
+    object-position: center;
     width: 100%;
     height: auto;
 }
@@ -55,6 +66,8 @@
 .catchPhrase {
     font-style: italic;
     text-align: center;
+    margin-bottom: 0px; 
+    font-size: large;
 }
 
 h3 {

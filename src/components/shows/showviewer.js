@@ -22,32 +22,50 @@ class ShowViewer extends React.Component {
         const landSection = (this.state.showSelected ? styles.hide : styles.show);
         const showSection = (this.state.showSelected ? styles.show : styles.hide);
 
+        // To handle missing show programmes.
+        let programmeView = styles.show;
+        let programmeLink = data[this.state.year]['programme'];
+        if (data[this.state.year]['programme'] === 'null') {
+            programmeView = styles.hide;
+            programmeLink = data[this.state.year]['2019'];
+        }
+
         return (
         <>
             <HeroBanner year={this.state.year} />
             <section className={styles.section}>
                 <section className={styles.container}>
                     <section className={showSection}> {/* To display specific show information*/}
-                        <div className={styles.aboutText}>
+                        <p className={styles.catchPhrase}>{data[this.state.year]['catch-phrase']}</p>
+                        <div className={styles.aboutText}>    
                             <div>
-                                <p className={styles.catchPhrase}>{data[this.state.year]['catch-phrase']}</p>
                                 <h3>ABOUT THE SHOW</h3>
                                 <p>{data[this.state.year]['blurb']}</p>
+                                <p className={styles.catchPhrase}>{data[this.state.year]['quote']}</p>
                                 <h3>THE CAST</h3>
                                 <p>Directed by {data[this.state.year]['director']} <br />
-                                    Produced by {data[this.state.year]['producer']} <br /> <br />
-                                    For a full cast list and more detals, please view the 
-                                    <a href={data[this.state.year]['programme']}> {this.state.year} show programme</a>
-                                </p><br />
-                                <p>Each year, our lovely cast is made up of around 100 budding engineers from the University 
+                                    Produced by {data[this.state.year]['producer']} <br /></p>
+                                <p className={programmeView}> For a full cast list and more detals, please view the 
+                                    <a href={programmeLink}> {this.state.year} show programme</a>.
+                                </p>
+                            </div>
+                            <div className={styles.aboutImageContainer}>
+                                <img src={data[this.state.year]['poster']} className={styles.aboutImage} />
+                            </div>
+                        </div>
+                        <br />
+                        <div className={styles.aboutText}>
+                            <div className={styles.castImageContainer}>
+                                <img src={data[this.state.year]['cast-picture']} alt="cast" className={styles.aboutImage} />
+                            </div>
+                            <div>
+                                <h3></h3>
+                                <p className={styles.castText}>Each year, our lovely cast is made up of around 100 budding engineers from the University 
                                     of Auckland! We are a show run solely by engineering students, for engineering students. No
                                     matter what your level of experience may be, if you're keen to get involved, we want YOU!
                                     Sign ups for 2020 are now on! So navigate to <a href="http://www.engrevue.co.nz/signup">
                                     engrevue.co.nz/signup</a> for more info!
                                 </p>
-                            </div>
-                            <div className={styles.aboutImageContainer}>
-                                <img src={data[this.state.year]['poster']} className={styles.aboutImage} />
                             </div>
                         </div>
                     </section>
