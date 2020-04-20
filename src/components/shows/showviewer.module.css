@@ -1,0 +1,67 @@
+.view {
+    max-height: 100%;
+}
+
+.hide {
+    height: 0;
+    display: none;
+}
+
+.section {
+    background-color: #262626;
+    color: white;
+  }
+
+.container {
+    margin: 0 auto;
+    padding: 24px 24px;
+    max-width: 960px;
+    background-color: #121212;
+    color: white;
+    align-items: center;
+}
+
+.imgButton {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    padding: 5px 5px;
+    width: 225px;
+}
+
+.imgView {
+    height: 250px;
+}
+
+/* Different words and stuff */
+.aboutText {
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutImageContainer {
+    margin-left: 48px;
+    display: flex;
+    flex: 0 0 33%;  
+}
+
+.aboutImage {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
+.catchPhrase {
+    font-style: italic;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+  
+a {
+    color: red;
+}
