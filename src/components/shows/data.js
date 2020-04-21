@@ -53,6 +53,7 @@ const data = {
         // Text
         'title': 'GAME OF LOANS',
         'subtitle': 'Auckland Engineering Revue 2019',
+        'subtitle1': 'Engineering Revue 2019',
         'catch-phrase': 'When you play the Game of Loans, you win, or you default.',
         'location': 'SkyCity Theatre',
         'director': 'Alex Kennedy',
@@ -73,6 +74,7 @@ const data = {
         // Text
         'title': 'PIRATES OF THE CURRICULUM',
         'subtitle': 'Auckland Engineering Revue 2018',
+        'subtitle1': 'Engineering Revue 2018',
         'catch-phrase': 'The content and delivery of this Revue is protected by copyright.',
         'location': 'SkyCity Theatre',
         'director': 'Henry Merton',
@@ -95,6 +97,7 @@ const data = {
         // Text
         'title': '21 SYMONDS STREET',
         'subtitle': 'Auckland Engineering Revue 2017',
+        'subtitle1': 'Engineering Revue 2017',
         'catch-phrase': 'Symonds are forever.',
         'location': 'SkyCity Theatre',
         'director': 'Jake Thomas',
@@ -116,6 +119,7 @@ const data = {
         // Text
         'title': 'THE AVENGINEERS',
         'subtitle': 'Auckland Engineering Revue 2016',
+        'subtitle1': 'Engineering Revue 2016',
         'catch-phrase': 'Unlike the actual franchise, you only have to watch one of these!',
         'location': 'SkyCity Theatre',
         'director': 'Duncan Bakke',
@@ -137,6 +141,7 @@ const data = {
         // Text
         'title': 'HACK TO THE FUTURE',
         'subtitle': 'Auckland Engineering Revue 2015',
+        'subtitle1': 'Engineering Revue 2015',
         'catch-phrase': "If there's one thing for sure, it's that no one calls the Engineering Revue chicken.",
         'location': 'The Maidment Theatre',
         'director': 'Duncan Bakke & Cam Rouse',
@@ -158,6 +163,7 @@ const data = {
         // Text
         'title': 'THE WIZARD OF COS',
         'subtitle': 'Auckland Engineering Revue 2014',
+        'subtitle1': 'Engineering Revue 2014',
         'catch-phrase': "Why you ask? Hmm... just 'cos.",
         'location': 'The Maidment Theatre',
         'director': 'Janet Van',
@@ -178,6 +184,7 @@ const data = {
         // Text
         'title': 'FINDING NANO',
         'subtitle': 'Auckland Engineering Revue 2013',
+        'subtitle1': 'Engineering Revue 2013',
         'catch-phrase': 'null',
         'location': 'Raye Freedman Arts Centre',
         'director': 'Janet Van',
@@ -198,6 +205,7 @@ const data = {
         // Text
         'title': 'THE ION KING',
         'subtitle': 'Auckland Engineering Revue 2012',
+        'subtitle1': 'Engineering Revue 2012',
         'catch-phrase': 'null',
         'location': 'The Maidment Theatre',
         'director': 'Mahmood Hikmet & Nick Corlett',
@@ -218,6 +226,7 @@ const data = {
         // Text
         'title': 'DEGREES OF UNIFORMITY',
         'subtitle': 'Auckland Engineering Revue 2011',
+        'subtitle1': 'Engineering Revue 2011',
         'catch-phrase': 'The FOURTH Engineering Revue EVER!',
         'location': 'The Maidment Theatre',
         'director': 'Mahmood Hikmet & Nick Corlett',
@@ -238,6 +247,7 @@ const data = {
         // Text
         'title': 'THE BLACK BOX',
         'subtitle': 'Auckland Engineering Revue 2010',
+        'subtitle1': 'Engineering Revue 2010',
         'catch-phrase': 'The THIRD Engineering Revue EVER!',
         'location': 'The Maidment Theatre',
         'director': 'Mahmood Hikmet, Danvar Barganza, & Iain Dunning',
@@ -259,6 +269,7 @@ const data = {
         // Text
         'title': 'NZs NEXT MOST SMARTEST TOP ENGINEER WITH THE STARS',
         'subtitle': 'Auckland Engineering Revue 2009',
+        'subtitle1': 'Engineering Revue 2009',
         'catch-phrase': 'The SECOND Engineering Revue EVER!',
         'location': 'The Maidment Theatre',
         'director': 'Danvar Braganza',
@@ -279,6 +290,7 @@ const data = {
         // Text
         'title': 'A WORLD WITHOUT ENGINEERS',
         'subtitle': 'Auckland Engineering Revue 2008',
+        'subtitle1': 'Engineering Revue 2008',
         'catch-phrase': 'The FIRST Engineering Revue EVER!',
         'location': 'The Maidment Theatre',
         'director': 'Athena',
