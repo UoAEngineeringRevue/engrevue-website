@@ -9,7 +9,7 @@ class HeroBanner extends React.Component {
   }
 
   render() {
-    if (this.props.year != "null") {
+    if (this.props.defined === true) {
       // If a year HAS been entered...
       return (
         <section

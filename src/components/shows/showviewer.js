@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import styles from "./showviewer.module.css"
 import data from "./data.js"
 import HeroBanner from "./heroBanner"
@@ -42,6 +41,7 @@ class ShowViewer extends React.Component {
     // TODO(alex-ruddell) Figure out why this is crashing...
     //                      Small fix done but not perfect.
     // =====================================================
+
     var next = parseInt(this.state.year) + 1;
     var prev = parseInt(this.state.year) - 1;
     var nextText, prevText, nextYear, prevYear, nextShowDefined, prevShowDefined;
@@ -52,9 +52,11 @@ class ShowViewer extends React.Component {
     } else {
         nextShowDefined = true;
         nextYear = next;
-        nextText = "< " + data[next]['title'];
-        if (nextText.length > 35) {
-            nextText = nextText.substr(0, 37) + "..."; // Handles case where string is too long.
+        if (typeof next !== undefined) {
+          nextText = "< " + data[next]['title'];
+        }
+        if (nextText.length > 37) {
+          nextText = nextText.substr(0, 37) + "..."; // Handles case where string is too long.
         }
     }
     if (String(prev) === "2007") {
@@ -64,15 +66,17 @@ class ShowViewer extends React.Component {
     } else {
         prevShowDefined = true;
         prevYear = prev;
-        prevText = data[prev]['title'] + " >";
-        if (prevText.length > 35) {
+        if (typeof prev !== undefined) {
+          prevText = data[prev]['title'] + " >";
+        }
+        if (prevText.length > 37) {
             prevText = prevText.substr(0, 35) + "... >"; // Handles case where string is too long.
         }
     }
 
     return (
       <>
-        <HeroBanner year={this.state.year} />
+        <HeroBanner year={this.state.year} defined={this.state.showSelected} />
         <section className={styles.section}>
           <section className={styles.container}>
             <section className={showSection}>
