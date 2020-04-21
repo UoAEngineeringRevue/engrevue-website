@@ -23,7 +23,6 @@ import programme2018 from "../../assets/images/previous/2018/programme.pdf"
 import programme2017 from "../../assets/images/previous/2017/programme.pdf"
 import programme2016 from "../../assets/images/previous/2016/programme.pdf"
 
-
 const data = {
     /* Structure of this data:
     'year': { // replace with year
@@ -137,7 +136,7 @@ const data = {
         // Pictures
         'cover-image': curtains,
         'poster': revue2015,
-        'cast-picture': curtains,
+        'cast-picture': 'null',
         // Text
         'title': 'HACK TO THE FUTURE',
         'subtitle': 'Auckland Engineering Revue 2015',
@@ -159,7 +158,7 @@ const data = {
         // Pictures
         'cover-image': curtains,
         'poster': revue2014,
-        'cast-picture': curtains,
+        'cast-picture': 'null',
         // Text
         'title': 'THE WIZARD OF COS',
         'subtitle': 'Auckland Engineering Revue 2014',
@@ -180,12 +179,12 @@ const data = {
         // Pictures
         'cover-image': curtains,
         'poster': revue2013,
-        'cast-picture': curtains,
+        'cast-picture': 'null',
         // Text
         'title': 'FINDING NANO',
         'subtitle': 'Auckland Engineering Revue 2013',
         'subtitle1': 'Engineering Revue 2013',
-        'catch-phrase': 'null',
+        'catch-phrase': "If you thought we were done parodying kids movies, you were wrong!",
         'location': 'Raye Freedman Arts Centre',
         'director': 'Janet Van',
         'producer': 'Luke Harries',
@@ -201,19 +200,19 @@ const data = {
         // Pictures
         'cover-image': curtains,
         'poster': revue2012,
-        'cast-picture': curtains,
+        'cast-picture': 'null',
         // Text
         'title': 'THE ION KING',
         'subtitle': 'Auckland Engineering Revue 2012',
         'subtitle1': 'Engineering Revue 2012',
-        'catch-phrase': 'null',
+        'catch-phrase': "We've moved on to kids movies!",
         'location': 'The Maidment Theatre',
         'director': 'Mahmood Hikmet & Nick Corlett',
         'producer': 'Emma Foulkes',
         'blurb': `In the fourth annual Auckland Engineering Revue, the 100% University-of-Auckland based cast attacks a wonderful animated
                 childrens film in the hopes of not ruining it for their mature audience! In this spin-off parody of "The Lion King", you 
                 get the engineering-related twist of comedy you never knew you needed!`,
-        'quote': 'null',
+        'quote': '"Hakuna Matata!"',
         // Resources
         'programme': 'null'
     },
@@ -222,7 +221,7 @@ const data = {
         // Pictures
         'cover-image': curtains,
         'poster': revue2011,
-        'cast-picture': curtains,
+        'cast-picture': 'null',
         // Text
         'title': 'DEGREES OF UNIFORMITY',
         'subtitle': 'Auckland Engineering Revue 2011',
@@ -243,7 +242,7 @@ const data = {
         // Pictures
         'cover-image': curtains,
         'poster': revue2010,
-        'cast-picture': curtains,
+        'cast-picture': 'null',
         // Text
         'title': 'THE BLACK BOX',
         'subtitle': 'Auckland Engineering Revue 2010',
@@ -265,7 +264,7 @@ const data = {
         // Pictures
         'cover-image': curtains,
         'poster': revue2009,
-        'cast-picture': curtains,
+        'cast-picture': 'null',
         // Text
         'title': 'NZs NEXT MOST SMARTEST TOP ENGINEER WITH THE STARS',
         'subtitle': 'Auckland Engineering Revue 2009',
@@ -286,7 +285,7 @@ const data = {
         // Pictures
         'cover-image': curtains,
         'poster': revue2008,
-        'cast-picture': curtains,
+        'cast-picture': 'null',
         // Text
         'title': 'A WORLD WITHOUT ENGINEERS',
         'subtitle': 'Auckland Engineering Revue 2008',
@@ -307,7 +306,7 @@ const data = {
         // Pictures
         'cover-image': curtains,
         'poster': curtains,
-        'cast-picture': curtains,
+        'cast-picture': 'null',
         // Text
         'title': 'null',
         'subtitle': 'null',

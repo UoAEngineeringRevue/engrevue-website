@@ -37,54 +37,10 @@
 
 }
 
-.imgButton:hover .imgView {
-    opacity: 25%;
-}
-
-.imgButton:hover .showText {
-    opacity: 100%;
-}
-
-.imgButton:hover .showTextTwoLines {
-    opacity: 100%;
-}
-
 .imgView {
     width: 75%;
     background-color: black;
     transition-duration: 0.75s;
-}
-
-.showText {
-    opacity: 0%;
-    transition-duration: 0.75s;
-    height: 0.5px;
-    width: 100%;
-    text-align: center;
-    transform: translate(0,-24500%);
-}
-
-.showTextTwoLines {
-    opacity: 0%;
-    transition-duration: 0.75s;
-    height: 0.5px;
-    width: 100%;
-    text-align: center;
-    transform: translate(0,-26000%);
-}
-
-.hiddenText1 {
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 2px;
-    /* transform: translate(0,-650%); */
-}
-
-.hiddenText2 {
-    color: white;
-    font-size: 11px;
-    /* transform: translate(0,-1175%); */
 }
 
 /* Different words and stuff */
@@ -94,7 +50,11 @@
 }
 
 .castText {
-    margin-left: 48px;
+    margin-left: 24px;
+}
+
+.castText2 {
+    margin-left: 0;
 }
 
 .aboutImageContainer {
@@ -106,7 +66,7 @@
 
 .castImageContainer {
     display: flex;
-    flex: 0 0 60%;  
+    flex: 0 0 50%;
 }
 
 .aboutImage {
@@ -124,10 +84,98 @@
 }
 
 h3 {
+    margin-bottom: 5px;
+}
+
+.h3alt {
     margin-top: 25px;
     margin-bottom: 5px;
 }
   
 a {
     color: red;
+}
+
+/* Sign up button */
+.signupButton {
+    text-align: center;
+}
+
+.signupButton a {
+    color: white;
+    background-color: #cc0000;
+    padding: 10px;
+}
+
+.signupButton a:hover {
+    background: rgb(187, 34, 34);
+}
+
+/* Code for front page button fading */
+.imgButton:hover .imgView {
+    opacity: 25%;
+}
+
+.imgButton:hover .showText {
+    opacity: 100%;
+}
+
+.imgButton:hover .showTextv1 {
+    opacity: 100%;
+}
+
+.imgButton:hover .showTextv2 {
+    opacity: 100%;
+}
+
+.imgButton:hover .showTextv3 {
+    opacity: 100%;
+}
+
+.showText {
+    opacity: 0%;
+    transition-duration: 0.75s;
+    height: 0.5px;
+    width: 100%;
+    text-align: center;
+    transform: translate(0,-24500%);
+}
+
+.showTextv1 {
+    opacity: 0%;
+    transition-duration: 0.75s;
+    height: 0.5px;
+    width: 100%;
+    text-align: center;
+    transform: translate(0,-26000%);
+}
+
+.showTextv2 {
+    opacity: 0%;
+    transition-duration: 0.75s;
+    height: 0.5px;
+    width: 100%;
+    text-align: center;
+    transform: translate(0,-15000%);
+}
+
+.showTextv3 {
+    opacity: 0%;
+    transition-duration: 0.75s;
+    height: 0.5px;
+    width: 100%;
+    text-align: center;
+    transform: translate(0,-12500%);
+}
+
+.hiddenText1 {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.hiddenText2 {
+    color: white;
+    font-size: 11px;
 }
