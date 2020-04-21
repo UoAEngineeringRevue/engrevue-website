@@ -12,5 +12,4 @@ const Shows = () => (
   </Layout>
 )
 
-
 export default Shows

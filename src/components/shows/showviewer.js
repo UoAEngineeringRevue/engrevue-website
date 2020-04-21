@@ -1,5 +1,5 @@
 import React from "react"
-
+import { Link } from "gatsby"
 import styles from "./showviewer.module.css"
 import data from "./data.js"
 import HeroBanner from "./heroBanner"
@@ -9,7 +9,7 @@ class ShowViewer extends React.Component {
     super(props)
     this.state = {
       showSelected: false,
-      year: "null",
+      year: "2019"
     }
     this.selectShow = this.selectShow.bind(this)
   }
@@ -38,18 +38,55 @@ class ShowViewer extends React.Component {
       joinusStyle = styles.castText2
     }
 
+    // =====================================================
+    // TODO(alex-ruddell) Figure out why this is crashing...
+    //                      Small fix done but not perfect.
+    // =====================================================
+    var next = parseInt(this.state.year) + 1;
+    var prev = parseInt(this.state.year) - 1;
+    var nextText, prevText, nextYear, prevYear, nextShowDefined, prevShowDefined;
+    if (String(next) === "2020") {
+        nextShowDefined = false;
+        nextYear = "2019"; // Won't be displayed, but this ensures it doesn't crash.
+        nextText = "VIEW ALL SHOWS";
+    } else {
+        nextShowDefined = true;
+        nextYear = next;
+        nextText = "< " + data[next]['title'];
+        if (nextText.length > 35) {
+            nextText = nextText.substr(0, 37) + "..."; // Handles case where string is too long.
+        }
+    }
+    if (String(prev) === "2007") {
+        prevShowDefined = false;
+        prevYear = "2019"; // Won't be displayed, but this ensures it doesn't crash.
+        prevText = "VIEW ALL SHOWS";
+    } else {
+        prevShowDefined = true;
+        prevYear = prev;
+        prevText = data[prev]['title'] + " >";
+        if (prevText.length > 35) {
+            prevText = prevText.substr(0, 35) + "... >"; // Handles case where string is too long.
+        }
+    }
+
     return (
       <>
         <HeroBanner year={this.state.year} />
         <section className={styles.section}>
           <section className={styles.container}>
             <section className={showSection}>
-              {" "}
               {/* To display specific show information*/}
-              <div className={styles.aboutText}>
-                <div className={styles.signupButton}>
-                  <a href="https://www.engrevue.co.nz/shows/">Back to shows</a>
+              <div className={styles.topButtons}>
+                
+                <div className={styles.fwrdButton}>
+                  <a onClick={() => this.setState({showSelected: nextShowDefined, year: nextYear})}>{nextText}</a>
                 </div>
+                <div className={styles.backButton}>
+                  <a onClick={() => this.setState({showSelected: prevShowDefined, year: prevYear})}>{prevText}</a>
+                </div>
+              </div>
+              <div>
                 <p className={styles.catchPhrase}>
                   {data[this.state.year]["catch-phrase"]}
                 </p>
@@ -70,10 +107,9 @@ class ShowViewer extends React.Component {
                     Engineering Revue of {this.state.year}!
                   </p>
                   <p className={programmeView}>
+                    For a full cast list and more details, please view the
                     {" "}
-                    For a full cast list and more detals, please view the
                     <a href={programmeLink}>
-                      {" "}
                       {this.state.year} show programme
                     </a>
                     .
@@ -88,8 +124,8 @@ class ShowViewer extends React.Component {
               </div>
               <br />
               <div className={styles.aboutText}>
-                <div className={styles.castImageContainer}>
-                  <div className={castPicView}>
+                <div className={castPicView}>
+                  <div className={styles.castImageContainer}>
                     <img
                       src={castPicture}
                       alt="cast"

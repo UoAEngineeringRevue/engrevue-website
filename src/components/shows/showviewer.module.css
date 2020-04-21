@@ -34,12 +34,54 @@
 
   text-align: center;
   vertical-align: middle;
+  position: relative;
 }
 
 .imgView {
   width: 75%;
   background-color: black;
   transition-duration: 0.75s;
+}
+
+
+/* Navigation buttons */
+.topButtons {
+  display: flex;
+  flex-direction: row;
+}
+
+.backButton {
+  display: flex;
+  flex: 0 0 50%;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.fwrdButton {
+  display: flex;
+  flex: 0 0 50%;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.backButton a {
+  color: white;
+  background-color: #cc0000;
+  padding: 10px;
+}
+
+.fwrdButton a {
+  color: white;
+  background-color: #cc0000;
+  padding: 10px;
+}
+
+.backButton a:hover {
+  background: rgb(187, 34, 34);
+}
+
+.fwrdButton a:hover {
+  background: rgb(187, 34, 34);
 }
 
 /* Different words and stuff */
@@ -78,7 +120,9 @@
 .catchPhrase {
   font-style: italic;
   text-align: center;
+  vertical-align: center;
   margin-bottom: 0px;
+  margin-top: 20px;
   font-size: large;
 }
 
@@ -119,52 +163,16 @@ a {
   opacity: 100%;
 }
 
-.imgButton:hover .showTextv1 {
-  opacity: 100%;
-}
-
-.imgButton:hover .showTextv2 {
-  opacity: 100%;
-}
-
-.imgButton:hover .showTextv3 {
-  opacity: 100%;
-}
-
 .showText {
   opacity: 0%;
   transition-duration: 0.75s;
-  height: 0.5px;
-  width: 100%;
+  width: 75%;
   text-align: center;
-  transform: translate(0, -24500%);
-}
-
-.showTextv1 {
-  opacity: 0%;
-  transition-duration: 0.75s;
-  height: 0.5px;
-  width: 100%;
-  text-align: center;
-  transform: translate(0, -26000%);
-}
-
-.showTextv2 {
-  opacity: 0%;
-  transition-duration: 0.75s;
-  height: 0.5px;
-  width: 100%;
-  text-align: center;
-  transform: translate(0, -15000%);
-}
-
-.showTextv3 {
-  opacity: 0%;
-  transition-duration: 0.75s;
-  height: 0.5px;
-  width: 100%;
-  text-align: center;
-  transform: translate(0, -12500%);
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
 }
 
 .hiddenText1 {
