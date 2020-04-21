@@ -1,78 +1,75 @@
 .hero {
-    color: white;
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0.75) 50%,
-        rgba(0, 0, 0, 0)
-    
+  color: white;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.75) 50%,
+      rgba(0, 0, 0, 0)
     ),
     url(../../assets/images/watch/curtains.jpg); /* Still stored in previous. */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 100px;
-    height: 20vh;
-  }
-  
-  .heroContainer {
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-  }
-  
-  .heroTextArea {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100px;
+  height: 20vh;
+}
 
+.heroContainer {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heroTextArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 20px;
+  display: block;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 768px) {
   .title {
-    font-size: 50px;
+    font-size: 38px;
     text-align: center;
     margin-bottom: 3px;
   }
-  
+
   .subtitle {
     text-align: center;
-    font-size: 20px;
+    font-size: 14px;
     display: block;
     font-style: italic;
   }
-  
-  
-  @media only screen and (max-width: 768px) {
-    .title {
-      font-size: 38px;
-      text-align: center;
-      margin-bottom: 3px;
-    }
-    
-    .subtitle {
-      text-align: center;
-      font-size: 14px;
-      display: block;
-      font-style: italic;
-    }
+}
+
+@media only screen and (max-width: 425px) {
+  .title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 3px;
   }
-  
-  @media only screen and (max-width: 425px) {
-    .title {
-      font-size: 24px;
-      text-align: center;
-      margin-bottom: 3px;
-    }
-    
-    .subtitle {
-      text-align: center;
-      font-size: 10px;
-      display: block;
-      font-style: italic;
-    }
+
+  .subtitle {
+    text-align: center;
+    font-size: 10px;
+    display: block;
+    font-style: italic;
   }
+}
