@@ -35,14 +35,14 @@
   text-align: center;
   vertical-align: middle;
   position: relative;
+
 }
 
 .imgView {
   width: 75%;
-  background-color: black;
+  opacity: 100%;
   transition-duration: 0.75s;
 }
-
 
 /* Navigation buttons */
 .topButtons {
@@ -155,6 +155,11 @@ a {
 }
 
 /* Code for front page button fading */
+button:hover {
+  opacity: 100%;
+  background: inherit;
+}
+
 .imgButton:hover .imgView {
   opacity: 25%;
 }
@@ -166,7 +171,7 @@ a {
 .showText {
   opacity: 0%;
   transition-duration: 0.75s;
-  width: 75%;
+  width: 70%;
   text-align: center;
   
   position: absolute;
