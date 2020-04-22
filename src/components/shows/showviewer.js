@@ -155,6 +155,7 @@ class ShowViewer extends React.Component {
               </div>
             </section>
             <section className={landSection}>
+              <div className={styles.buttonView}>
               {Object.keys(data)
                 .sort()
                 .reverse()
@@ -163,7 +164,7 @@ class ShowViewer extends React.Component {
                     return
                   }
                   return (
-                    <button
+                    <div
                       className={styles.imgButton}
                       onClick={() => this.selectShow(String(year))}
                     >
@@ -180,9 +181,10 @@ class ShowViewer extends React.Component {
                           {data[year]["subtitle1"]}
                         </p>
                       </div>
-                    </button>
+                    </div>
                   )
                 })}
+                </div>
             </section>
           </section>
         </section>
