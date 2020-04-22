@@ -18,23 +18,23 @@ class ShowViewer extends React.Component {
   }
 
   render() {
-    const landSection = this.state.showSelected ? styles.hide : styles.show
-    const showSection = this.state.showSelected ? styles.show : styles.hide
+    const landSection = this.state.showSelected ? styles.hide : styles.view;
+    const showSection = this.state.showSelected ? styles.view : styles.hide;
 
-    let programmeView = styles.show
-    let programmeLink = data[this.state.year]["programme"]
+    let programmeView = styles.view;
+    let programmeLink = data[this.state.year]["programme"];
     if (data[this.state.year]["programme"] === "null") {
-      programmeView = styles.hide
-      programmeLink = data[this.state.year]["programme"]
+      programmeView = styles.hide;
+      programmeLink = data[this.state.year]["programme"];
     }
 
-    let castPicView = styles.show
-    let castPicture = data[this.state.year]["cast-picture"]
-    let joinusStyle = styles.castText
+    let castPicView = styles.view;
+    let castPicture = data[this.state.year]["cast-picture"];
+    let joinusStyle = styles.castText;
     if (data[this.state.year]["cast-picture"] === "null") {
-      castPicView = styles.hide
-      castPicture = data[this.state.year]["cast-picture"]
-      joinusStyle = styles.castText2
+      castPicView = styles.hide;
+      castPicture = data[this.state.year]["cast-picture"];
+      joinusStyle = styles.castText2;
     }
 
     // =====================================================
