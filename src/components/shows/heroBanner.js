@@ -1,7 +1,6 @@
 import React from "react"
 import styles from "./heroBanner.module.css"
 import data from "./data.js"
-import curtains from "../../assets/images/watch/curtains.jpg"
 
 class HeroBanner extends React.Component {
   constructor(props) {
@@ -12,24 +11,7 @@ class HeroBanner extends React.Component {
     if (this.props.defined === true) {
       // If a year HAS been entered...
       return (
-        <section
-          style={{
-            color: "white",
-            height: "20vh",
-            minHeight: "100px",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundAttachment: "fixed",
-            backgroundImage: `linear-gradient(
-          to right,
-          rgba(0, 0, 0, 0),
-          rgba(0, 0, 0, 0.75) 50%,
-          rgba(0, 0, 0, 0)
-          ),
-          url(${data[this.props.year]["cover-image"]})`,
-          }}
-        >
+        <section className={styles.hero}>
           <div className={styles.heroContainer}>
             <div className={styles.heroTextArea}>
               <h1 className={styles.title}>{data[this.props.year]["title"]}</h1>
@@ -43,24 +25,7 @@ class HeroBanner extends React.Component {
     } else {
       // Else, if no year has been selected, is the base state of the previous revues page...
       return (
-        <section
-          style={{
-            color: "white",
-            height: "20vh",
-            minHeight: "100px",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundAttachment: "fixed",
-            backgroundImage: `linear-gradient(
-          to right,
-          rgba(0, 0, 0, 0),
-          rgba(0, 0, 0, 0.75) 50%,
-          rgba(0, 0, 0, 0)
-          ),
-          url(${curtains})`,
-          }}
-        >
+        <section className={styles.hero}>
           <div className={styles.heroContainer}>
             <div className={styles.heroTextArea}>
               <h1 className={styles.title}>PREVIOUS REVUES</h1>

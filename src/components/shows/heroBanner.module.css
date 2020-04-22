@@ -31,12 +31,6 @@
   text-align: center;
 }
 
-.title {
-  font-size: 50px;
-  text-align: center;
-  margin-bottom: 3px;
-}
-
 .subtitle {
   text-align: center;
   font-size: 20px;
@@ -44,32 +38,38 @@
   font-style: italic;
 }
 
-@media only screen and (max-width: 768px) {
-  .title {
-    font-size: 38px;
-    text-align: center;
-    margin-bottom: 3px;
-  }
+.title {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 3px;
+}
 
+@media only screen and (max-width: 768px) {
   .subtitle {
     text-align: center;
     font-size: 14px;
     display: block;
     font-style: italic;
   }
-}
 
-@media only screen and (max-width: 425px) {
   .title {
-    font-size: 24px;
+    font-size: 38px;
     text-align: center;
     margin-bottom: 3px;
   }
+}
 
+@media only screen and (max-width: 425px) {
   .subtitle {
     text-align: center;
     font-size: 10px;
     display: block;
     font-style: italic;
+  }
+
+  .title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 3px;
   }
 }

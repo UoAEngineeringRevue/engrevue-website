@@ -42,9 +42,9 @@ class ShowViewer extends React.Component {
     //                      Small fix done but not perfect.
     // =====================================================
 
-    var next = parseInt(this.state.year) + 1;
-    var prev = parseInt(this.state.year) - 1;
-    var nextText, prevText, nextYear, prevYear, nextShowDefined, prevShowDefined;
+    let next = parseInt(this.state.year) + 1;
+    let prev = parseInt(this.state.year) - 1;
+    let nextText, prevText, nextYear, prevYear, nextShowDefined, prevShowDefined;
     if (String(next) === "2020") {
         nextShowDefined = false;
         nextYear = "2019"; // Won't be displayed, but this ensures it doesn't crash.
@@ -165,7 +165,7 @@ class ShowViewer extends React.Component {
                   return (
                     <button
                       className={styles.imgButton}
-                      onClick={() => this.selectShow(year)}
+                      onClick={() => this.selectShow(String(year))}
                     >
                       <img
                         src={data[year]["poster"]}

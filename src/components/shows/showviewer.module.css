@@ -1,15 +1,46 @@
-.view {
-  max-height: 100%;
+a {
+  color: red;
 }
 
-.hide {
-  height: 0;
-  display: none;
+.aboutImage {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  height: auto;
 }
 
-.section {
-  background-color: #262626;
-  color: white;
+.aboutImageContainer {
+  margin-top: 30px;
+  margin-left: 48px;
+  display: flex;
+  flex: 0 0 33%;
+}
+
+.aboutText {
+  display: flex;
+  flex-direction: row;
+}
+
+.castImageContainer {
+  display: flex;
+  flex: 0 0 50%;
+}
+
+.castText {
+  margin-left: 24px;
+}
+
+.castText2 {
+  margin-left: 0;
+}
+
+.catchPhrase {
+  font-style: italic;
+  text-align: center;
+  vertical-align: center;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  font-size: large;
 }
 
 .container {
@@ -19,6 +50,71 @@
   background-color: #121212;
   color: white;
   align-items: center;
+}
+
+.backButton {
+  display: flex;
+  flex: 0 0 50%;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.backButton a {
+  color: white;
+  background-color: #cc0000;
+  padding: 10px;
+}
+
+.backButton a:hover {
+  background: rgb(187, 34, 34);
+}
+
+button:hover {
+  opacity: 100%;
+  background: inherit;
+}
+
+.fwrdButton {
+  display: flex;
+  flex: 0 0 50%;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.fwrdButton a {
+  color: white;
+  background-color: #cc0000;
+  padding: 10px;
+}
+
+.fwrdButton a:hover {
+  background: rgb(187, 34, 34);
+}
+
+h3 {
+  margin-bottom: 5px;
+}
+
+.h3alt {
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.hiddenText1 {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.hiddenText2 {
+  color: white;
+  font-size: 11px;
+}
+
+.hide {
+  height: 0;
+  display: none;
 }
 
 .imgButton {
@@ -38,134 +134,23 @@
 
 }
 
-.imgView {
-  width: 75%;
-  opacity: 100%;
-  transition-duration: 0.75s;
-}
-
-/* Navigation buttons */
-.topButtons {
-  display: flex;
-  flex-direction: row;
-}
-
-.backButton {
-  display: flex;
-  flex: 0 0 50%;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-.fwrdButton {
-  display: flex;
-  flex: 0 0 50%;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-
-.backButton a {
-  color: white;
-  background-color: #cc0000;
-  padding: 10px;
-}
-
-.fwrdButton a {
-  color: white;
-  background-color: #cc0000;
-  padding: 10px;
-}
-
-.backButton a:hover {
-  background: rgb(187, 34, 34);
-}
-
-.fwrdButton a:hover {
-  background: rgb(187, 34, 34);
-}
-
-/* Different words and stuff */
-.aboutText {
-  display: flex;
-  flex-direction: row;
-}
-
-.castText {
-  margin-left: 24px;
-}
-
-.castText2 {
-  margin-left: 0;
-}
-
-.aboutImageContainer {
-  margin-top: 30px;
-  margin-left: 48px;
-  display: flex;
-  flex: 0 0 33%;
-}
-
-.castImageContainer {
-  display: flex;
-  flex: 0 0 50%;
-}
-
-.aboutImage {
-  object-fit: contain;
-  object-position: center;
-  width: 100%;
-  height: auto;
-}
-
-.catchPhrase {
-  font-style: italic;
-  text-align: center;
-  vertical-align: center;
-  margin-bottom: 0px;
-  margin-top: 20px;
-  font-size: large;
-}
-
-h3 {
-  margin-bottom: 5px;
-}
-
-.h3alt {
-  margin-top: 25px;
-  margin-bottom: 5px;
-}
-
-a {
-  color: red;
-}
-
-/* Sign up button */
-.signupButton {
-  text-align: center;
-}
-
-.signupButton a {
-  color: white;
-  background-color: #cc0000;
-  padding: 10px;
-}
-
-.signupButton a:hover {
-  background: rgb(187, 34, 34);
-}
-
-/* Code for front page button fading */
-button:hover {
-  opacity: 100%;
-  background: inherit;
-}
-
 .imgButton:hover .imgView {
   opacity: 25%;
 }
 
 .imgButton:hover .showText {
   opacity: 100%;
+}
+
+.imgView {
+  width: 75%;
+  opacity: 100%;
+  transition-duration: 0.75s;
+}
+
+.section {
+  background-color: #262626;
+  color: white;
 }
 
 .showText {
@@ -180,14 +165,25 @@ button:hover {
   transform: translate(-50%, -30%);
 }
 
-.hiddenText1 {
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 2px;
+.signupButton {
+  text-align: center;
 }
 
-.hiddenText2 {
+.signupButton a {
   color: white;
-  font-size: 11px;
+  background-color: #cc0000;
+  padding: 10px;
+}
+
+.signupButton a:hover {
+  background: rgb(187, 34, 34);
+}
+
+.topButtons {
+  display: flex;
+  flex-direction: row;
+}
+
+.view {
+  max-height: 100%;
 }
