@@ -49,9 +49,12 @@ class Header extends React.Component {
               </Link>
             </li>
             <li className={styles.navListItemPenultimate}>
-              <Link to="/signup/" className={styles.navLink}>
+              <a
+                href="https://forms.gle/JSZCwv4BoLM1tUxK9"
+                className={styles.navLink}
+              >
                 SIGN UP
-              </Link>
+              </a>
             </li>
             <li className={styles.navListItem}>
               <a
