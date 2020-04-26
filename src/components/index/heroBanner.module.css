@@ -1,13 +1,14 @@
 .hero {
   color: white;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.6) 50%),
-    url(../../assets/images/index/IMG_0798_crop.jpg);
-  background-position: center;
+    url(../../assets/images/index/auditions-banner.jpg);
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   min-height: 465px;
   height: 75vh;
+  max-height: 800px;
 }
 
 .heroContainer {
@@ -43,18 +44,19 @@
 .heroBtn a {
   display: block;
   padding: 18px;
-  color: white;
-  background-color: #cc0000;
+  color: black;
+  background-color: #ffa500;
 }
 
 .heroBtn a:hover {
-  background: rgb(187, 34, 34);
+  background: #eba72a;
 }
 
 @media only screen and (max-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../../assets/images/index/IMG_0798.jpg);
+    url(../../assets/images/index/auditions-banner-tall.jpg);
+    background-position: top center;
   }
 
   .heroContainer {
@@ -71,9 +73,7 @@
     margin-left: 24px;
     margin-right: 24px;
   }
-}
 
-@media only screen and (max-width: 425px) {
   .heroBtn {
     width: 100%;
   }

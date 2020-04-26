@@ -1,17 +1,19 @@
-// import { Link } from "gatsby"
 import React from "react"
 import styles from "./heroBanner.module.css"
 
-import GoLLogo from "../../assets/images/index/game-of-loans-logo-white.png"
-
+import Revue20Logo from "../../assets/images/index/revue-2020-logo.png"
 const HeroBanner = () => (
   <section className={styles.hero}>
     <div className={styles.heroContainer}>
       <div className={styles.heroTextArea}>
-        <img src={GoLLogo} alt="Game of Loans" className={styles.heroLogo} />
-        <h2 className={styles.heroText}>Now available to watch online!</h2>
+        <img
+          src={Revue20Logo}
+          alt="Engineering Revue 2020"
+          className={styles.heroLogo}
+        />
+        <h2 className={styles.heroText}>Sign up for auditions now!</h2>
         <div className={styles.heroBtn}>
-          <a href="https://www.youtube.com/watch?v=9EsIMuKK91I">WATCH NOW</a>
+          <a href="https://forms.gle/JSZCwv4BoLM1tUxK9">SIGN UP</a>
         </div>
       </div>
     </div>
