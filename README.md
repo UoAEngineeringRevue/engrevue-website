@@ -25,7 +25,7 @@ Changes are automatically deployed to Netlify upon committing to the `master` br
 ### Long-term future
 * **History** page: detailed historical timeline of the creation of the Revue and its changes from 2008 to today
 * Mailing list to contact potential patrons with promotional material and ticket sales information (subject to any potential cost/data privacy issues)
-* Sign-up page for Univeristy of Auckland Engineering students who want to get involved
+* Sign-up page for University of Auckland Engineering students who want to get involved
 
 ## Authors
 
