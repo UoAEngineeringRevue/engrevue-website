@@ -25,6 +25,15 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.buttonClear {
+  padding: 0;
+  background-repeat:no-repeat;
+  border: none;
+  background-color: #cc0000;
+  outline:none;
 }
 
 .castImageContainer {
@@ -46,7 +55,7 @@ a {
   vertical-align: center;
   margin-bottom: 0px;
   margin-top: 20px;
-  font-size: large;
+  font-size: 18px;
 }
 
 .container {
@@ -60,7 +69,7 @@ a {
 
 .backButton {
   display: flex;
-  flex: 0 0 50%;
+  flex: 0 0 33%;
   flex-direction: row;
   justify-content: flex-end;
 }
@@ -75,9 +84,26 @@ a {
   background: rgb(187, 34, 34);
 }
 
+.homeButton {
+  display: flex;
+  flex: 0 0 33%;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.homeButton a {
+  color: white;
+  background-color: #cc0000;
+  padding: 10px;
+}
+
+.homeButton a:hover {
+  background: rgb(187, 34, 34);
+}
+
 .fwrdButton {
   display: flex;
-  flex: 0 0 50%;
+  flex: 0 0 33%;
   flex-direction: row;
   justify-content: flex-start;
 }
@@ -126,7 +152,7 @@ h3 {
   cursor: pointer;
   width: 225px;
   height: 260px;
-  transition-duration: 0.75s;
+  transition-duration: 0.3s;
   overflow: hidden;
   padding: 10px;
 
@@ -147,13 +173,35 @@ h3 {
 .imgView {
   width: 75%;
   
-  transition-duration: 0.75s;
+  transition-duration: 0.3s;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
   position: absolute;
+}
+
+.linkLong {
+  display: unset;
+}
+
+.linkShort {
+  display: none;
+}
+
+.posterImage {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  height: auto;
+}
+
+.posterImageContainer {
+  margin-top: 30px;
+  margin-left: 48px;
+  display: flex;
+  flex: 0 0 33%;
 }
 
 .section {
@@ -163,7 +211,7 @@ h3 {
 
 .showText {
   opacity: 0;
-  transition-duration: 0.75s;
+  transition-duration: 0.3s;
   width: 70%;
   text-align: center;
   
@@ -194,4 +242,53 @@ h3 {
 
 .view {
   opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutImage {
+    margin-bottom: 30px;
+  }
+  
+  .aboutImageContainer {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .aboutText {
+    flex-direction: column;
+  }
+
+  .linkShort {
+    display: unset;
+  }
+
+  .linkLong {
+    display: none;
+  }
+
+  .posterImage {
+    display: none;
+  }
+  
+  .posterImageContainer {
+    display: none;
+    margin: 0;
+    height: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .homeButton {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .linkShort {
+    display: none;
+  }
+
+  .linkLong{
+    display: none;
+  }
+
 }

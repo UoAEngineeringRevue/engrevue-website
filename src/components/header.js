@@ -26,7 +26,7 @@ class Header extends React.Component {
       <header>
         <div className={styles.logoArea}>
           <h3 style={{ margin: 0 }}>
-            <Link to="/">AUCKLAND ENGINEERING REVUE</Link>
+            <Link to="/">ENGINEERING REVUE</Link>
           </h3>
           <button className={styles.menuBtn} onClick={this.toggleNavbar} />
         </div>

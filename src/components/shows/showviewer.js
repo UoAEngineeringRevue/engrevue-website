@@ -45,32 +45,35 @@ class ShowViewer extends React.Component {
     let next = parseInt(this.state.year) + 1;
     let prev = parseInt(this.state.year) - 1;
     let nextText, prevText, nextYear, prevYear, nextShowDefined, prevShowDefined;
+    let displayHomeButton = styles.show;
     if (String(next) === "2020") {
         nextShowDefined = false;
         nextYear = "2019"; // Won't be displayed, but this ensures it doesn't crash.
         nextText = "VIEW ALL SHOWS";
+        displayHomeButton = styles.hide;
     } else {
         nextShowDefined = true;
         nextYear = next;
         if (typeof next !== undefined) {
           nextText = "< " + data[next]['title'];
         }
-        if (nextText.length > 37) {
-          nextText = nextText.substr(0, 37) + "..."; // Handles case where string is too long.
+        if (nextText.length > 20) {
+          nextText = nextText.substr(0, 20) + "..."; // Handles case where string is too long.
         }
     }
     if (String(prev) === "2007") {
         prevShowDefined = false;
         prevYear = "2019"; // Won't be displayed, but this ensures it doesn't crash.
         prevText = "VIEW ALL SHOWS";
+        displayHomeButton = styles.hide;
     } else {
         prevShowDefined = true;
         prevYear = prev;
         if (typeof prev !== undefined) {
           prevText = data[prev]['title'] + " >";
         }
-        if (prevText.length > 37) {
-            prevText = prevText.substr(0, 35) + "... >"; // Handles case where string is too long.
+        if (prevText.length > 20) {
+            prevText = prevText.substr(0, 20) + "... >"; // Handles case where string is too long.
         }
     }
 
@@ -82,12 +85,28 @@ class ShowViewer extends React.Component {
             <section className={showSection}>
               {/* To display specific show information*/}
               <div className={styles.topButtons}>
-                
                 <div className={styles.fwrdButton}>
-                  <a onClick={() => this.setState({showSelected: nextShowDefined, year: nextYear})}>{nextText}</a>
+                  <button className={styles.buttonClear}>  
+                    <a className={styles.linkLong} onClick={() => this.setState({showSelected: nextShowDefined, year: nextYear})}>{nextText}</a>
+                    <a className={styles.linkShort} onClick={() => this.setState({showSelected: nextShowDefined, year: nextYear})}>
+                      {nextText == "VIEW ALL SHOWS" ? nextText : "< NEXT SHOW"}
+                    </a>
+                  </button>  
+                </div>
+                <div className={styles.homeButton}>
+                  <div className={displayHomeButton}>
+                    <button className={styles.buttonClear}>
+                      <a onClick={() => this.setState({showSelected: false, year: "2019"})}>VIEW ALL SHOWS</a>
+                    </button>
+                  </div>
                 </div>
                 <div className={styles.backButton}>
-                  <a onClick={() => this.setState({showSelected: prevShowDefined, year: prevYear})}>{prevText}</a>
+                  <button className={styles.buttonClear}>  
+                    <a className={styles.linkLong} onClick={() => this.setState({showSelected: prevShowDefined, year: prevYear})}>{prevText}</a>
+                    <a className={styles.linkShort} onClick={() => this.setState({showSelected: prevShowDefined, year: prevYear})}>
+                      {prevText == "VIEW ALL SHOWS" ? prevText : "PREVIOUS SHOW >"}
+                    </a>
+                  </button>  
                 </div>
               </div>
               <div>
@@ -114,15 +133,14 @@ class ShowViewer extends React.Component {
                     For a full cast list and more details, please view the
                     {" "}
                     <a href={programmeLink}>
-                      {this.state.year} show programme
+                      {this.state.year} show programme.
                     </a>
-                    .
                   </p>
                 </div>
-                <div className={styles.aboutImageContainer}>
+                <div className={styles.posterImageContainer}>
                   <img
                     src={data[this.state.year]["poster"]}
-                    className={styles.aboutImage}
+                    className={styles.posterImage}
                   />
                 </div>
               </div>

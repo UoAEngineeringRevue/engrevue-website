@@ -194,7 +194,7 @@ const data = {
     "director": "Janet Van",
     "producer": "Luke Harries",
     "blurb": `In the fifth annual Auckland Engineering Revue, the 100% University-of-Auckland based cast attacks a wonderful animated
-                childrens film in the hopes of not ruining it for their mature audience! In this spin-off parody of "Finding Nemo", you 
+                children's film in the hopes of not ruining it for their mature audience! In this spin-off parody of "Finding Nemo", you 
                 get the engineering-related twist of comedy you never knew you needed!`,
     "quote": '"Just keep swimming!"',
     // Resources
@@ -215,7 +215,7 @@ const data = {
     "director": "Mahmood Hikmet & Nick Corlett",
     "producer": "Emma Foulkes",
     "blurb": `In the fourth annual Auckland Engineering Revue, the 100% University-of-Auckland based cast attacks a wonderful animated
-                childrens film in the hopes of not ruining it for their mature audience! In this spin-off parody of "The Lion King", you 
+                children's film in the hopes of not ruining it for their mature audience! In this spin-off parody of "The Lion King", you 
                 get the engineering-related twist of comedy you never knew you needed!`,
     "quote": '"Hakuna Matata!"',
     // Resources
@@ -272,7 +272,7 @@ const data = {
     "poster": revue2009,
     "cast-picture": "null",
     // Text
-    "title": "NZs NEXT MOST SMARTEST TOP ENGINEER WITH THE STARS",
+    "title": "NZ's NEXT MOST SMARTEST TOP ENGINEER WITH THE STARS",
     "subtitle": "Auckland Engineering Revue 2009",
     "subtitle1": "Engineering Revue 2009",
     "catch-phrase": "The SECOND Engineering Revue EVER!",
