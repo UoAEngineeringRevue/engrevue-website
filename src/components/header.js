@@ -48,6 +48,14 @@ class Header extends React.Component {
                 PREVIOUS SHOWS
               </Link>
             </li>
+            <li className={styles.navListItemPenultimate}>
+              <a
+                href="https://forms.gle/JSZCwv4BoLM1tUxK9"
+                className={styles.navLink}
+              >
+                SIGN UP
+              </a>
+            </li>
             <li className={styles.navListItem}>
               <a
                 href="https://www.youtube.com/watch?v=9EsIMuKK91I"
