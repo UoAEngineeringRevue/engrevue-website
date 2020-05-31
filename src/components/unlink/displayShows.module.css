@@ -1,9 +1,0 @@
-.show {
-    max-height: 100%;
-    background-color: cornflowerblue;
-}
-
-.hide {
-    height: 0;
-    visibility: hidden;
-}
