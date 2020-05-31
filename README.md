@@ -18,7 +18,6 @@ Changes are automatically deployed to Netlify upon committing to the `master` br
 * **Watch** page: ability to watch old revues with timestamp bookmarks for skits
 
 ### Short-term future
-* Refactor Previous page to greatly improve code cleanliness and speed
 * **Sponsor Us** page: promotion of the Revue to potential future sponsors
 * Ticket sales, when that inevitably happens
 
@@ -34,6 +33,7 @@ Changes are automatically deployed to Netlify upon committing to the `master` br
   * Index page
   * Watch page (under development)
 * Alex Ruddell
-  * Previous page (under development)
+  * Previous Shows page
+  * Sponsor Us page (under development)
 
 *Special thanks to Alex Kennedy, Daniel Wong, and Michael Kemp for their contributions to the previous version of this website between 2018-2019.*
