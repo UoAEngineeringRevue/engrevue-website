@@ -33,7 +33,8 @@ a {
   background-repeat:no-repeat;
   border: none;
   background-color: #cc0000;
-  outline:none;
+  outline: none;
+  font-family: inherit;
 }
 
 .castImageContainer {
@@ -258,6 +259,10 @@ h3 {
     flex-direction: column;
   }
 
+  .castText {
+    margin-left: 0px;
+  }
+
   .linkShort {
     display: unset;
   }
@@ -267,22 +272,30 @@ h3 {
   }
 
   .posterImage {
-    display: none;
+    max-height: 400px;
   }
-  
+
   .posterImageContainer {
-    display: none;
-    margin: 0;
-    height: 0;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #262626;
   }
 }
 
 @media only screen and (max-width: 600px) {
+
   .homeButton {
-    flex-direction: row;
-    justify-content: center;
+    position: absolute; 
+    margin-right: auto;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    align-self: center;
   }
-  
+
   .linkShort {
     display: none;
   }

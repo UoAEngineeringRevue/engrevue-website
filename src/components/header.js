@@ -44,7 +44,7 @@ class Header extends React.Component {
               </Link>
             </li> */}
             <li className={styles.navListItemPenultimate}>
-              <Link to="/previous/" className={styles.navLink}>
+              <Link to="/shows/" className={styles.navLink}>
                 PREVIOUS SHOWS
               </Link>
             </li>

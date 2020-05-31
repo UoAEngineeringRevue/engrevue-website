@@ -45,12 +45,13 @@ class ShowViewer extends React.Component {
     let next = parseInt(this.state.year) + 1;
     let prev = parseInt(this.state.year) - 1;
     let nextText, prevText, nextYear, prevYear, nextShowDefined, prevShowDefined;
-    let displayHomeButton = styles.show;
+    let displayFwrdButton = styles.show;
+    let displayBackButton = styles.show;
     if (String(next) === "2020") {
         nextShowDefined = false;
         nextYear = "2019"; // Won't be displayed, but this ensures it doesn't crash.
         nextText = "VIEW ALL SHOWS";
-        displayHomeButton = styles.hide;
+        displayFwrdButton = styles.hide;
     } else {
         nextShowDefined = true;
         nextYear = next;
@@ -65,7 +66,7 @@ class ShowViewer extends React.Component {
         prevShowDefined = false;
         prevYear = "2019"; // Won't be displayed, but this ensures it doesn't crash.
         prevText = "VIEW ALL SHOWS";
-        displayHomeButton = styles.hide;
+        displayBackButton = styles.hide;
     } else {
         prevShowDefined = true;
         prevYear = prev;
@@ -86,27 +87,29 @@ class ShowViewer extends React.Component {
               {/* To display specific show information*/}
               <div className={styles.topButtons}>
                 <div className={styles.fwrdButton}>
-                  <button className={styles.buttonClear}>  
-                    <a className={styles.linkLong} onClick={() => this.setState({showSelected: nextShowDefined, year: nextYear})}>{nextText}</a>
-                    <a className={styles.linkShort} onClick={() => this.setState({showSelected: nextShowDefined, year: nextYear})}>
-                      {nextText == "VIEW ALL SHOWS" ? nextText : "< NEXT SHOW"}
-                    </a>
-                  </button>  
-                </div>
-                <div className={styles.homeButton}>
-                  <div className={displayHomeButton}>
-                    <button className={styles.buttonClear}>
-                      <a onClick={() => this.setState({showSelected: false, year: "2019"})}>VIEW ALL SHOWS</a>
-                    </button>
+                  <div className={displayFwrdButton}>
+                    <button className={styles.buttonClear}>  
+                      <a className={styles.linkLong} onClick={() => this.setState({showSelected: nextShowDefined, year: nextYear})}>{nextText}</a>
+                      <a className={styles.linkShort} onClick={() => this.setState({showSelected: nextShowDefined, year: nextYear})}>
+                        {nextText == "VIEW ALL SHOWS" ? nextText : "< NEXT SHOW"}
+                      </a>
+                    </button>  
                   </div>
                 </div>
+                <div className={styles.homeButton}>
+                  <button className={styles.buttonClear}>
+                    <a onClick={() => this.setState({showSelected: false, year: "2019"})}>VIEW ALL SHOWS</a>
+                  </button>    
+                </div>
                 <div className={styles.backButton}>
-                  <button className={styles.buttonClear}>  
-                    <a className={styles.linkLong} onClick={() => this.setState({showSelected: prevShowDefined, year: prevYear})}>{prevText}</a>
-                    <a className={styles.linkShort} onClick={() => this.setState({showSelected: prevShowDefined, year: prevYear})}>
-                      {prevText == "VIEW ALL SHOWS" ? prevText : "PREVIOUS SHOW >"}
-                    </a>
-                  </button>  
+                  <div className={displayBackButton}>
+                    <button className={styles.buttonClear}>  
+                      <a className={styles.linkLong} onClick={() => this.setState({showSelected: prevShowDefined, year: prevYear})}>{prevText}</a>
+                      <a className={styles.linkShort} onClick={() => this.setState({showSelected: prevShowDefined, year: prevYear})}>
+                        {prevText == "VIEW ALL SHOWS" ? prevText : "PREVIOUS SHOW >"}
+                      </a>
+                    </button>  
+                  </div>
                 </div>
               </div>
               <div>
