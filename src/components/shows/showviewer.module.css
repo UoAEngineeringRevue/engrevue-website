@@ -1,0 +1,307 @@
+a {
+  color: red;
+}
+
+.aboutImage {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  height: auto;
+}
+
+.aboutImageContainer {
+  margin-top: 30px;
+  margin-left: 48px;
+  display: flex;
+  flex: 0 0 33%;
+}
+
+.aboutText {
+  display: flex;
+  flex-direction: row;
+}
+
+.buttonView {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.buttonClear {
+  padding: 0;
+  background-repeat:no-repeat;
+  border: none;
+  background-color: #cc0000;
+  outline: none;
+  font-family: inherit;
+}
+
+.castImageContainer {
+  display: flex;
+  flex: 0 0 50%;
+}
+
+.castText {
+  margin-left: 24px;
+}
+
+.castText2 {
+  margin-left: 0;
+}
+
+.catchPhrase {
+  font-style: italic;
+  text-align: center;
+  vertical-align: center;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 24px 24px;
+  max-width: 960px;
+  background-color: #121212;
+  color: white;
+  align-items: center;
+}
+
+.backButton {
+  display: flex;
+  flex: 0 0 33%;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.backButton a {
+  color: white;
+  background-color: #cc0000;
+  padding: 10px;
+}
+
+.backButton a:hover {
+  background: rgb(187, 34, 34);
+}
+
+.homeButton {
+  display: flex;
+  flex: 0 0 33%;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.homeButton a {
+  color: white;
+  background-color: #cc0000;
+  padding: 10px;
+}
+
+.homeButton a:hover {
+  background: rgb(187, 34, 34);
+}
+
+.fwrdButton {
+  display: flex;
+  flex: 0 0 33%;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.fwrdButton a {
+  color: white;
+  background-color: #cc0000;
+  padding: 10px;
+}
+
+.fwrdButton a:hover {
+  background: rgb(187, 34, 34);
+}
+
+h3 {
+  margin-bottom: 5px;
+}
+
+.h3alt {
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.hiddenText1 {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.hiddenText2 {
+  color: white;
+  font-size: 11px;
+}
+
+.hide {
+  height: 0;
+  display: none;
+  opacity: 0;
+}
+
+.imgButton {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  width: 225px;
+  height: 260px;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  padding: 10px;
+
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+
+}
+
+.imgButton:hover .imgView {
+  opacity: 0.25;
+}
+
+.imgButton:hover .showText {
+  opacity: 1;
+}
+
+.imgView {
+  width: 75%;
+  
+  transition-duration: 0.3s;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+}
+
+.linkLong {
+  display: unset;
+}
+
+.linkShort {
+  display: none;
+}
+
+.posterImage {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  height: auto;
+}
+
+.posterImageContainer {
+  margin-top: 30px;
+  margin-left: 48px;
+  display: flex;
+  flex: 0 0 33%;
+}
+
+.section {
+  background-color: #262626;
+  color: white;
+}
+
+.showText {
+  opacity: 0;
+  transition-duration: 0.3s;
+  width: 70%;
+  text-align: center;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+}
+
+.signupButton {
+  text-align: center;
+}
+
+.signupButton a {
+  color: white;
+  background-color: #cc0000;
+  padding: 10px;
+}
+
+.signupButton a:hover {
+  background: rgb(187, 34, 34);
+}
+
+.topButtons {
+  display: flex;
+  flex-direction: row;
+}
+
+.view {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutImage {
+    margin-bottom: 30px;
+  }
+  
+  .aboutImageContainer {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .aboutText {
+    flex-direction: column;
+  }
+
+  .castText {
+    margin-left: 0px;
+  }
+
+  .linkShort {
+    display: unset;
+  }
+
+  .linkLong {
+    display: none;
+  }
+
+  .posterImage {
+    max-height: 400px;
+  }
+
+  .posterImageContainer {
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #262626;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .homeButton {
+    position: absolute; 
+    margin-right: auto;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    align-self: center;
+  }
+
+  .linkShort {
+    display: none;
+  }
+
+  .linkLong{
+    display: none;
+  }
+
+}

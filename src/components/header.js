@@ -43,8 +43,8 @@ class Header extends React.Component {
                 SPONSOR US
               </Link>
             </li> */}
-            <li className={styles.navListItem}>
-              <Link to="/previous/" className={styles.navLink}>
+            <li className={styles.navListItemPenultimate}>
+              <Link to="/shows/" className={styles.navLink}>
                 PREVIOUS SHOWS
               </Link>
             </li>
