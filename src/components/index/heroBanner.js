@@ -11,9 +11,13 @@ const HeroBanner = () => (
           alt="Engineering Revue 2020"
           className={styles.heroLogo}
         />
-        <h2 className={styles.heroText}>Sign up for auditions now!</h2>
+        <h2 className={styles.heroText}>
+          Come to our in-person auditions on June 13!
+        </h2>
         <div className={styles.heroBtn}>
-          <a href="https://forms.gle/JSZCwv4BoLM1tUxK9">SIGN UP</a>
+          <a href="https://www.facebook.com/events/589342615021318">
+            RSVP ON FACEBOOK
+          </a>
         </div>
       </div>
     </div>
