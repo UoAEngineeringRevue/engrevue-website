@@ -34,7 +34,9 @@
 }
 
 .heroText {
+  line-height: 32px;
   margin-bottom: 48px;
+  max-width: 350px;
 }
 
 .heroBtn {
