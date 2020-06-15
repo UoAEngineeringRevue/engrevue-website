@@ -12,11 +12,11 @@ const HeroBanner = () => (
           className={styles.heroLogo}
         />
         <h2 className={styles.heroText}>
-          Come to our in-person auditions on June 13!
+          Please hold while we create a show
         </h2>
         <div className={styles.heroBtn}>
-          <a href="https://www.facebook.com/events/589342615021318">
-            RSVP ON FACEBOOK
+          <a href="https://www.facebook.com/EngineeringRevue">
+            LIKE US ON FACEBOOK
           </a>
         </div>
       </div>
