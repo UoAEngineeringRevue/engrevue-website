@@ -14,4 +14,11 @@ exports.createPages = ({ actions }) => {
     isPermanent: true,
     force: true,
   })
+  createRedirect({
+    fromPath: "/tickets",
+    toPath:
+      "https://www.iticket.co.nz/events/2020/sep/indy-jones",
+    isPermanent: true,
+    force: true,
+  })
 }
