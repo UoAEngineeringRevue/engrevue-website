@@ -1,4 +1,20 @@
 @font-face {
+  font-family: "SF Fedora Titles";
+  font-style: normal;
+  font-weight: 400;
+  src: url("sf-fedora-titles.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Fedora Titles";
+  font-style: italic;
+  font-weight: 400;
+  src: url("sf-fedora-titles-italic.ttf");
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Trueno";
   font-style: normal;
   font-weight: 300;

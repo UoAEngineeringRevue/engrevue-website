@@ -13,6 +13,32 @@
   color: white; /* #cf6679 */
 }
 
+.flavour--text {
+  font-family: "SF Fedora Titles"
+}
+
+.flavour--text > p {
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+.flavour--btn {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.flavour--btn a {
+  display: block;
+  padding: 18px;
+  color: black;
+  background-color: #ff801c;
+  text-align: center;
+}
+
+.flavour--btn a:hover {
+  background: #fa8e39;
+}
+
 .about-us--text {
   display: flex;
   flex-direction: row;
