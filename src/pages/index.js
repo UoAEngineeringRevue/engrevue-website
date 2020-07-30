@@ -30,7 +30,7 @@ const IndexPage = () => (
         <br/>
         
         <p>
-          The annual MAS Auckland Engineering Revue
+          The annual Auckland Engineering Revue
           (otherwise known as Auckland’s only show entirely created and performed by Engineering Students)
           has returned to mocking beloved cinema after a brief hiatus to mock prestige television.
           <br/><br/>
@@ -38,7 +38,7 @@ const IndexPage = () => (
           to our brilliant jazz band and comedy short films! Whatever you’re looking for, we have it and
           you’re gonna want to see it!
           <br/><br/>
-          The 2020 Engineering Revue is proudly sponsored by <a href="https://www.mas.co.nz/" style={{color: "#ff801c"}}>MAS Insurance</a>.
+          The 2020 Engineering Revue is proudly sponsored by <a href="https://www.mas.co.nz/" style={{color: "#ff801c"}}>MAS Insurance</a> and the <a href="https://wen.blogs.auckland.ac.nz/" style={{color: "#ff801c"}}>Women in Engineering Network (WEN)</a>.
         </p>
 
         <div className={styles.flavourBtn}>
