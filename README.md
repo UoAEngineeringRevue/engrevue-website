@@ -1,5 +1,7 @@
 # Engineering Revue Website
 
+## [Visit the website!](https://www.engrevue.co.nz/)
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/6d7fec8f-f6fc-4e11-8620-25c6052d70bb/deploy-status)](https://app.netlify.com/sites/engrevue/deploys)
 
 The landing page website used to promote and document the University of Auckland Engineering Revue, the coolest student-run variety comedy theatre show in the vicinity of 20 Symonds Street.
