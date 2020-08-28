@@ -19,7 +19,7 @@ const IndexPage = () => (
     <section className={styles.sectionRegular}>
       <div className={styles.container} style={{paddingBottom: "0px"}}>
         <div className={styles.flavourText}>
-          <h1>7.30pm, September 3rd - 5th<br/>SkyCity Theatre</h1>
+          <h1>7.30pm, October 1st - 3rd<br/>SkyCity Theatre</h1>
           <p>
             An ancient legend and a whole pile of terrible grades.
             Indi and her crew go digging for the reason, but quickly discover it's more than they imagined.
@@ -30,13 +30,17 @@ const IndexPage = () => (
         <br/>
         
         <p>
-          The annual Auckland Engineering Revue
-          (otherwise known as Auckland’s only show entirely created and performed by Engineering Students)
-          has returned to mocking beloved cinema after a brief hiatus to mock prestige television.
+          The annual Auckland Engineering Revue - Auckland's only show entirely created and performed by 
+          Engineering Students - has returned to parodying beloved cinema after a brief hiatus to parody
+          prestige television.
           <br/><br/>
           As always, the show ranges from brilliant one-off comedy sketches and fantastic dance numbers
           to our brilliant jazz band and comedy short films! Whatever you’re looking for, we have it and
           you’re gonna want to see it!
+          <br/><br/>
+          In compliance with the lockdown Level 3 announcement in mid-August, we've postponed our show
+          by about our month and will now be performing for three nights only from October 1st to
+          October 3rd. See you there!
           <br/><br/>
           The 2020 Engineering Revue is proudly sponsored by <a href="https://www.mas.co.nz/" style={{color: "#ff801c"}}>MAS Insurance</a> and the <a href="https://wen.blogs.auckland.ac.nz/" style={{color: "#ff801c"}}>Women in Engineering Network (WEN)</a>.
         </p>
