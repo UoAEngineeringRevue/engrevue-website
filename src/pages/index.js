@@ -39,7 +39,7 @@ const IndexPage = () => (
           you’re gonna want to see it!
           <br/><br/>
           In compliance with the lockdown Level 3 announcement in mid-August, we've postponed our show
-          by about our month and will now be performing for three nights only from October 1st to
+          by about a month and will now be performing for three nights only from October 1st to
           October 3rd. See you there!
           <br/><br/>
           The 2020 Engineering Revue is proudly sponsored by <a href="https://www.mas.co.nz/" style={{color: "#ff801c"}}>MAS Insurance</a> and the <a href="https://wen.blogs.auckland.ac.nz/" style={{color: "#ff801c"}}>Women in Engineering Network (WEN)</a>.
