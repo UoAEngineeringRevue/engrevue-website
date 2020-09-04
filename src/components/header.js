@@ -38,11 +38,12 @@ class Header extends React.Component {
                 HISTORY
               </Link>
             </li>
-            <li className={styles.navListItem}>
-              <Link to="/" className={styles.navLink}>
+             */}
+             <li className={styles.navListItem}>
+              <Link to="/sponsor/" className={styles.navLink}>
                 SPONSOR US
               </Link>
-            </li> */}
+            </li>
             <li className={styles.navListItem}>
               <Link to="/shows/" className={styles.navLink}>
                 PREVIOUS SHOWS

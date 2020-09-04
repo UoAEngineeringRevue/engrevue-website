@@ -1,0 +1,104 @@
+.hero {
+  color: white;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 50%),
+    url(../../assets/images/sponsor/sponsor-banner-01.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: relative;
+  min-height: 465px;
+  height: 90vh;
+  max-height: 800px;
+}
+
+.heroContainer {
+  margin: 0 auto;
+  max-width: 1250px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.heroTextArea {
+  margin-right: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heroBtnContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.heroBtn {
+  width: fit-content;
+}
+
+.heroBtn a {
+  display: block;
+  padding: 12px;
+  color: white;
+  background-color:red;
+}
+
+.heroBtn a:hover {
+  background: #E70000;
+}
+
+.title {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+  max-width: 500px;
+}
+
+.socialImg {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.subtext {
+  max-width: 500px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../assets/images/sponsor/sponsor-banner-01.jpg);
+    background-position: top center;
+  }
+
+  .heroContainer {
+    justify-content: center;
+  }
+
+  /* For some reason this margin isn't getting respected when the
+   * screen gets smaller than the logo image. Need to investigate.
+   * TODO(dikunong): Fix this.
+   */
+  .heroTextArea {
+    align-items: center;
+    text-align: center;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .heroBtn {
+    width: 100%;
+  }
+}
+
+/**
+ * This isn't actually for the iPhone SE.
+ * It's an ugly workaround for the heroTextArea margin being ignored
+ * when it gets smaller than the image - make the image even smaller.
+ */
+@media only screen and (max-width: 354px) {
+  .heroLogo {
+    max-width: 270px;
+  }
+}
