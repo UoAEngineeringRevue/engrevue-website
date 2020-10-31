@@ -1,27 +1,27 @@
 .hero {
   color: white;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 50%),
-    url(../../assets/images/sponsor/sponsor-banner-01.jpg);
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0) 80%),
+    url(../../assets/images/sponsor/DSC05963.jpg);
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: relative;
   min-height: 465px;
-  height: 90vh;
-  max-height: 800px;
+  height: 95vh;
 }
 
 .heroContainer {
   margin: 0 auto;
-  max-width: 1250px;
+  max-width: 500px;
   height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: flex;
+  justify-content: center;
 }
 
 .heroTextArea {
   margin-right: 0px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,23 +29,44 @@
 
 .heroBtnContainer {
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
 .heroBtn {
   width: fit-content;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .heroBtn a {
   display: block;
   padding: 12px;
   color: white;
-  background-color:red;
+  background-color:#993333; 
 }
 
 .heroBtn a:hover {
   background: #E70000;
 }
+
+.heroBtnVariant {
+  width: fit-content;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.heroBtnVariant a {
+  display: block;
+  padding: 12px;
+  color: white; 
+  background-color:#193f4f;
+}
+
+.heroBtnVariant a:hover {
+  background: #00ace6;
+}
+
 
 .title {
   font-size: 50px;
