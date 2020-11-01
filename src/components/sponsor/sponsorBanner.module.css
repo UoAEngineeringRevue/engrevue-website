@@ -87,8 +87,8 @@
 
 @media only screen and (max-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../../assets/images/sponsor/sponsor-banner-01.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(../../assets/images/sponsor/DSC05963.jpg);
     background-position: top center;
   }
 
@@ -96,29 +96,41 @@
     justify-content: center;
   }
 
-  /* For some reason this margin isn't getting respected when the
-   * screen gets smaller than the logo image. Need to investigate.
-   * TODO(dikunong): Fix this.
-   */
   .heroTextArea {
     align-items: center;
     text-align: center;
     margin-left: 24px;
     margin-right: 24px;
   }
-
-  .heroBtn {
-    width: 100%;
-  }
 }
 
-/**
- * This isn't actually for the iPhone SE.
- * It's an ugly workaround for the heroTextArea margin being ignored
- * when it gets smaller than the image - make the image even smaller.
- */
-@media only screen and (max-width: 354px) {
-  .heroLogo {
-    max-width: 270px;
+@media only screen and (max-width: 400px) {
+  .heroBtn, .heroBtnVariant {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 100%;
+  }
+
+  .heroBtn a, .heroBtnVariant a {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .heroBtnContainer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 500px;
+  }
+  
+  .subtext {
+    max-width: 500px;
+    font-size: 14px;
+    text-align: center;
   }
 }

@@ -24,7 +24,7 @@ const HeroBanner = () => (
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}
+            duration={300}
           >
             <div className={styles.heroBtnVariant}>
               <a href="#more"> 

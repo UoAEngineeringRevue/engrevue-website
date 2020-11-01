@@ -17,7 +17,6 @@
 
 .h2alt {
   margin-top: 20px;
-  margin-bottom: 5px;
 }
 
 .imageContainerLeft {
@@ -42,4 +41,37 @@
 .section {
   background-color: #262626;
   color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .h2alt, h2 {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .dispImage {
+    display: block;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .imageContainerRight {
+    margin: 0;
+    width: 100%;
+  }
+  
+  .imageContainerLeft {
+    display: none;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .rowText {
+    display: flex;
+    flex-direction: column;
+  }
+
 }

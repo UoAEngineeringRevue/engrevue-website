@@ -38,7 +38,7 @@ const Sponsor = () => (
           </div>
           <div className={styles.rowText}>
             <div class={styles.imageContainerRight}>
-              <img src={picture2} className={styles.dispImage} alt="dancing" />
+              <img src={picture2} className={styles.dispImage} alt="friends" />
             </div>            
             <div>
               <h2 className={styles.h2alt}> YOUR SUPPORT </h2>
