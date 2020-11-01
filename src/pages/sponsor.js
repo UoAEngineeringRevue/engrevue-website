@@ -12,11 +12,6 @@ const Sponsor = () => (
   <Layout>
     <SEO title="Sponsor Us" />
       <SponsorBanner />
-      {
-      // =====================================================
-      // TODO(alex-ruddell) Smooth scrolling to "more details"
-      // =====================================================
-      }
       <section id="more" className={styles.section}>
         <div class={styles.container}>
           <div className={styles.rowText}>
@@ -41,7 +36,6 @@ const Sponsor = () => (
               <img src={picture1} className={styles.dispImage} alt="dancing" />
             </div>
           </div>
-          
           <div className={styles.rowText}>
             <div class={styles.imageContainerRight}>
               <img src={picture2} className={styles.dispImage} alt="dancing" />

@@ -2,6 +2,7 @@ import React from "react"
 import styles from "./sponsorBanner.module.css"
 import emailIcon from "../../assets/images/icons/email-white-144px.png"
 import downIcon from "../../assets/images/icons/down-button.png"
+import { Link, animateScroll as scroll } from "react-scroll"
 
 
 const HeroBanner = () => (
@@ -17,11 +18,20 @@ const HeroBanner = () => (
           studying an Engineering degree at the University of Auckland.
         </p>
         <div className={styles.heroBtnContainer}>
-          <div className={styles.heroBtnVariant}>
-            <a href="#more">
-              <img onClick={window.scrollBy(0,100)} src={downIcon} className={styles.socialImg} alt="See more" /> SEE MORE...
-            </a>
-          </div>
+          <Link
+            activeClass="active"
+            to="more"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            <div className={styles.heroBtnVariant}>
+              <a href="#more"> 
+                <img src={downIcon} className={styles.socialImg} alt="See more" /> SEE MORE... 
+              </a>
+            </div>
+          </Link>          
           <div className={styles.heroBtn}>
             <a href="mailto:sponsorship.engrevue@gmail.com">
               <img src={emailIcon} className={styles.socialImg} alt="Email" /> GET IN TOUCH

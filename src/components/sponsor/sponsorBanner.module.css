@@ -59,14 +59,13 @@
 .heroBtnVariant a {
   display: block;
   padding: 12px;
-  color: white; 
-  background-color:#193f4f;
+  color: white;
+  background-color:#193f4f; 
 }
 
 .heroBtnVariant a:hover {
   background: #00ace6;
 }
-
 
 .title {
   font-size: 50px;
