@@ -1,3 +1,5 @@
+
+import revue2020 from "../../assets/images/previous/2020.jpg"
 import revue2019 from "../../assets/images/previous/2019.jpg"
 import revue2018 from "../../assets/images/previous/2018.jpg"
 import revue2017 from "../../assets/images/previous/2017.jpg"
@@ -11,6 +13,7 @@ import revue2010 from "../../assets/images/previous/2010.jpg"
 import revue2009 from "../../assets/images/previous/2009.gif"
 import revue2008 from "../../assets/images/previous/2008.gif"
 
+import revue2020Cast from "../../assets/images/previous/2020/cast_2020.jpg"
 import revue2019Cast from "../../assets/images/previous/2019/cast_2019.jpg"
 import revue2018Cast from "../../assets/images/previous/2018/cast_2018.jpg"
 import revue2017Cast from "../../assets/images/previous/2017/cast_2017.jpg"
@@ -18,6 +21,7 @@ import revue2016Cast from "../../assets/images/previous/2016/cast_2016.jpg"
 
 import curtains from "../../assets/images/watch/curtains.jpg"
 
+import programme2020 from "../../assets/images/previous/2020/programme.pdf"
 import programme2019 from "../../assets/images/previous/2019/programme.pdf"
 import programme2018 from "../../assets/images/previous/2018/programme.pdf"
 import programme2017 from "../../assets/images/previous/2017/programme.pdf"
@@ -43,6 +47,27 @@ const data = {
         'programme': 'null'
     }
     */
+
+  "2020": {
+    "cover-image": curtains,
+    "poster": revue2020,
+    "cast-picture": revue2020Cast,
+    // Text
+    "title": "INDIANA JONES AND THE GRADERS OF THE LOST MARKS",
+    "subtitle": 'Auckland Engineering Revue 2020',
+    "subtitle1": "Engineering Revue 2020",
+    "catch-phrase": 'The ONLY Auckland Revue of 2020!',
+    "location": 'SkyCity Theatre',
+    "director": 'Grace Wood',
+    "producer": 'Alex Ruddell',
+    "blurb": `An ancient legend and a whole pile of terrible grades. Indi and her crew go 
+                digging for the reason but quickly discover it's more than they imagined. 
+                Can they recover their lost marks?`,
+    "quote": `"We'll try to be there, but it's pretty close to election time" -
+                Jacinda Ardern & Dr. Ashley Bloomfield (Local New Zealand Heroes)`,
+    // Resources
+    "programme": programme2020
+  },
 
   "2019": {
     // Pictures
