@@ -1,55 +1,55 @@
 .hero {
-  color: white;
+  background-attachment: fixed;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.6) 50%),
     url(../../assets/images/index/cast-photo-no-logo.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  min-height: 465px;
+  color: white;
   height: 75vh;
   max-height: 800px;
+  min-height: 465px;
 }
 
-.heroContainer {
-  margin: 0 auto;
-  max-width: 960px;
-  height: 100%;
+.hero-container {
   display: flex;
   flex-direction: row;
+  height: 100%;
   justify-content: flex-end;
+  margin: 0 auto;
+  max-width: 960px;
 }
 
-.heroTextArea {
-  margin-right: 36px;
+.hero-text-area {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-right: 36px;
 }
 
-.heroLogo {
-  max-width: 300px;
+.hero-logo {
   height: auto;
   margin-bottom: 48px;
+  max-width: 300px;
 }
 
-.heroText {
+.hero-text {
   line-height: 32px;
   margin-bottom: 48px;
 }
 
-.heroBtn {
+.hero-btn {
   width: fit-content;
 }
 
-.heroBtn a {
+.hero-btn a {
   background-color: #cc0000;
   color: white;
   display: block;
   padding: 18px;
 }
 
-.heroBtn a:hover {
+.hero-btn a:hover {
   background: #bb2222;
 }
 
@@ -66,7 +66,7 @@
     background-position: top center;
   }
 
-  .heroContainer {
+  .hero-container {
     justify-content: center;
   }
 
@@ -74,14 +74,14 @@
    * screen gets smaller than the logo image. Need to investigate.
    * TODO(dikunong): Fix this.
    */
-  .heroTextArea {
+  .hero-text-area {
     align-items: center;
-    text-align: center;
     margin-left: 24px;
     margin-right: 24px;
+    text-align: center;
   }
 
-  .heroBtn {
+  .hero-btn {
     width: 100%;
   }
 }
@@ -92,7 +92,7 @@
  * when it gets smaller than the image - make the image even smaller.
  */
 @media only screen and (max-width: 354px) {
-  .heroLogo {
+  .hero-logo {
     max-width: 270px;
   }
 }

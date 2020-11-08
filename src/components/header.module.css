@@ -20,14 +20,14 @@ nav {
   justify-content: flex-end;
 }
 
-.logoArea {
+.logo-area {
   height: 60px;
   vertical-align: middle;
   display: flex;
   flex-direction: row;
 }
 
-.menuBtn {
+.menu-btn {
   display: none;
   margin-left: auto;
   background: #343a40;
@@ -45,35 +45,35 @@ button:hover {
   background-color: rgba(158, 158, 158, 0.2);
 }
 
-.navList {
+.nav-list {
   margin: 0;
   display: flex;
 }
 
-.navListItem {
+.nav-list--item {
   margin: 0;
 }
 
-.navListItemPenultimate {
+.nav-list--item-penultimate {
   margin: 0;
   margin-right: 18px;
 }
 
-.navLink:hover {
+.nav-link:hover {
   background: rgba(158, 158, 158, 0.2);
 }
 
-.navLinkPrimary {
+.nav-link--primary {
   background-color: #cc0000;
   color: #ffffff;
 }
 
-.navLinkPrimary:hover {
+.nav-link--primary:hover {
   background: #bb2222;
 }
 
 @media only screen and (max-width: 880px) {
-  .menuBtn {
+  .menu-btn {
     display: inline-block;
   }
 
@@ -86,7 +86,7 @@ button:hover {
     align-items: flex-end;
   }
 
-  .navCollapsed {
+  .nav-collapsed {
     overflow: hidden;
     max-height: 0;
     transition: all 0.3s ease-in;
@@ -94,18 +94,18 @@ button:hover {
 
   /* max-height is proportional to the number of the items in the
      navbar, where each item is 60px tall, so num * 60. */
-  .navExpanded {
+  .nav-expanded {
     overflow: hidden;
     max-height: 240px;
     transition: all 0.3s ease-out;
   }
 
-  .navList {
+  .nav-list {
     flex-direction: column;
     width: 100%;
   }
 
-  .navListItemPenultimate {
+  .nav-list--item-penultimate {
     margin-right: 0;
   }
 }
@@ -115,7 +115,7 @@ button:hover {
  * TODO: this text is actually slightly off-vertical-centre
  */
 @media only screen and (max-width: 375px) {
-  .logoArea > h3 {
+  .logo-area > h3 {
     font-size: 1.25rem;
   }
 }

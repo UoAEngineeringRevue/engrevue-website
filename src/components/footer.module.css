@@ -1,29 +1,29 @@
 footer {
   background-color: #343a40;
   color: lightgrey;
-  padding: 18px;
   display: flex;
   justify-content: space-between;
+  padding: 18px;
 }
 
-.copyrightText {
-  display: flex;
+.copyright-text {
   align-items: center;
+  display: flex;
   font-weight: 300;
 }
 
-.socialIcon {
-  margin-right: 16px;
-  display: inline-flex;
-  justify-content: center;
+.social-icon {
   align-items: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 24px;
   background-color: #e65100;
+  border-radius: 24px;
+  display: inline-flex;
+  height: 48px;
+  justify-content: center;
+  margin-right: 16px;
+  width: 48px;
 }
 
-.socialIcon:hover {
+.social-icon:hover {
   filter: brightness(90%);
 }
 
@@ -51,23 +51,23 @@ footer {
   background-color: #fffc00;
 }
 
-.socialImg {
-  width: 24px;
+.social-img {
   height: 24px;
   vertical-align: middle;
+  width: 24px;
 }
 
 @media only screen and (max-width: 768px) {
   footer {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
 
-  .socialIcon {
+  .social-icon {
     margin-bottom: 18px;
   }
 
-  .socialIconLast {
+  .social-icon--last {
     margin-right: 0px;
   }
 }
@@ -76,22 +76,22 @@ footer {
  * iPhone SE, why do you still exist?
  */
 @media only screen and (max-width: 375px) {
-  .copyrightText {
+  .copyright-text {
     font-size: 0.8rem;
   }
 
-  .socialIcon {
+  .social-icon {
+    height: 36px;
     margin-right: 12px;
     width: 36px;
-    height: 36px;
   }
 
-  .socialIconLast {
+  .social-icon--last {
     margin-right: 0px;
   }
 
-  .socialImg {
-    width: 18px;
+  .social-img {
     height: 18px;
+    width: 18px;
   }
 }
