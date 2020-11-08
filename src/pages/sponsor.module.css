@@ -65,10 +65,6 @@
     display: none;
   }
 
-  p {
-    font-size: 14px;
-  }
-
   .rowText {
     display: flex;
     flex-direction: column;
