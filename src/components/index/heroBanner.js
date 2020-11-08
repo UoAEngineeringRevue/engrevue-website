@@ -1,18 +1,18 @@
 import React from "react"
 import styles from "./heroBanner.module.css"
 
-import Revue20Logo from "../../assets/images/index/revue-2020-logo.png"
+import GotLMLogo from "../../assets/images/index/indy-jones-logo.png"
 const HeroBanner = () => (
   <section className={styles.hero}>
     <div className={styles.heroContainer}>
       <div className={styles.heroTextArea}>
         <img
-          src={Revue20Logo}
-          alt="Engineering Revue 2020"
+          src={GotLMLogo}
+          alt="Indiana Jones and the Graders of the Lost Marks"
           className={styles.heroLogo}
         />
         <h2 className={styles.heroText}>
-          Please hold while we create a show
+          Thank you for your support!
         </h2>
         <div className={styles.heroBtn}>
           <a href="https://www.facebook.com/EngineeringRevue">

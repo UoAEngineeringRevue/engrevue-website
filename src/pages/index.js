@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import PromoBanner from "../components/index/promoBanner"
+import HeroBanner from "../components/index/heroBanner"
 import styles from "./index.module.css"
 
 import AboutUsImage from "../assets/images/index/about-us.jpg"
@@ -15,40 +15,7 @@ import scIcon from "../assets/images/icons/snapchat-logo-144px.png"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <PromoBanner />
-    <section className={styles.sectionRegular}>
-      <div className={styles.container} style={{paddingBottom: "0px"}}>
-        <div className={styles.flavourText}>
-          <h1>October 8th, 7.30pm - October 9th, 7.30pm - October 10th, 12.00pm<br/>SkyCity Theatre</h1>
-          <p>
-            An ancient legend and a whole pile of terrible grades.
-            Indi and her crew go digging for the reason, but quickly discover it's more than they imagined.
-            Can they recover their lost marks?
-          </p>
-        </div>
-
-        <br/>
-        
-        <p>
-          The annual Auckland Engineering Revue - Auckland's only show entirely created and performed by 
-          Engineering Students - has returned to parodying beloved cinema after a brief hiatus to parody
-          prestige television.
-          <br/><br/>
-          As always, the show ranges from brilliant one-off comedy sketches and fantastic dance numbers
-          to our brilliant jazz band and comedy short films! Whatever you’re looking for, we have it and
-          you’re gonna want to see it!
-          <br/><br/>
-          The 2020 Engineering Revue is proudly sponsored by <a href="https://www.mas.co.nz/" style={{color: "#ff801c"}}>MAS Insurance</a> 
-          and the <a href="https://wen.blogs.auckland.ac.nz/" style={{color: "#ff801c"}}>Women in Engineering Network (WEN)</a>.
-        </p>
-
-        <div className={styles.flavourBtn}>
-          <a href="https://www.iticket.co.nz/events/2020/sep/indy-jones">
-            CLICK HERE TO BUY TICKETS
-          </a>
-        </div>
-      </div>
-    </section>
+    <HeroBanner />
     <section className={styles.sectionRegular}>
       <div className={styles.container}>
         <h1>ABOUT US</h1>
@@ -57,18 +24,18 @@ const IndexPage = () => (
             The Engineering Revue is an awesome show put on by the University of
             Auckland Faculty of Engineering at SkyCity Theatre. Established in
             2008, the Revue is an annual event drawing on the collective talent
-            of dozens of students, from bright-eyed first years to world-weary
+            of nearly 100 students, from bright-eyed first years to world-weary
             post-graduates. Every aspect of the show, from writing and
             performance, through choreography and costume, to lighting and
             sound, is done by students. Heck, in the past we've even made an
-            elevator & a pirate ship, and last year we made a dragon! It all
+            elevator, a pirate ship, & a dragon, and this year we made a temple! It all
             comes together for a night (or three) of acting, comedy, dancing,
             singing, and much more!
           </p>
           <div className={styles.aboutUsImageContainer}>
             <img
               src={AboutUsImage}
-              alt="Game of Loans cast & crew"
+              alt="Indiana Jones and the Graders of the Lost Marks cast & crew"
               className={styles.aboutUsImage}
             />
           </div>

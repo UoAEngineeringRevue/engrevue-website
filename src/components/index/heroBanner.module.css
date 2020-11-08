@@ -1,8 +1,8 @@
 .hero {
   color: white;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.6) 50%),
-    url(../../assets/images/index/auditions-banner.jpg);
-  background-position: left;
+    url(../../assets/images/index/cast-photo-no-logo.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -36,17 +36,6 @@
 .heroText {
   line-height: 32px;
   margin-bottom: 48px;
-  max-width: 350px;
-}
-
-.heroText:after {
-  animation: ellipsis steps(4,end) 2.1s infinite;
-  content: "\2026"; /* ASCII code for the "..." character */
-  display: inline-block;
-  overflow: hidden;
-  position: absolute;
-  vertical-align: bottom;
-  width: 0px;
 }
 
 .heroBtn {
@@ -54,14 +43,14 @@
 }
 
 .heroBtn a {
+  background-color: #cc0000;
+  color: white;
   display: block;
   padding: 18px;
-  color: black;
-  background-color: #ffa500;
 }
 
 .heroBtn a:hover {
-  background: #eba72a;
+  background: #bb2222;
 }
 
 @keyframes ellipsis {
@@ -73,7 +62,7 @@
 @media only screen and (max-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../../assets/images/index/auditions-banner-tall.jpg);
+    url(../../assets/images/index/cast-photo-no-logo.jpg);
     background-position: top center;
   }
 

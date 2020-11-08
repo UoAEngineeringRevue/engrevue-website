@@ -44,25 +44,17 @@ class Header extends React.Component {
                 SPONSOR US
               </Link>
             </li>
-            <li className={styles.navListItem}>
+            <li className={styles.navListItemPenultimate}>
               <Link to="/shows/" className={styles.navLink}>
                 PREVIOUS SHOWS
               </Link>
             </li>
-            <li className={styles.navListItemPenultimate}>
-              <a
-                href="https://www.youtube.com/watch?v=9EsIMuKK91I"
-                className={styles.navLink}
-              >
-                WATCH NOW
-              </a>
-            </li>
             <li className={styles.navListItem}>
               <a
-                href="https://www.iticket.co.nz/events/2020/sep/indy-jones"
+                href="https://www.youtube.com/watch?v=9EsIMuKK91I"
                 className={styles.navLinkPrimary}
               >
-                BUY TICKETS
+                WATCH NOW
               </a>
             </li>
           </ul>
