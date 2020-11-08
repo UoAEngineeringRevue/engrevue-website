@@ -1,39 +1,39 @@
 .container {
-  margin: 0 auto;
-  padding: 24px 24px;
-  max-width: 960px;
+  align-items: center;
   background-color: #121212;
   color: white;
-  align-items: center;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 24px 24px;
 }
 
-.dispImage {
+.disp-image {
+  height: auto;
+  max-width: 500px;
   object-fit: contain;
   object-position: center;
   width: 100%;
-  max-width: 500px;
-  height: auto;
 }
 
 .h2alt {
   margin-top: 20px;
 }
 
-.imageContainerLeft {
-  margin-top: 0;
-  margin-left: 30px;
+.image-container--left {
   display: flex;
   flex: 0 0 33%;
+  margin-top: 0;
+  margin-left: 30px;
 }
 
-.imageContainerRight {
-  margin-top: 20px;
-  margin-right: 30px;
+.image-container--right {
   display: flex;
   flex: 0 0 37%;
+  margin-top: 20px;
+  margin-right: 30px;
 }
 
-.rowText {
+.row-text {
   display: flex;
   flex-direction: row;
 }
@@ -45,27 +45,27 @@
 
 @media only screen and (max-width: 768px) {
   .h2alt, h2 {
-    text-align: center;
     margin-bottom: 5px;
+    text-align: center;
   }
 
-  .dispImage {
+  .disp-image {
     display: block;
-    width: 75%;
     margin-left: auto;
     margin-right: auto;
+    width: 75%;
   }
 
-  .imageContainerRight {
+  .image-container--right {
     margin: 0;
     width: 100%;
   }
   
-  .imageContainerLeft {
+  .image-container--left {
     display: none;
   }
 
-  .rowText {
+  .row-text {
     display: flex;
     flex-direction: column;
   }
