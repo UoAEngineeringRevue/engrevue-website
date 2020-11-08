@@ -8,7 +8,7 @@ class ShowViewer extends React.Component {
     super(props)
     this.state = {
       showSelected: false,
-      year: "2019"
+      year: "2020"
     }
     this.selectShow = this.selectShow.bind(this)
   }
@@ -47,9 +47,9 @@ class ShowViewer extends React.Component {
     let nextText, prevText, nextYear, prevYear, nextShowDefined, prevShowDefined;
     let displayFwrdButton = styles.show;
     let displayBackButton = styles.show;
-    if (String(next) === "2020") {
+    if (String(next) === "2021") {
         nextShowDefined = false;
-        nextYear = "2019"; // Won't be displayed, but this ensures it doesn't crash.
+        nextYear = "2020"; // Won't be displayed, but this ensures it doesn't crash.
         nextText = "VIEW ALL SHOWS";
         displayFwrdButton = styles.hide;
     } else {
@@ -64,7 +64,7 @@ class ShowViewer extends React.Component {
     }
     if (String(prev) === "2007") {
         prevShowDefined = false;
-        prevYear = "2019"; // Won't be displayed, but this ensures it doesn't crash.
+        prevYear = "2020"; // Won't be displayed, but this ensures it doesn't crash.
         prevText = "VIEW ALL SHOWS";
         displayBackButton = styles.hide;
     } else {
