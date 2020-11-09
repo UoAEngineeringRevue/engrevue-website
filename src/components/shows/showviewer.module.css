@@ -2,120 +2,120 @@ a {
   color: red;
 }
 
-.aboutImage {
+.about-image {
+  height: auto;
   object-fit: contain;
   object-position: center;
   width: 100%;
-  height: auto;
 }
 
-.aboutImageContainer {
-  margin-top: 30px;
-  margin-left: 48px;
+.about-image-container {
   display: flex;
   flex: 0 0 33%;
+  margin-top: 30px;
+  margin-left: 48px;
 }
 
-.aboutText {
+.about-text {
   display: flex;
   flex-direction: row;
 }
 
-.buttonView {
+.button-view {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.buttonClear {
-  padding: 0;
+.button-clear {
+  background-color: #cc0000;
   background-repeat:no-repeat;
   border: none;
-  background-color: #cc0000;
-  outline: none;
   font-family: inherit;
+  outline: none;
+  padding: 0;
 }
 
-.castImageContainer {
+.cast-image-container {
   display: flex;
   flex: 0 0 50%;
 }
 
-.castText {
+.cast-text {
   margin-left: 24px;
 }
 
-.castText2 {
+.cast-text-2 {
   margin-left: 0;
 }
 
-.catchPhrase {
+.catch-phrase {
+  font-size: 18px;
   font-style: italic;
-  text-align: center;
-  vertical-align: center;
   margin-bottom: 0px;
   margin-top: 20px;
-  font-size: 18px;
+  text-align: center;
+  vertical-align: center; 
 }
 
 .container {
-  margin: 0 auto;
-  padding: 24px 24px;
-  max-width: 960px;
+  align-items: center;
   background-color: #121212;
   color: white;
-  align-items: center;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 24px 24px;
 }
 
-.backButton {
+.back-button {
   display: flex;
   flex: 0 0 33%;
   flex-direction: row;
   justify-content: flex-end;
 }
 
-.backButton a {
-  color: white;
+.back-button a {
   background-color: #cc0000;
+  color: white;
   padding: 10px;
 }
 
-.backButton a:hover {
+.back-button a:hover {
   background: rgb(187, 34, 34);
 }
 
-.homeButton {
+.home-button {
   display: flex;
   flex: 0 0 33%;
   flex-direction: row;
   justify-content: center;
 }
 
-.homeButton a {
-  color: white;
+.home-button a {
   background-color: #cc0000;
+  color: white;
   padding: 10px;
 }
 
-.homeButton a:hover {
+.home-button a:hover {
   background: rgb(187, 34, 34);
 }
 
-.fwrdButton {
+.fwrd-button {
   display: flex;
   flex: 0 0 33%;
   flex-direction: row;
   justify-content: flex-start;
 }
 
-.fwrdButton a {
-  color: white;
+.fwrd-button a {
   background-color: #cc0000;
+  color: white;
   padding: 10px;
 }
 
-.fwrdButton a:hover {
+.fwrd-button a:hover {
   background: rgb(187, 34, 34);
 }
 
@@ -128,81 +128,78 @@ h3 {
   margin-bottom: 5px;
 }
 
-.hiddenText1 {
+.hidden-text-1 {
   color: white;
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 2px;
 }
 
-.hiddenText2 {
+.hidden-text-2 {
   color: white;
   font-size: 11px;
 }
 
 .hide {
-  height: 0;
   display: none;
+  height: 0;
   opacity: 0;
 }
 
-.imgButton {
+.img-button {
   background: none;
   border: none;
   color: inherit;
   cursor: pointer;
-  width: 225px;
   height: 260px;
-  transition-duration: 0.3s;
   overflow: hidden;
   padding: 10px;
-
-  text-align: center;
-  vertical-align: middle;
   position: relative;
-
+  text-align: center;
+  transition-duration: 0.3s;
+  vertical-align: middle;
+  width: 225px;
 }
 
-.imgButton:hover .imgView {
+.img-button:hover .img-view {
   opacity: 0.25;
 }
 
-.imgButton:hover .showText {
+.img-button:hover .show-text {
   opacity: 1;
 }
 
-.imgView {
-  width: 75%;
-  
-  transition-duration: 0.3s;
-  top: 0;
+.img-view {
   bottom: 0;
   left: 0;
-  right: 0;
   margin: auto;
   position: absolute;
+  right: 0;
+  top: 0;
+  transition-duration: 0.3s;
+  width: 75%;
 }
 
-.linkLong {
+.link-long {
   display: unset;
 }
 
-.linkShort {
+.link-short {
   display: none;
 }
 
-.posterImage {
+.poster-image {
+  height: auto;
   object-fit: contain;
   object-position: center;
   width: 100%;
-  height: auto;
 }
 
-.posterImageContainer {
-  margin-top: 30px;
-  margin-left: 48px;
+.poster-image-container {
   display: flex;
   flex: 0 0 33%;
+  margin-top: 30px;
+  margin-left: 48px;
 }
 
 .section {
@@ -210,33 +207,32 @@ h3 {
   color: white;
 }
 
-.showText {
-  opacity: 0;
-  transition-duration: 0.3s;
-  width: 70%;
-  text-align: center;
-  
-  position: absolute;
-  top: 50%;
+.show-text {
   left: 50%;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
   transform: translate(-50%, -30%);
+  transition-duration: 0.3s;
+  width: 70%;  
 }
 
-.signupButton {
+.signup-button {
   text-align: center;
 }
 
-.signupButton a {
+.signup-button a {
   color: white;
   background-color: #cc0000;
   padding: 10px;
 }
 
-.signupButton a:hover {
+.signup-button a:hover {
   background: rgb(187, 34, 34);
 }
 
-.topButtons {
+.top-buttons {
   display: flex;
   flex-direction: row;
 }
@@ -246,61 +242,61 @@ h3 {
 }
 
 @media only screen and (max-width: 768px) {
-  .aboutImage {
+  .about-image {
     margin-bottom: 30px;
   }
   
-  .aboutImageContainer {
-    margin-top: 0;
+  .about-image-container {
     margin-left: 0;
+    margin-top: 0;
   }
 
-  .aboutText {
+  .about-text {
     flex-direction: column;
   }
 
-  .castText {
+  .cast-text {
     margin-left: 0px;
   }
 
-  .linkShort {
+  .link-short {
     display: unset;
   }
 
-  .linkLong {
+  .link-long {
     display: none;
   }
 
-  .posterImage {
+  .poster-image {
     max-height: 400px;
   }
 
-  .posterImageContainer {
-    margin-top: 0px;
-    margin-left: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  .poster-image-container {
     background-color: #262626;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
   }
 }
 
 @media only screen and (max-width: 600px) {
 
-  .homeButton {
-    position: absolute; 
+  .home-button {
+    align-self: center;
+    left: 0;
     margin-right: auto;
     margin-left: auto;
-    left: 0;
+    position: absolute; 
     right: 0;
     text-align: center;
-    align-self: center;
   }
 
-  .linkShort {
+  .link-short {
     display: none;
   }
 
-  .linkLong{
+  .link-long {
     display: none;
   }
 

@@ -1,67 +1,56 @@
 .hero {
-  color: white;
+  background-attachment: fixed;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.6) 50%),
-    url(../../assets/images/index/auditions-banner.jpg);
-  background-position: left;
+    url(../../assets/images/index/cast-photo-no-logo.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  min-height: 465px;
+  color: white;
   height: 75vh;
   max-height: 800px;
+  min-height: 465px;
 }
 
-.heroContainer {
-  margin: 0 auto;
-  max-width: 960px;
-  height: 100%;
+.hero-container {
   display: flex;
   flex-direction: row;
+  height: 100%;
   justify-content: flex-end;
+  margin: 0 auto;
+  max-width: 960px;
 }
 
-.heroTextArea {
-  margin-right: 36px;
+.hero-text-area {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-right: 36px;
 }
 
-.heroLogo {
-  max-width: 300px;
+.hero-logo {
   height: auto;
   margin-bottom: 48px;
+  max-width: 300px;
 }
 
-.heroText {
+.hero-text {
   line-height: 32px;
   margin-bottom: 48px;
-  max-width: 350px;
 }
 
-.heroText:after {
-  animation: ellipsis steps(4,end) 2.1s infinite;
-  content: "\2026"; /* ASCII code for the "..." character */
-  display: inline-block;
-  overflow: hidden;
-  position: absolute;
-  vertical-align: bottom;
-  width: 0px;
-}
-
-.heroBtn {
+.hero-btn {
   width: fit-content;
 }
 
-.heroBtn a {
+.hero-btn a {
+  background-color: #cc0000;
+  color: white;
   display: block;
   padding: 18px;
-  color: black;
-  background-color: #ffa500;
 }
 
-.heroBtn a:hover {
-  background: #eba72a;
+.hero-btn a:hover {
+  background: #bb2222;
 }
 
 @keyframes ellipsis {
@@ -73,11 +62,11 @@
 @media only screen and (max-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../../assets/images/index/auditions-banner-tall.jpg);
+    url(../../assets/images/index/cast-photo-no-logo.jpg);
     background-position: top center;
   }
 
-  .heroContainer {
+  .hero-container {
     justify-content: center;
   }
 
@@ -85,14 +74,14 @@
    * screen gets smaller than the logo image. Need to investigate.
    * TODO(dikunong): Fix this.
    */
-  .heroTextArea {
+  .hero-text-area {
     align-items: center;
-    text-align: center;
     margin-left: 24px;
     margin-right: 24px;
+    text-align: center;
   }
 
-  .heroBtn {
+  .hero-btn {
     width: 100%;
   }
 }
@@ -103,7 +92,7 @@
  * when it gets smaller than the image - make the image even smaller.
  */
 @media only screen and (max-width: 354px) {
-  .heroLogo {
+  .hero-logo {
     max-width: 270px;
   }
 }

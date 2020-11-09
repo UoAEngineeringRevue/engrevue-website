@@ -1,83 +1,83 @@
 .hero {
-  color: white;
+  background-attachment: relative;
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0) 80%),
     url(../../assets/images/sponsor/DSC05963.jpg);
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: relative;
-  min-height: 465px;
+  color: white;
   height: 95vh;
+  min-height: 465px;
 }
 
-.heroContainer {
-  margin: 0 auto;
-  max-width: 500px;
-  height: 100%;
+.hero-container {
   display: flex;
   flex-direction: row;
+  height: 100%;
   justify-content: center;
+  margin: 0 auto;
+  max-width: 500px;
 }
 
-.heroTextArea {
-  margin-right: 0px;
-  margin-bottom: 100px;
+.hero-text-area {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 100px;
+  margin-right: 0px;
 }
 
-.heroBtnContainer {
+.hero-btn-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.heroBtn {
-  width: fit-content;
+.hero-btn {
   margin-left: 5px;
   margin-right: 5px;
+  width: fit-content;
 }
 
-.heroBtn a {
+.hero-btn a {
+  background-color:#993333; 
+  color: white;
   display: block;
   padding: 12px;
-  color: white;
-  background-color:#993333; 
 }
 
-.heroBtn a:hover {
+.hero-btn a:hover {
   background: #E70000;
 }
 
-.heroBtnVariant {
-  width: fit-content;
+.hero-btn--variant {
   margin-left: 5px;
   margin-right: 5px;
+  width: fit-content;
 }
 
-.heroBtnVariant a {
+.hero-btn--variant a {
+  background-color:#193f4f;
+  color: white;
   display: block;
   padding: 12px;
-  color: white;
-  background-color:#193f4f; 
 }
 
-.heroBtnVariant a:hover {
+.hero-btn--variant a:hover {
   background: #00ace6;
 }
 
 .title {
   font-size: 50px;
-  text-align: center;
   margin-bottom: 20px;
   max-width: 500px;
+  text-align: center;
 }
 
-.socialImg {
-  width: 24px;
+.social-img {
   height: 24px;
   vertical-align: middle;
+  width: 24px;
 }
 
 .subtext {
@@ -92,11 +92,11 @@
     background-position: top center;
   }
 
-  .heroContainer {
+  .hero-container {
     justify-content: center;
   }
 
-  .heroTextArea {
+  .hero-text-area {
     align-items: center;
     text-align: center;
     margin-left: 24px;
@@ -105,32 +105,32 @@
 }
 
 @media only screen and (max-width: 400px) {
-  .heroBtn, .heroBtnVariant {
+  .hero-btn, .hero-btn--variant {
     margin-bottom: 5px;
     margin-top: 5px;
     width: 100%;
   }
 
-  .heroBtn a, .heroBtnVariant a {
+  .hero-btn a, .hero-btn--variant a {
     font-size: 14px;
     padding: 6px;
   }
 
-  .heroBtnContainer {
+  .hero-btn-container {
     flex-direction: column;
     justify-content: center;
   }
 
   .title {
     font-size: 35px;
-    text-align: center;
     margin-bottom: 20px;
     max-width: 500px;
+    text-align: center;
   }
   
   .subtext {
-    max-width: 500px;
     font-size: 14px;
+    max-width: 500px;
     text-align: center;
   }
 }
