@@ -1,23 +1,9 @@
 exports.createPages = ({ actions }) => {
   const { createRedirect } = actions
   createRedirect({
-    fromPath: "/signup",
+    fromPath: "/interest",
     toPath:
-      "https://docs.google.com/forms/d/e/1FAIpQLScAKoyEA_sz2W5UWt2ocRMjrw2g9bjFFsJow2QgSGW_yqFfEw/viewform?usp=sf_link",
-    isPermanent: true,
-    force: true,
-  })
-  createRedirect({
-    fromPath: "/crewsignup",
-    toPath:
-      "https://docs.google.com/forms/d/e/1FAIpQLScWKMPxsOV0-tpv2281hKbs9hkBSagrPzYRzdzmYdjF8vfC2w/viewform?usp=sf_link",
-    isPermanent: true,
-    force: true,
-  })
-  createRedirect({
-    fromPath: "/tickets",
-    toPath:
-      "https://www.iticket.co.nz/events/2020/sep/indy-jones",
+      "https://docs.google.com/forms/d/e/1FAIpQLScJ_2Uj8seJS22Q9vov5Qxf6iehP0lBnpEUSOLCKgH29x8D-Q/viewform?usp=sf_link",
     isPermanent: true,
     force: true,
   })

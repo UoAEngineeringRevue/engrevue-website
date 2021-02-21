@@ -51,7 +51,7 @@ class Header extends React.Component {
             </li>
             <li className={styles.navListItem}>
               <a
-                href="https://www.youtube.com/watch?v=9EsIMuKK91I"
+                href="https://www.youtube.com/watch?v=q63ef6H7uFg"
                 className={styles.navLinkPrimary}
               >
                 WATCH NOW
