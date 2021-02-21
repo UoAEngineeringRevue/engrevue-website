@@ -95,7 +95,7 @@ const IndexPage = () => (
 
           <div className={styles.contactUsSocialContainer}>
             <a
-              href="https://www.youtube.com/user/Engrevue"
+              href="https://www.youtube.com/c/EngineeringRevue"
               className={styles.contactUsSocial}
             >
               <img
