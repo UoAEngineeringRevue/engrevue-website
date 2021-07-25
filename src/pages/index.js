@@ -32,9 +32,9 @@ const IndexPage = () => (
         <br/>
 
         <p>
-          The annual MAS Auckland Engineering Revue
-          (otherwise known as Auckland’s only show entirely created and performed by Engineering Students)
-          is back for its 14th annual performance, and it's sure to be The One That You Want (to watch)
+          The annual Auckland Engineering Revue 
+          (otherwise known as Auckland’s only show entirely created and performed by Engineering students)
+          presented by MAS is back for its 14th annual performance, and it's sure to be The One That You Want (to watch)!
           <br/><br/>
           As always, the show ranges from brilliant one-off comedy sketches and fantastic dance numbers
           to our brilliant jazz band and comedy short films! Whatever you’re looking for, we have it and
