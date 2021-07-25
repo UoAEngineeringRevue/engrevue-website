@@ -14,12 +14,11 @@
 }
 
 .flavour--text {
-  font-family: "SF Fedora Titles"
+  font-family: "Rockwell Std";
 }
 
 .flavour--text > p {
   font-size: 1.4rem;
-  font-style: italic;
 }
 
 .flavour--btn {
@@ -30,13 +29,13 @@
 .flavour--btn a {
   display: block;
   padding: 18px;
-  color: black;
-  background-color: #ff801c;
+  color: white;
+  background-color: #b31b20;
   text-align: center;
 }
 
 .flavour--btn a:hover {
-  background: #fa8e39;
+  background: #a80d13;
 }
 
 .about-us--text {
