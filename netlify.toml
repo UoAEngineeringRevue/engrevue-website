@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/ticketstest"
+  to = "https://www.iticket.co.nz/events/2021/aug/cs-get-degrease"
+  status = 301
+  force = true
