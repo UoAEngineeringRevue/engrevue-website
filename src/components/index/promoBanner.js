@@ -18,13 +18,13 @@ const PromoBanner = () => {
           <div>
             <img
               src={GreaseLogo}
-              alt="Indiana Jones and the Graders of the Lost Marks"
+              alt="C's Get DeGrease"
               className={styles.promoLogo}
             />
           </div>
           <div className={styles.promoBtns}>
             <div className={styles.promoBtn}>
-              <a href="https://www.iticket.co.nz/events/2020/sep/indy-jones">
+              <a href="https://www.iticket.co.nz/events/2021/aug/cs-get-degrease">
                 BUY TICKETS
               </a>
             </div>
