@@ -1,16 +1,16 @@
 @font-face {
-  font-family: "SF Fedora Titles";
+  font-family: "Rockwell Std";
   font-style: normal;
   font-weight: 400;
-  src: url("sf-fedora-titles.ttf");
+  src: url("rockwell-std.ttf");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "SF Fedora Titles";
-  font-style: italic;
-  font-weight: 400;
-  src: url("sf-fedora-titles-italic.ttf");
+  font-family: "Rockwell Std";
+  font-style: normal;
+  font-weight: 600;
+  src: url("rockwell-std-bold.ttf");
   font-display: swap;
 }
 
