@@ -1,8 +1,15 @@
 exports.createPages = ({ actions }) => {
   const { createRedirect } = actions
   createRedirect({
-    fromPath: "/tickets",
-    toPath: "https://www.iticket.co.nz/events/2021/aug/cs-get-degrease",
+    fromPath: "/distrussed",
+    toPath: "https://www.youtube.com/watch?v=u7XGILPI7Lg",
+    isPermanent: true,
+    redirectInBrowser: true,
+    force: true,
+  })
+  createRedirect({
+    fromPath: "/dancewithus",
+    toPath: "https://www.youtube.com/watch?v=f4-92UYWsVs",
     isPermanent: true,
     redirectInBrowser: true,
     force: true,
