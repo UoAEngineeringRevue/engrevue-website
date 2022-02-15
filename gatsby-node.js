@@ -14,4 +14,11 @@ exports.createPages = ({ actions }) => {
     redirectInBrowser: true,
     force: true,
   })
+  createRedirect({
+    fromPath: "/interview",
+    toPath: "https://www.youtube.com/watch?v=GmS0LObyRD0",
+    isPermanent: true,
+    redirectInBrowser: true,
+    force: true,
+  })
 }
