@@ -9,33 +9,31 @@ import scIcon from "../assets/images/icons/snapchat-logo-144px.png"
 const Footer = () => (
   <footer>
     <div>
-      <a href="mailto:engrevue@gmail.com" className={styles.socialIcon}>
-        <img src={emailIcon} className={styles.socialImg} alt="Email" />
-      </a>
-      <a
-        href="https://www.facebook.com/EngineeringRevue/"
-        className={`${styles.socialIcon} ${styles.facebook}`}
-      >
-        <img src={fbIcon} className={styles.socialImg} alt="Facebook" />
-      </a>
-      <a
-        href="https://www.instagram.com/engrevue"
-        className={`${styles.socialIcon} ${styles.instagram}`}
-      >
-        <img src={instaIcon} className={styles.socialImg} alt="Instagram" />
-      </a>
-      <a
-        href="https://www.youtube.com/user/Engrevue"
-        className={`${styles.socialIcon} ${styles.youtube}`}
-      >
-        <img src={ytIcon} className={styles.socialImg} alt="YouTube" />
-      </a>
-      <a
-        href="https://www.snapchat.com/add/engrevue"
-        className={`${styles.socialIcon} ${styles.socialIconLast} ${styles.snapchat}`}
-      >
-        <img src={scIcon} className={styles.socialImg} alt="Snapchat" />
-      </a>
+      <SocialIcon
+        type="email"
+        link="mailto:engrevue@gmail.com"
+        icon={emailIcon}
+      />
+      <SocialIcon
+        type="facebook"
+        link="https://www.facebook.com/EngineeringRevue"
+        icon={fbIcon}
+      />
+      <SocialIcon
+        type="instagram"
+        link="https://www.instagram.com/engrevue"
+        icon={instaIcon}
+      />
+      <SocialIcon
+        type="youtube"
+        link="https://www.youtube.com/user/Engrevue"
+        icon={ytIcon}
+      />
+      <SocialIcon
+        type="snapchat"
+        link="https://www.snapchat.com/add/engrevue"
+        icon={scIcon}
+      />
     </div>
     <div className={styles.copyrightText}>
       <p style={{ margin: 0 }}>
@@ -44,5 +42,18 @@ const Footer = () => (
     </div>
   </footer>
 )
+
+const SocialIcon = ({ type, link, icon }) => {
+  const iconLogoStyle = styles[`${type}`]
+
+  return (
+    <a
+      href={link}
+      className={`${styles.socialIcon} ${styles.socialIconLast} ${iconLogoStyle}`}
+    >
+      <img src={icon} className={styles.socialImg} alt={type} />
+    </a>
+  )
+}
 
 export default Footer
