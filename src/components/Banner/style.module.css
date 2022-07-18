@@ -1,0 +1,86 @@
+.banner {
+  color: white;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 465px;
+  height: 90vh;
+  max-height: 850px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 24px;
+}
+
+.textArea {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.heading {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.callToActionBtn {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.callToActionBtnLink {
+  display: block;
+  padding: 18px;
+  color: white;
+  background-color: #b31b20;
+  text-transform: uppercase;
+}
+
+.callToActionBtnLink:hover {
+  background: #a80d13;
+}
+
+.down-btn {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+}
+
+.down-arrow {
+  height: 90px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    justify-content: center;
+    margin: 0 24px;
+  }
+}

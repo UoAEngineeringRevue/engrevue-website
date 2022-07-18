@@ -2,16 +2,24 @@ import React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import PromoBanner from "../components/index/promoBanner"
-import * as styles from "./index.module.css"
-
-import AboutUsImage from "../assets/images/index/about-us.jpg"
 import ContactUs from "../components/ContactUs"
+import Banner from "../components/Banner"
+
+import * as styles from "./index.module.css"
+import GreaseBg from "../assets/images/index/grease-banner.png"
+import GreaseLogo from "../assets/images/index/grease-logo.png"
+import AboutUsImage from "../assets/images/index/about-us.jpg"
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <PromoBanner />
+    <Banner
+      background={GreaseBg}
+      logo={`${GreaseLogo}`}
+      callToActionLink="https://www.iticket.co.nz/events/2021/aug/cs-get-degrease"
+      callToActionText="Buy Tickets"
+      showDownBtn
+    />
     <section className={styles.sectionRegular}>
       <div className={styles.container}>
         <h1>ABOUT US</h1>
