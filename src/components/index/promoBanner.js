@@ -4,8 +4,9 @@ import * as styles from "./promoBanner.module.css"
 import GreaseLogo from "../../assets/images/index/grease-logo.png"
 import downArrow from "../../assets/images/index/down-arrow-black.png"
 
-const scrollToRef = ref =>
+const scrollToRef = (ref) => {
   window.scrollTo({ top: ref.current.offsetTop - 60, behavior: "smooth" })
+}
 
 const PromoBanner = () => {
   const flavourRef = useRef(null)
