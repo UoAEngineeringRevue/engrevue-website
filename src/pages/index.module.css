@@ -13,31 +13,6 @@
   color: white; /* #cf6679 */
 }
 
-.flavour--text {
-  font-family: "Rockwell Std";
-}
-
-.flavour--text > p {
-  font-size: 1.4rem;
-}
-
-.flavour--btn {
-  margin-bottom: 20px;
-  width: 100%;
-}
-
-.flavour--btn a {
-  display: block;
-  padding: 18px;
-  color: white;
-  background-color: #b31b20;
-  text-align: center;
-}
-
-.flavour--btn a:hover {
-  background: #a80d13;
-}
-
 .about-us--text {
   display: flex;
   flex-direction: row;
@@ -57,35 +32,6 @@
   object-fit: contain;
   width: 100%;
   height: auto;
-}
-
-.contact-us--social-container {
-  display: block;
-}
-
-.contact-us--social {
-  display: inline-flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px;
-  font-size: 1.38316rem;
-  font-weight: 600;
-  line-height: 1.1;
-}
-
-.contact-us--social:hover {
-  background-color: rgba(158, 158, 158, 0.2);
-  border-radius: 6px;
-}
-
-.contact-us--social > * {
-  margin: 0;
-}
-
-.contact-us--social-icon {
-  width: 36px;
-  height: 36px;
-  margin-right: 18px;
 }
 
 @media only screen and (max-width: 768px) {
