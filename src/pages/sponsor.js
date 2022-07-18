@@ -28,18 +28,29 @@ const Sponsor = () => (
       <div class={styles.container}>
         <div className={styles.rowText}>
           <div>
-            <h2> OUR LEGACY </h2>
+            <h1> OUR LEGACY </h1>
             <p>
               For the last 13 years, the Auckland Engineering Revue has
               continued to grow in presence within the faculty and has quickly
-              become one of the calendar highlights of the year. The 2020 show
-              was very well received, with a total audience of over 1400 people.
-              Leading into 2021, the Auckland Engineering Revue aims to maintain
-              its strong presence on campus, with a fantastic new cast and a
-              wonderful executive body dedicated to making their best show yet!
+              become one of the calendar highlights of the year.
+              <ul>
+                <li>
+                  The 2020 show was very well received, with a total audience of
+                  over 1400 people.
+                </li>
+                <li>
+                  While the 2021 show was cancelled due to Covid-19
+                  restrictions, we were still able to release 22 minutes of
+                  video content that reached over 1000 people online.
+                </li>
+              </ul>
+              Going into this year, the Auckland Engineering Revue aims to
+              maintain its strong presence on campus, with a fantastic new cast
+              and a wonderful executive body dedicated to making their best show
+              yet!
               <br />
             </p>
-            <h2> OUR MISSION </h2>
+            <h1> OUR MISSION </h1>
             <p>
               Our mission is to bring students together from all year levels and
               engineering disciplines to form meaningful connections with their
@@ -57,7 +68,7 @@ const Sponsor = () => (
             <img src={picture2} className={styles.dispImage} alt="friends" />
           </div>
           <div>
-            <h2 className={styles.h2alt}> YOUR SUPPORT </h2>
+            <h1 className={styles.h2alt}> YOUR SUPPORT </h1>
             <p>
               Your partnership means everything to us. It represents your
               support of our mission and helps ensure our show is as accessible
