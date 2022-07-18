@@ -47,10 +47,7 @@ const SocialIcon = ({ type, link, icon }) => {
   const iconLogoStyle = styles[`${type}`]
 
   return (
-    <a
-      href={link}
-      className={`${styles.socialIcon} ${styles.socialIconLast} ${iconLogoStyle}`}
-    >
+    <a href={link} className={`${styles.socialIcon} ${iconLogoStyle}`}>
       <img src={icon} className={styles.socialImg} alt={type} />
     </a>
   )
