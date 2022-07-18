@@ -14,7 +14,7 @@ import Footer from "./footer"
 import "./layout.css"
 import "../assets/fonts/fonts.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ bgImage, bgTint, children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -24,6 +24,15 @@ const Layout = ({ children }) => {
       }
     }
   `)
+
+  const bgImageCss = bgImage && {
+    backgroundBlendMode: "multiply",
+    backgroundImage: `url(${bgImage})`,
+  }
+
+  const bgTintCss = bgTint && {
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+  }
 
   return (
     <>
@@ -38,8 +47,16 @@ const Layout = ({ children }) => {
       >
         <main
           style={{
-            flexGrow: `1`,
+            backgroundAttachment: "fixed",
             backgroundColor: `#121212`,
+            ...bgImageCss,
+            ...bgTintCss,
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            display: "flex",
+            flexDirection: "column",
+            flexGrow: `1`,
             paddingBottom: `36px`,
           }}
         >
