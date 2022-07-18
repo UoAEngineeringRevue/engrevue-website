@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./heroBanner.module.css"
+import * as styles from "./heroBanner.module.css"
 import data from "./data.js"
 
 class HeroBanner extends React.Component {

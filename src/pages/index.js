@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PromoBanner from "../components/index/promoBanner"
-import styles from "./index.module.css"
+import * as styles from "./index.module.css"
 
 import AboutUsImage from "../assets/images/index/about-us.jpg"
 import emailIcon from "../assets/images/icons/email-white-144px.png"

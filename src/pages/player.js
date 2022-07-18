@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import styles from "./player.module.css"
+import * as styles from "./player.module.css"
 
 class PlayerPage extends React.Component {
   constructor(props) {

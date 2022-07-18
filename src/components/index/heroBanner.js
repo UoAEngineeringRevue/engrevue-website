@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./heroBanner.module.css"
+import * as styles from "./heroBanner.module.css"
 
 import GotLMLogo from "../../assets/images/index/indy-jones-logo.png"
 const HeroBanner = () => (

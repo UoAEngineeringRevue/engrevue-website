@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./footer.module.css"
+import * as styles from "./footer.module.css"
 import emailIcon from "../assets/images/icons/email-white-144px.png"
 import fbIcon from "../assets/images/icons/facebook-logo-144px.png"
 import instaIcon from "../assets/images/icons/instagram-logo-144px.png"

@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import styles from "./sponsor.module.css"
+import * as styles from "./sponsor.module.css"
 
 import picture1 from "../assets/images/sponsor/Saturday-23.jpg"
 import picture2 from "../assets/images/sponsor/DSC06330.jpg"

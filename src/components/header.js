@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
-import styles from "./header.module.css"
+import * as styles from "./header.module.css"
 
 class Header extends React.Component {
   constructor(props) {

@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./showviewer.module.css"
+import * as styles from "./showviewer.module.css"
 import data from "./data.js"
 import HeroBanner from "./heroBanner"
 
