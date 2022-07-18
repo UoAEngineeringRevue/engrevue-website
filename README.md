@@ -17,25 +17,29 @@ Changes are automatically deployed to Netlify upon committing to the `master` br
 ## Roadmap
 
 ### MVP
-* **Watch** page: ability to watch old revues with timestamp bookmarks for skits
+
+- **Watch** page: ability to watch old revues with timestamp bookmarks for skits
 
 ### Short-term future
-* **Sponsor Us** page: promotion of the Revue to potential future sponsors
-* Ticket sales, when that inevitably happens
+
+- **Sponsor Us** page: promotion of the Revue to potential future sponsors
+- Ticket sales, when that inevitably happens
 
 ### Long-term future
-* **History** page: detailed historical timeline of the creation of the Revue and its changes from 2008 to today
-* Mailing list to contact potential patrons with promotional material and ticket sales information (subject to any potential cost/data privacy issues)
-* Sign-up page for University of Auckland Engineering students who want to get involved
+
+- **History** page: detailed historical timeline of the creation of the Revue and its changes from 2008 to today
+- Mailing list to contact potential patrons with promotional material and ticket sales information (subject to any potential cost/data privacy issues)
+- Sign-up page for University of Auckland Engineering students who want to get involved
 
 ## Authors
 
 ### 2020
-* Di Kun Ong
-  * Index page
-  * Watch page (under development)
-* Alex Ruddell
-  * Previous Shows page
-  * Sponsor Us page (under development)
 
-*Special thanks to Alex Kennedy, Daniel Wong, and Michael Kemp for their contributions to the previous version of this website between 2018-2019.*
+- Di Kun Ong
+  - Index page
+  - Watch page (under development)
+- Alex Ruddell
+  - Previous Shows page
+  - Sponsor Us page (under development)
+
+_Special thanks to Alex Kennedy, Daniel Wong, and Michael Kemp for their contributions to the previous version of this website between 2018-2019._
