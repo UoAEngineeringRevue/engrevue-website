@@ -1,4 +1,4 @@
-
+import revue2021 from "../../assets/images/previous/2021.jpg"
 import revue2020 from "../../assets/images/previous/2020.jpg"
 import revue2019 from "../../assets/images/previous/2019.jpg"
 import revue2018 from "../../assets/images/previous/2018.jpg"
@@ -47,6 +47,29 @@ const data = {
         'programme': 'null'
     }
     */
+
+  "2021": {
+    "cover-image": curtains,
+    poster: revue2021,
+    "cast-picture": "null",
+    // Text
+    title: "CS GET DEGREASE",
+    subtitle: "Auckland Engineering Revue 2021",
+    subtitle1: "Engineering Revue 2021",
+    "catch-phrase": "Cancelled :( (due to Covid-19, not Twitter)",
+    location: "SkyCity Theatre",
+    director: "Flynn Huijser",
+    producer: "Flynn Fromont",
+    blurb: `Star-crossed lovers Sandy and Danny are devastated as their summer internships
+                come to an end. Torn apart by the distance between their universities, the
+                two engineering students reminisce over those summer nights. But, a surprise
+                reunion brings surprise opportunities, and with it a surprising clash between
+                the lovebirds. Will they be able to overcome their differences and pass the
+                semester? Join Sandy, Danny and the gang at the Engineering Revue to find out!`,
+    quote: `"New Zealand will move to Alert Level 4 from 11.59pm tonight, for an initial period of 7 days."`,
+    // Resources
+    programme: "null",
+  },
 
   "2020": {
     "cover-image": curtains,

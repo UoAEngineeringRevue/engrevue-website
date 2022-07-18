@@ -18,6 +18,9 @@ class ShowViewer extends React.Component {
   }
 
   render() {
+    const YEAR_AFTER_LATEST_SHOW = "2022"
+    const YEAR_BEFORE_FIRST_SHOW = "2007"
+
     const landSection = this.state.showSelected ? styles.hide : styles.view;
     const showSection = this.state.showSelected ? styles.view : styles.hide;
 
@@ -47,7 +50,7 @@ class ShowViewer extends React.Component {
     let nextText, prevText, nextYear, prevYear, nextShowDefined, prevShowDefined;
     let displayFwrdButton = styles.show;
     let displayBackButton = styles.show;
-    if (String(next) === "2021") {
+    if (String(next) === YEAR_AFTER_LATEST_SHOW) {
         nextShowDefined = false;
         nextYear = "2020"; // Won't be displayed, but this ensures it doesn't crash.
         nextText = "VIEW ALL SHOWS";
@@ -62,7 +65,7 @@ class ShowViewer extends React.Component {
           nextText = nextText.substr(0, 20) + "..."; // Handles case where string is too long.
         }
     }
-    if (String(prev) === "2007") {
+    if (String(prev) === YEAR_BEFORE_FIRST_SHOW) {
         prevShowDefined = false;
         prevYear = "2020"; // Won't be displayed, but this ensures it doesn't crash.
         prevText = "VIEW ALL SHOWS";
