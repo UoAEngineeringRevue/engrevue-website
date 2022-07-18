@@ -21,12 +21,12 @@ const IndexPage = () => (
             Auckland Faculty of Engineering at SkyCity Theatre. Established in
             2008, the Revue is an annual event drawing on the collective talent
             of nearly 100 students, from bright-eyed first years to world-weary
-            post-graduates. Every aspect of the show, from writing and
+            postgraduates. Every aspect of the show, from writing and
             performance, through choreography and costume, to lighting and
             sound, is done by students. Heck, in the past we've even made an
-            elevator, a pirate ship, & a dragon, and last year we made a temple!
-            It all comes together for a night (or three) of acting, comedy,
-            dancing, singing, and much more!
+            elevator, a pirate ship, a dragon, and a temple! It all comes
+            together for a night (or three) of acting, comedy, dancing, singing,
+            and much more!
           </p>
           <div className={styles.aboutUsImageContainer}>
             <img
