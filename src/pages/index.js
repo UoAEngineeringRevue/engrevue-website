@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import PromoBanner from "../components/index/promoBanner"
 import * as styles from "./index.module.css"
 
@@ -14,7 +14,7 @@ import scIcon from "../assets/images/icons/snapchat-logo-144px.png"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <Seo title="Home" />
     <PromoBanner />
     <section className={styles.sectionRegular}>
       <div className={styles.container} style={{ paddingBottom: "0px" }}>

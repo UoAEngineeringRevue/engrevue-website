@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import * as styles from "./player.module.css"
 
@@ -16,7 +16,7 @@ class PlayerPage extends React.Component {
   render() {
     return (
       <Layout>
-        <SEO title="Player" />
+        <Seo title="Player" />
         <section className={styles.container}>
           <div className={styles.videoWrapper}>
             <iframe

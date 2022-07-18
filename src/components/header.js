@@ -1,37 +1,20 @@
+import React, { useState } from "react"
 import { Link } from "gatsby"
-import React from "react"
 import * as styles from "./header.module.css"
 
-class Header extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      navExpanded: false,
-    }
-    this.toggleNavbar = this.toggleNavbar.bind(this);
-  }
+const Header = () => {
+  const [navExpanded, setNavExpanded] = useState(false)
 
-  toggleNavbar(e) {
-    e.preventDefault()
-    this.setState({
-      navExpanded: !this.state.navExpanded,
-    })
-  }
-
-  render() {
-
-    const navState = (this.state.navExpanded ? styles.navExpanded : styles.navCollapsed);
-
-    return (
-      <header>
+  return (
+    <header>
         <div className={styles.logoArea}>
           <h3 style={{ margin: 0 }}>
             <Link to="/">ENGINEERING REVUE</Link>
           </h3>
-          <button className={styles.menuBtn} onClick={this.toggleNavbar} />
+          <button className={styles.menuBtn} onClick={() => setNavExpanded(!navExpanded)} />
         </div>
 
-        <nav className={navState}>
+        <nav className={navExpanded ? styles.navExpanded : styles.navCollapsed}>
           <ul className={styles.navList}>
             {/* <li className={styles.navListItem}>
               <Link to="/" className={styles.navLink}>
@@ -68,8 +51,7 @@ class Header extends React.Component {
           </ul>
         </nav>
       </header>
-    )
-  }
+  )
 }
 
 export default Header

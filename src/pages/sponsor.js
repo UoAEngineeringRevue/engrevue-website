@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import * as styles from "./sponsor.module.css"
 
 import picture1 from "../assets/images/sponsor/Saturday-23.jpg"
@@ -10,7 +10,7 @@ import SponsorBanner from "../components/sponsor/sponsorBanner"
 
 const Sponsor = () => (
   <Layout>
-    <SEO title="Sponsor Us" />
+    <Seo title="Sponsor Us" />
       <SponsorBanner />
       <section id="more" className={styles.section}>
         <div class={styles.container}>

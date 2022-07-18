@@ -2,7 +2,7 @@ import React from "react"
 import * as styles from "./sponsorBanner.module.css"
 import emailIcon from "../../assets/images/icons/email-white-144px.png"
 import downIcon from "../../assets/images/icons/down-button.png"
-import { Link, animateScroll as scroll } from "react-scroll"
+import { Link } from "react-scroll"
 
 
 const HeroBanner = () => (
