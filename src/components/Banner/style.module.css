@@ -1,5 +1,4 @@
 .banner {
-  color: white;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,7 +26,6 @@
 }
 
 .textArea {
-  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;

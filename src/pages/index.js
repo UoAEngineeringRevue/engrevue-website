@@ -15,6 +15,7 @@ const IndexPage = () => (
     <Seo title="Home" />
     <Banner
       background={GreaseBg}
+      color="black"
       logo={`${GreaseLogo}`}
       callToActionLink="https://www.iticket.co.nz/events/2021/aug/cs-get-degrease"
       callToActionText="Buy Tickets"

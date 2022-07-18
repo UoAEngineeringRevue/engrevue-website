@@ -1,7 +1,8 @@
 import React, { useRef } from "react"
 import * as styles from "./style.module.css"
 
-import downArrow from "../../assets/images/index/down-arrow-black.png"
+import downArrowBlack from "../../assets/images/down-arrow-black.png"
+import downArrowWhite from "../../assets/images/down-arrow-white.png"
 
 const scrollToRef = (ref) => {
   window.scrollTo({ top: ref.current.offsetTop - 60, behavior: "smooth" })
@@ -9,6 +10,7 @@ const scrollToRef = (ref) => {
 
 const Banner = ({
   background,
+  color,
   logo,
   heading,
   body,
@@ -25,6 +27,7 @@ const Banner = ({
         className={styles.banner}
         style={{
           backgroundImage: `url(${background})`,
+          color: `${color}`,
         }}
       >
         <div className={styles.container}>
@@ -51,7 +54,7 @@ const Banner = ({
             {showDownBtn && (
               <button onClick={executeScroll} className={styles.downBtn}>
                 <img
-                  src={downArrow}
+                  src={color == "black" ? downArrowBlack : downArrowWhite}
                   alt="Downwards scrolling arrow"
                   className={styles.downArrow}
                 />
