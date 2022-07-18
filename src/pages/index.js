@@ -6,19 +6,19 @@ import ContactUs from "../components/ContactUs"
 import Banner from "../components/Banner"
 
 import * as styles from "./index.module.css"
-import GreaseBg from "../assets/images/index/grease-banner.png"
-import GreaseLogo from "../assets/images/index/grease-logo.png"
+import RevueBg from "../assets/images/index/banner-cast-2021.jpg"
+import RevueLogo from "../assets/images/index/revue-logo.png"
 import AboutUsImage from "../assets/images/index/about-us.jpg"
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <Banner
-      background={GreaseBg}
-      color="black"
-      logo={`${GreaseLogo}`}
-      callToActionLink="https://www.iticket.co.nz/events/2021/aug/cs-get-degrease"
-      callToActionText="Buy Tickets"
+      background={RevueBg}
+      color="white"
+      logo={`${RevueLogo}`}
+      heading="University of Auckland Engineering Revue"
+      tint
       showDownBtn
     />
     <section className={styles.sectionRegular}>

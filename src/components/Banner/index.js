@@ -16,16 +16,23 @@ const Banner = ({
   body,
   callToActionLink,
   callToActionText,
+  tint,
   showDownBtn,
 }) => {
   const flavourRef = useRef(null)
   const executeScroll = () => scrollToRef(flavourRef)
+
+  const tintCss = tint && {
+    backgroundColor: "rgba(0, 0, 0, 0.2)",
+    backgroundBlendMode: "multiply",
+  }
 
   return (
     <>
       <section
         className={styles.banner}
         style={{
+          ...tintCss,
           backgroundImage: `url(${background})`,
           color: `${color}`,
         }}
@@ -54,7 +61,7 @@ const Banner = ({
             {showDownBtn && (
               <button onClick={executeScroll} className={styles.downBtn}>
                 <img
-                  src={color == "black" ? downArrowBlack : downArrowWhite}
+                  src={color === "black" ? downArrowBlack : downArrowWhite}
                   alt="Downwards scrolling arrow"
                   className={styles.downArrow}
                 />
