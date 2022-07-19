@@ -1,0 +1,29 @@
+.container {
+  display: block;
+}
+
+.contactUs {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  font-size: 1.38316rem;
+  font-weight: 600;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.contactUs:hover {
+  background-color: rgba(158, 158, 158, 0.2);
+  border-radius: 6px;
+}
+
+.contactUs > * {
+  margin: 0;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  margin-right: 18px;
+}

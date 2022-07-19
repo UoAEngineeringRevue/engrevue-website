@@ -1,20 +1,4 @@
 @font-face {
-  font-family: "Rockwell Std";
-  font-style: normal;
-  font-weight: 400;
-  src: url("rockwell-std.ttf");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Rockwell Std";
-  font-style: normal;
-  font-weight: 600;
-  src: url("rockwell-std-bold.ttf");
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Trueno";
   font-style: normal;
   font-weight: 300;

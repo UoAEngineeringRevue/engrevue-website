@@ -72,7 +72,7 @@ button:hover {
   background: #a80d13;
 }
 
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 910px) {
   .menu-btn {
     display: inline-block;
   }

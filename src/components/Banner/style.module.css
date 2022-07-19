@@ -1,54 +1,66 @@
-.promo {
-  color: white;
-  background-image: url(../../assets/images/index/grease-banner.png);
-  background-position: top center;
+.banner {
+  background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   min-height: 465px;
   height: 90vh;
-  max-height: 800px;
+  max-height: 850px;
 }
 
-.promoContainer {
+.container {
   margin: 0 auto;
   max-width: 960px;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
-.promoLogo {
+.logo {
   max-width: 600px;
   width: 100%;
   height: auto;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
 }
 
-.promo-btns {
+.textArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.heading {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   max-width: 600px;
   text-align: center;
+  margin-top: 24px;
 }
 
-.promoBtn {
+.callToActionBtn {
   margin-bottom: 20px;
   width: 100%;
 }
 
-.promoBtn a {
+.callToActionBtnLink {
   display: block;
   padding: 18px;
   color: white;
   background-color: #b31b20;
+  text-transform: uppercase;
 }
 
-.promoBtn a:hover {
+.callToActionBtnLink:hover {
   background: #a80d13;
 }
 
@@ -65,23 +77,8 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .promoContainer {
+  .container {
     justify-content: center;
     margin: 0 24px;
-  }
-
-  .promoBtn {
-    width: 100%;
-  }
-}
-
-/**
- * This isn't actually for the iPhone SE.
- * It's an ugly workaround for the heroTextArea margin being ignored
- * when it gets smaller than the image - make the image even smaller.
- */
-@media only screen and (max-width: 354px) {
-  .promoLogo {
-    max-width: 270px;
   }
 }

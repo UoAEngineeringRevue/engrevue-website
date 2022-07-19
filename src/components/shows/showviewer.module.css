@@ -30,7 +30,7 @@ a {
 
 .button-clear {
   background-color: #cc0000;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   border: none;
   font-family: inherit;
   outline: none;
@@ -56,7 +56,7 @@ a {
   margin-bottom: 0px;
   margin-top: 20px;
   text-align: center;
-  vertical-align: center; 
+  vertical-align: center;
 }
 
 .container {
@@ -203,7 +203,7 @@ h3 {
 }
 
 .section {
-  background-color: #262626;
+  background-color: #121212;
   color: white;
 }
 
@@ -215,7 +215,7 @@ h3 {
   top: 50%;
   transform: translate(-50%, -30%);
   transition-duration: 0.3s;
-  width: 70%;  
+  width: 70%;
 }
 
 .signup-button {
@@ -245,7 +245,7 @@ h3 {
   .about-image {
     margin-bottom: 30px;
   }
-  
+
   .about-image-container {
     margin-left: 0;
     margin-top: 0;
@@ -281,13 +281,12 @@ h3 {
 }
 
 @media only screen and (max-width: 600px) {
-
   .home-button {
     align-self: center;
     left: 0;
     margin-right: auto;
     margin-left: auto;
-    position: absolute; 
+    position: absolute;
     right: 0;
     text-align: center;
   }
@@ -299,5 +298,4 @@ h3 {
   .link-long {
     display: none;
   }
-
 }

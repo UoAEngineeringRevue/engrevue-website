@@ -2,10 +2,10 @@
  * Layout component that queries for data
  * with Gatsby's useStaticQuery component
  *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
+ * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React from "react"
+import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -14,7 +14,7 @@ import Footer from "./footer"
 import "./layout.css"
 import "../assets/fonts/fonts.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ bgImage, bgTint, children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -25,6 +25,15 @@ const Layout = ({ children }) => {
     }
   `)
 
+  const bgImageCss = bgImage && {
+    backgroundBlendMode: "multiply",
+    backgroundImage: `url(${bgImage})`,
+  }
+
+  const bgTintCss = bgTint && {
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+  }
+
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
@@ -33,10 +42,26 @@ const Layout = ({ children }) => {
           paddingTop: `60px`,
           minHeight: `100vh`,
           display: `flex`,
-          flexDirection: `column`
+          flexDirection: `column`,
         }}
       >
-        <main style={{ flexGrow: `1`, backgroundColor: `#121212` }}>{children}</main>
+        <main
+          style={{
+            backgroundAttachment: "fixed",
+            backgroundColor: `#121212`,
+            ...bgImageCss,
+            ...bgTintCss,
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            display: "flex",
+            flexDirection: "column",
+            flexGrow: `1`,
+            paddingBottom: `36px`,
+          }}
+        >
+          {children}
+        </main>
         <Footer />
       </div>
     </>

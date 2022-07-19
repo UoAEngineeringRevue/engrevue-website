@@ -19,8 +19,11 @@ footer {
   display: inline-flex;
   height: 48px;
   justify-content: center;
-  margin-right: 16px;
   width: 48px;
+}
+
+.social-icon:not(:last-child) {
+  margin-right: 16px;
 }
 
 .social-icon:hover {
@@ -66,10 +69,6 @@ footer {
   .social-icon {
     margin-bottom: 18px;
   }
-
-  .social-icon--last {
-    margin-right: 0px;
-  }
 }
 
 /**
@@ -82,12 +81,11 @@ footer {
 
   .social-icon {
     height: 36px;
-    margin-right: 12px;
     width: 36px;
   }
 
-  .social-icon--last {
-    margin-right: 0px;
+  .social-icon:not(:last-child) {
+    margin-right: 12px;
   }
 
   .social-img {
