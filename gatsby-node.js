@@ -21,4 +21,11 @@ exports.createPages = ({ actions }) => {
     redirectInBrowser: true,
     force: true,
   })
+  createRedirect({
+    fromPath: "/tickets",
+    toPath: "https://www.iticket.co.nz/events/2022/aug/charlie-internship-lottery",
+    isPermanent: true,
+    redirectInBrowser: true,
+    force: true,
+  })
 }
