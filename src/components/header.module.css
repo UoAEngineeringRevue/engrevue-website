@@ -64,12 +64,12 @@ button:hover {
 }
 
 .nav-link--primary {
-  background-color: #b31b20;
+  background-color: #ca3c41;
   color: #ffffff;
 }
 
 .nav-link--primary:hover {
-  background: #a80d13;
+  background: #ad272c;
 }
 
 @media only screen and (max-width: 910px) {
