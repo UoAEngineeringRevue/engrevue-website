@@ -6,18 +6,30 @@ import ContactUs from "../components/ContactUs"
 import Banner from "../components/Banner"
 
 import * as styles from "./index.module.css"
-import RevueBg from "../assets/images/index/banner-cast-2021.jpg"
-import RevueLogo from "../assets/images/index/revue-logo.png"
+import RevueBg from "../assets/images/index/bg-purple.png"
+//import RevueBg from "../assets/images/index/banner-cast-2021.jpg"
+import RevueLogo from "../assets/images/index/charlie-logo-5.png"
+//import RevueLogo from "../assets/images/index/revue-logo.png"
 import AboutUsImage from "../assets/images/index/about-us.jpg"
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <Banner
+    {/*<Banner
       background={RevueBg}
       color="white"
       logo={`${RevueLogo}`}
       heading="University of Auckland Engineering Revue"
+      tint
+      showDownBtn
+/>*/}
+    <Banner
+      background={RevueBg}
+      color="white"
+      logo={`${RevueLogo}`}
+      callToActionLink="https://www.iticket.co.nz/events/2022/aug/charlie-internship-lottery"
+      callToActionText="Buy Tickets"
+      heading=""
       tint
       showDownBtn
     />

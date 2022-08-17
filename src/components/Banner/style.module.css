@@ -19,7 +19,8 @@
 }
 
 .logo {
-  max-width: 600px;
+  padding-top: 24px;
+  max-width: 800px;
   width: 100%;
   height: auto;
   margin-bottom: 24px;
@@ -42,7 +43,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 600px;
+  max-width: 300px;
   text-align: center;
   margin-top: 24px;
 }
@@ -56,12 +57,12 @@
   display: block;
   padding: 18px;
   color: white;
-  background-color: #b31b20;
+  background-color: #ca3c41;
   text-transform: uppercase;
 }
 
 .callToActionBtnLink:hover {
-  background: #a80d13;
+  background: #ad272c;
 }
 
 .down-btn {
