@@ -29,14 +29,6 @@ const Header = () => {
               PREVIOUS SHOWS
             </Link>
           </li>
-          /*<li className={styles.navListItem}>
-            <a
-              href="https://www.iticket.co.nz/events/2022/aug/charlie-internship-lottery"
-              className={styles.navLinkPrimary}
-            >
-              BUY TICKETS NOW
-            </a>
-          </li>*/
           <li className={styles.navListItem}>
               <a
                 href="https://forms.gle/jQFfDgDp2pWVenLz8"
