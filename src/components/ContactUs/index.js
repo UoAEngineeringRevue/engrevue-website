@@ -19,6 +19,11 @@ const ContactUs = ({ type }) => {
       link = "mailto:engrevue@gmail.com"
       text = "engrevue@gmail.com"
       break
+    case "YouTube":
+      icon = YouTubeIcon
+      link = "https://www.youtube.com/c/EngineeringRevue"
+      text = "Engineering Revue"
+      break
     case "Facebook":
       icon = FacebookIcon
       link = "https://www.facebook.com/EngineeringRevue"
@@ -29,20 +34,15 @@ const ContactUs = ({ type }) => {
       link = "https://www.instagram.com/engrevue"
       text = "@engrevue"
       break
-    case "YouTube":
-      icon = YouTubeIcon
-      link = "https://www.youtube.com/c/EngineeringRevue"
-      text = "Engineering Revue"
-      break
     case "Snapchat":
       icon = SnapchatIcon
       link = "https://www.snapchat.com/add/engrevue"
-      text = "engrevue"
+      text = "@engrevue"
       break
     case "TikTok":
       icon = TikTokIcon
       link = "https://www.tiktok.com/@engrevue"
-      text = "engrevue"
+      text = "@engrevue"
       break
     default:
       icon = RevueIcon
