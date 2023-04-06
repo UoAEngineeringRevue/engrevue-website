@@ -33,12 +33,10 @@ const Sponsor = () => (
               Since 2008, the Auckland Engineering Revue has
               continued to grow in presence within the faculty and has quickly
               become one of the calendar highlights of the year.
-              <ul>
-                <li>
+              <p>
                   The 2022 show was very well received, with a total audience of
-                  over 1500 people.
-                </li>
-              </ul>
+                  over 1500 people across our three show nights.
+              </p>
               Going into this year, the Auckland Engineering Revue aims to
               maintain its strong presence on campus, with a fantastic new cast
               and a wonderful executive body dedicated to making their best show
