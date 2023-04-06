@@ -39,10 +39,10 @@ const Header = () => {
           </li>
           {/* <li className={styles.navListItem}>
               <a
-                href="https://www.iticket.co.nz/events/2021/aug/cs-get-degrease"
+                href="https://forms.gle/jQFfDgDp2pWVenLz8"
                 className={styles.navLinkPrimary}
               >
-                BUY TICKETS
+                SIGN UP
               </a>
             </li> */}
         </ul>
