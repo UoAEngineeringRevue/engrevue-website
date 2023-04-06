@@ -30,7 +30,7 @@ class HeroBanner extends React.Component {
             <div className={styles.heroTextArea}>
               <h1 className={styles.title}>PREVIOUS REVUES</h1>
               <p className={styles.subtitle}>
-                Did you know we've been going for over 10 years!
+                Did you know the Engineering Revue has been running since 2008?
                 <br />
                 See what we've been up to "recently"...
               </p>
