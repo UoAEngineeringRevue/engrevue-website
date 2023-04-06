@@ -5,7 +5,7 @@ import fbIcon from "../assets/images/icons/facebook-logo-144px.png"
 import instaIcon from "../assets/images/icons/instagram-logo-144px.png"
 import ytIcon from "../assets/images/icons/youtube-logo-144px.png"
 import scIcon from "../assets/images/icons/snapchat-logo-144px.png"
-import ttIcon from "../assets/images/icons/tiktok-logo-144px.png"
+import ttIcon from "../assets/images/icons/tiktokcolour-logo-144px.png"
 
 const Footer = () => (
   <footer>
