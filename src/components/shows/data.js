@@ -69,7 +69,7 @@ const data = {
                 and the competition is not as sweet as they seem…`,
     quote: `"Y’all were incredible, shoutout to looksharp" - Med Revue`,
     // Resources
-    programme: "null",
+    programme: programme2022,
   },
     
   2021: {
