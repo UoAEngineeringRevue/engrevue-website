@@ -7,6 +7,7 @@ import FacebookIcon from "../../assets/images/icons/facebook-logo-144px.png"
 import InstagramIcon from "../../assets/images/icons/instagram-logo-144px.png"
 import YouTubeIcon from "../../assets/images/icons/youtube-logo-144px.png"
 import SnapchatIcon from "../../assets/images/icons/snapchat-logo-144px.png"
+import TikTokIcon from "../../assets/images/icons/tiktok-logo-144px.png"
 
 const ContactUs = ({ type }) => {
   let icon
@@ -36,6 +37,11 @@ const ContactUs = ({ type }) => {
     case "Snapchat":
       icon = SnapchatIcon
       link = "https://www.snapchat.com/add/engrevue"
+      text = "engrevue"
+      break
+    case "TikTok":
+      icon = TikTokIcon
+      link = "https://www.tiktok.com/@engrevue"
       text = "engrevue"
       break
     default:
