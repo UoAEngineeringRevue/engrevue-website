@@ -28,7 +28,7 @@ const IndexPage = () => (
       color="white"
       logo={`${RevueLogo}`}
       callToActionLink="https://forms.gle/jQFfDgDp2pWVenLz8"
-      callToActionText="Sign Up"
+      callToActionText="Sign Up for Revue 2023"
       heading=""
       tint
       showDownBtn
