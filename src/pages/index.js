@@ -6,10 +6,10 @@ import ContactUs from "../components/ContactUs"
 import Banner from "../components/Banner"
 
 import * as styles from "./index.module.css"
-import RevueBg from "../assets/images/index/bg-purple.png"
+import RevueBg from "../assets/images/index/2022_cast_crew.jpg"
 //import RevueBg from "../assets/images/index/banner-cast-2021.jpg"
-import RevueLogo from "../assets/images/index/charlie-logo-5.png"
-//import RevueLogo from "../assets/images/index/revue-logo.png"
+//import RevueLogo from "../assets/images/index/charlie-logo-5.png"
+import RevueLogo from "../assets/images/index/revue-logo.png"
 import AboutUsImage from "../assets/images/index/about-us.jpg"
 
 const IndexPage = () => (
