@@ -27,8 +27,8 @@ const IndexPage = () => (
       background={RevueBg}
       color="white"
       logo={`${RevueLogo}`}
-      callToActionLink="https://www.iticket.co.nz/events/2022/aug/charlie-internship-lottery"
-      callToActionText="Buy Tickets"
+      callToActionLink="https://forms.gle/jQFfDgDp2pWVenLz8"
+      callToActionText="Sign Up"
       heading=""
       tint
       showDownBtn
