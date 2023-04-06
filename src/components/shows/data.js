@@ -1,3 +1,4 @@
+import revue2022 from "../../assets/images/previous/2022.png"
 import revue2021 from "../../assets/images/previous/2021.jpg"
 import revue2020 from "../../assets/images/previous/2020.jpg"
 import revue2019 from "../../assets/images/previous/2019.jpg"
@@ -13,6 +14,7 @@ import revue2010 from "../../assets/images/previous/2010.jpg"
 import revue2009 from "../../assets/images/previous/2009.gif"
 import revue2008 from "../../assets/images/previous/2008.gif"
 
+import revue2022Cast from "../../assets/images/previous/2020/cast_2022.jpg"
 import revue2020Cast from "../../assets/images/previous/2020/cast_2020.jpg"
 import revue2019Cast from "../../assets/images/previous/2019/cast_2019.jpg"
 import revue2018Cast from "../../assets/images/previous/2018/cast_2018.jpg"
@@ -21,6 +23,7 @@ import revue2016Cast from "../../assets/images/previous/2016/cast_2016.jpg"
 
 import curtains from "../../assets/images/watch/curtains.jpg"
 
+import programme2022 from "../../assets/images/previous/2022/programme.pdf"
 import programme2020 from "../../assets/images/previous/2020/programme.pdf"
 import programme2019 from "../../assets/images/previous/2019/programme.pdf"
 import programme2018 from "../../assets/images/previous/2018/programme.pdf"
@@ -48,6 +51,27 @@ const data = {
     }
     */
 
+ 2022: {
+    "cover-image": curtains,
+    poster: revue2022,
+    "cast-picture": revue2022Cast,
+    // Text
+    title: "CHARLIE AND THE INTERNSHIP LOTTERY",
+    subtitle: "Auckland Engineering Revue 2022",
+    subtitle1: "Engineering Revue 2022",
+    "catch-phrase": "It's time to kick the Bucket...",
+    location: "SkyCity Theatre",
+    director: "Chantelle Haywood",
+    producer: "Jordyn Chan",
+    blurb: `Charlie Bucket, engineering student ordinaire, has the chance of a lifetime when
+                Willy Wonka offers one lucky student an internship at his famed confectionery
+                conglomerate. But Charlie is not the only one vying for this coveted position,
+                and the competition is not as sweet as they seem…`,
+    quote: `"Y’all were incredible, shoutout to looksharp" - Med Revue`,
+    // Resources
+    programme: "null",
+  },
+    
   2021: {
     "cover-image": curtains,
     poster: revue2021,
