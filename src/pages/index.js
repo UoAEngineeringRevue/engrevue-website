@@ -10,7 +10,7 @@ import RevueBg from "../assets/images/index/2022_cast_crew.jpg"
 //import RevueBg from "../assets/images/index/banner-cast-2021.jpg"
 //import RevueLogo from "../assets/images/index/charlie-logo-5.png"
 import RevueLogo from "../assets/images/index/revue-logo.png"
-import AboutUsImage from "../assets/images/index/about-us.jpg"
+import AboutUsImage from "../assets/images/index/2022-exec.jpg"
 
 const IndexPage = () => (
   <Layout>
@@ -52,7 +52,7 @@ const IndexPage = () => (
           <div className={styles.aboutUsImageContainer}>
             <img
               src={AboutUsImage}
-              alt="Indiana Jones and the Graders of the Lost Marks cast & crew"
+              alt="Charlie and the Internship Lottery exec team"
               className={styles.aboutUsImage}
             />
           </div>
