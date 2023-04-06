@@ -69,9 +69,9 @@ const IndexPage = () => (
           </p>
 
           <ContactUs type="Email" />
+          <ContactUs type="YouTube" />
           <ContactUs type="Facebook" />
           <ContactUs type="Instagram" />
-          <ContactUs type="YouTube" />
           <ContactUs type="Snapchat" />
           <ContactUs type="TikTok" />
         </div>
