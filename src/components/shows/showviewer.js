@@ -213,10 +213,10 @@ class ShowViewer extends React.Component {
                     engineers from the University of Auckland! We are a show run
                     solely by engineering students, for engineering students. No
                     matter what your level of experience may be, if you're keen
-                    to get involved, we want YOU! Sign ups for 2020 are now on!
+                    to get involved, we want YOU! Sign ups for 2023 are now on!
                   </p>
                   <div className={styles.signupButton}>
-                    <a href="https://www.engrevue.co.nz/signup">
+                    <a href="https://www.engrevue.co.nz/cast">
                       Click here to sign up!
                     </a>
                   </div>
