@@ -5,6 +5,7 @@ import fbIcon from "../assets/images/icons/facebook-logo-144px.png"
 import instaIcon from "../assets/images/icons/instagram-logo-144px.png"
 import ytIcon from "../assets/images/icons/youtube-logo-144px.png"
 import scIcon from "../assets/images/icons/snapchat-logo-144px.png"
+import ttIcon from "../assets/images/icons/tiktok-logo-144px.png"
 
 const Footer = () => (
   <footer>
@@ -13,6 +14,11 @@ const Footer = () => (
         type="email"
         link="mailto:engrevue@gmail.com"
         icon={emailIcon}
+      />
+      <SocialIcon
+        type="youtube"
+        link="https://www.youtube.com/user/Engrevue"
+        icon={ytIcon}
       />
       <SocialIcon
         type="facebook"
@@ -25,14 +31,14 @@ const Footer = () => (
         icon={instaIcon}
       />
       <SocialIcon
-        type="youtube"
-        link="https://www.youtube.com/user/Engrevue"
-        icon={ytIcon}
-      />
-      <SocialIcon
         type="snapchat"
         link="https://www.snapchat.com/add/engrevue"
         icon={scIcon}
+      />
+      <SocialIcon
+        type="tiktok"
+        link="https://www.tiktok.com/@engrevue"
+        icon={ttIcon}
       />
     </div>
     <div className={styles.copyrightText}>
