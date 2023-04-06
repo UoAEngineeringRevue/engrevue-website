@@ -29,22 +29,22 @@ const Header = () => {
               PREVIOUS SHOWS
             </Link>
           </li>
-          <li className={styles.navListItem}>
+          /*<li className={styles.navListItem}>
             <a
               href="https://www.iticket.co.nz/events/2022/aug/charlie-internship-lottery"
               className={styles.navLinkPrimary}
             >
               BUY TICKETS NOW
             </a>
-          </li>
-          {/* <li className={styles.navListItem}>
+          </li>*/
+          <li className={styles.navListItem}>
               <a
                 href="https://forms.gle/jQFfDgDp2pWVenLz8"
                 className={styles.navLinkPrimary}
               >
                 SIGN UP
               </a>
-            </li> */}
+            </li>
         </ul>
       </nav>
     </header>
