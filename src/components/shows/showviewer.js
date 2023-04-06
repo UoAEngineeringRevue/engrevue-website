@@ -8,7 +8,7 @@ class ShowViewer extends React.Component {
     super(props)
     this.state = {
       showSelected: false,
-      year: "2020",
+      year: "2022",
     }
     this.selectShow = this.selectShow.bind(this)
   }
@@ -18,7 +18,7 @@ class ShowViewer extends React.Component {
   }
 
   render() {
-    const YEAR_AFTER_LATEST_SHOW = "2022"
+    const YEAR_AFTER_LATEST_SHOW = "2023"
     const YEAR_BEFORE_FIRST_SHOW = "2007"
 
     const landSection = this.state.showSelected ? styles.hide : styles.view
