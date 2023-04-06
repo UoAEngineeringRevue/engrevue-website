@@ -73,6 +73,7 @@ const IndexPage = () => (
           <ContactUs type="Instagram" />
           <ContactUs type="YouTube" />
           <ContactUs type="Snapchat" />
+          <ContactUs type="TikTok" />
         </div>
       </div>
     </section>
