@@ -28,4 +28,11 @@ exports.createPages = ({ actions }) => {
     redirectInBrowser: true,
     force: true,
   })
+  createRedirect({
+    fromPath: "/auditions",
+    toPath: "https://forms.gle/a9WfjFZwWiixHoNm9",
+    isPermanent: true,
+    redirectInBrowser: true,
+    force: true,
+  })
 }
