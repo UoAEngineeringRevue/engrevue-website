@@ -30,18 +30,13 @@ const Sponsor = () => (
           <div>
             <h1> OUR LEGACY </h1>
             <p>
-              For the last 13 years, the Auckland Engineering Revue has
+              Since 2008, the Auckland Engineering Revue has
               continued to grow in presence within the faculty and has quickly
               become one of the calendar highlights of the year.
               <ul>
                 <li>
-                  The 2020 show was very well received, with a total audience of
-                  over 1400 people.
-                </li>
-                <li>
-                  While the 2021 show was cancelled due to Covid-19
-                  restrictions, we were still able to release 22 minutes of
-                  video content that reached over 1000 people online.
+                  The 2022 show was very well received, with a total audience of
+                  over 1500 people.
                 </li>
               </ul>
               Going into this year, the Auckland Engineering Revue aims to
