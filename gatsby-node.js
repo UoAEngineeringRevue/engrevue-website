@@ -1,22 +1,15 @@
 exports.createPages = ({ actions }) => {
   const { createRedirect } = actions
   createRedirect({
-    fromPath: "/cast",
-    toPath: "https://forms.gle/Gdzm41nodG3wvaYY9",
+    fromPath: "/tickets",
+    toPath: "http://www.iticket.co.nz/events/2023/aug/engineering-revue",
     isPermanent: true,
     redirectInBrowser: true,
     force: true,
   })
   createRedirect({
-    fromPath: "/crew",
-    toPath: "https://forms.gle/a9WfjFZwWiixHoNm9",
-    isPermanent: true,
-    redirectInBrowser: true,
-    force: true,
-  })
-  createRedirect({
-    fromPath: "/video",
-    toPath: "https://www.youtube.com/watch?v=fIBn00Wd9Zc",
+    fromPath: "/ticket",
+    toPath: "http://www.iticket.co.nz/events/2023/aug/engineering-revue",
     isPermanent: true,
     redirectInBrowser: true,
     force: true,
