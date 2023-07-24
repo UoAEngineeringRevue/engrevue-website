@@ -27,8 +27,8 @@ const IndexPage = () => (
       background={RevueBg}
       color="white"
       logo={`${RevueLogo}`}
-      callToActionLink="https://forms.gle/jQFfDgDp2pWVenLz8"
-      callToActionText="Sign Up for Revue 2023"
+      callToActionLink="https://www.iticket.co.nz/events/2023/aug/engineering-revue"
+      callToActionText="TICKETS"
       heading=""
       tint
       showDownBtn
