@@ -31,10 +31,10 @@ const Header = () => {
           </li>
           <li className={styles.navListItem}>
               <a
-                href="https://forms.gle/jQFfDgDp2pWVenLz8"
+                href="https://www.iticket.co.nz/events/2023/aug/engineering-revue"
                 className={styles.navLinkPrimary}
               >
-                SIGN UP
+                TICKETS
               </a>
             </li>
         </ul>
