@@ -6,7 +6,7 @@ import ContactUs from "../components/ContactUs"
 import Banner from "../components/Banner"
 
 import * as styles from "./index.module.css"
-import RevueBg from "../assets/images/index/2022_cast_crew.jpg"
+import RevueBg from "../assets/images/index/Scooby-Doo BG.jpg"
 //import RevueBg from "../assets/images/index/banner-cast-2021.jpg"
 //import RevueLogo from "../assets/images/index/charlie-logo-5.png"
 import RevueLogo from "../assets/images/index/revue-logo.png"
@@ -26,7 +26,7 @@ const IndexPage = () => (
     <Banner
       background={RevueBg}
       color="white"
-      logo={`${RevueLogo}`}
+      //logo={`${RevueLogo}`}
       callToActionLink="https://www.iticket.co.nz/events/2023/aug/engineering-revue"
       callToActionText="GET YOUR TICKETS NOW"
       heading=""
