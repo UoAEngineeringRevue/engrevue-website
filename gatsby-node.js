@@ -14,4 +14,11 @@ exports.createPages = ({ actions }) => {
     redirectInBrowser: true,
     force: true,
   })
+  createRedirect({
+    fromPath: "/lecture",
+    toPath: "https://docs.google.com/presentation/d/19jLpCe-OLfRCgKeDhqFU-aM3zPPn0iqNl7lpb_8b-Z4/edit?usp=sharing",
+    isPermanent: true,
+    redirectInBrowser: true,
+    force: true,
+  })
 }
