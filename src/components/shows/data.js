@@ -1,3 +1,4 @@
+import revue2022 from "../../assets/images/previous/2023.png"
 import revue2022 from "../../assets/images/previous/2022.png"
 import revue2021 from "../../assets/images/previous/2021.jpg"
 import revue2020 from "../../assets/images/previous/2020.jpg"
@@ -14,6 +15,7 @@ import revue2010 from "../../assets/images/previous/2010.jpg"
 import revue2009 from "../../assets/images/previous/2009.gif"
 import revue2008 from "../../assets/images/previous/2008.gif"
 
+import revue2023Cast from "../../assets/images/previous/2022/cast_2023.jpg"
 import revue2022Cast from "../../assets/images/previous/2022/cast_2022.jpg"
 import revue2020Cast from "../../assets/images/previous/2020/cast_2020.jpg"
 import revue2019Cast from "../../assets/images/previous/2019/cast_2019.jpg"
@@ -23,6 +25,7 @@ import revue2016Cast from "../../assets/images/previous/2016/cast_2016.jpg"
 
 import curtains from "../../assets/images/watch/curtains.jpg"
 
+import programme2023 from "../../assets/images/previous/2023/programme.pdf"
 import programme2022 from "../../assets/images/previous/2022/programme.pdf"
 import programme2020 from "../../assets/images/previous/2020/programme.pdf"
 import programme2019 from "../../assets/images/previous/2019/programme.pdf"
@@ -51,6 +54,27 @@ const data = {
     }
     */
 
+2023: {
+    "cover-image": curtains,
+    poster: revue2023,                // image import of show's poster
+    "cast-picture": revue2023Cast,    // image import of cast photo from show week
+    // Text
+    title: "SCOOBY-DOO AND THE DUBIOUS SCOOP",
+    subtitle: "Auckland Engineering Revue 2023",
+    subtitle1: "Engineering Revue 2023",
+    "catch-phrase": "Jeepers!",
+    location: "SkyCity Theatre",
+    director: "Tia Jones",
+    producer: "Aaron Lew",
+    blurb: `Everything is normal for Fred, Daphne, Velma, Shaggy, and Scooby-Doo until one day they're
+                locked in the engineering building late at night and something spooky is trapped with them.
+                With only a limited number of suspects, can they get to the bottom of this mystery before
+                time runs out? Catch our show for a gripping story that will surely hit the headlines!`,
+    quote: `"Remarkably, some Engineering students DON'T spend their entire existence studying!" - Craccum`,
+    // Resources
+    programme: programme2023,         // file import of show's programme pdf
+  },
+  
  2022: {
     "cover-image": curtains,
     poster: revue2022,
