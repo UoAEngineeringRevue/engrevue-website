@@ -7,11 +7,13 @@ import Banner from "../components/Banner"
 
 import * as styles from "./index.module.css"
 //import RevueBg from "../assets/images/index/scooby-doo-bg-blank.jpg"
-import RevueBg from "../assets/images/index/banner-cast-2021.jpg"
+//import RevueBg from "../assets/images/index/banner-cast-2021.jpg"
+import RevueBg from "../assets/images/index/2023-cast.jpeg"
 //import RevueLogo from "../assets/images/index/charlie-logo-5.png"
 import RevueLogo from "../assets/images/index/revue-logo.png"
 //import RevueLogo from "../assets/images/index/scooby-doo-logo.png"
-import AboutUsImage from "../assets/images/index/2022-exec.jpg"
+//import AboutUsImage from "../assets/images/index/2022-exec.jpg"
+import AboutUsImage from "../assets/images/index/2023-exec.jpeg"
 
 const IndexPage = () => (
   <Layout>
