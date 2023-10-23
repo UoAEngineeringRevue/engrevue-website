@@ -8,7 +8,7 @@ class ShowViewer extends React.Component {
     super(props)
     this.state = {
       showSelected: false,
-      year: "2022",
+      year: "2023",
     }
     this.selectShow = this.selectShow.bind(this)
   }
