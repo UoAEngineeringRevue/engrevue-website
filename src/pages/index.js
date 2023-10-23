@@ -6,11 +6,11 @@ import ContactUs from "../components/ContactUs"
 import Banner from "../components/Banner"
 
 import * as styles from "./index.module.css"
-import RevueBg from "../assets/images/index/scooby-doo-bg-blank.jpg"
-//import RevueBg from "../assets/images/index/banner-cast-2021.jpg"
+//import RevueBg from "../assets/images/index/scooby-doo-bg-blank.jpg"
+import RevueBg from "../assets/images/index/banner-cast-2021.jpg"
 //import RevueLogo from "../assets/images/index/charlie-logo-5.png"
-//import RevueLogo from "../assets/images/index/revue-logo.png"
-import RevueLogo from "../assets/images/index/scooby-doo-logo.png"
+import RevueLogo from "../assets/images/index/revue-logo.png"
+//import RevueLogo from "../assets/images/index/scooby-doo-logo.png"
 import AboutUsImage from "../assets/images/index/2022-exec.jpg"
 
 const IndexPage = () => (
@@ -28,8 +28,8 @@ const IndexPage = () => (
       background={RevueBg}
       color="white"
       logo={`${RevueLogo}`}
-      callToActionLink="https://www.iticket.co.nz/events/2023/aug/engineering-revue"
-      callToActionText="GET YOUR TICKETS NOW!"
+      callToActionLink="https://www.youtube.com/c/engineeringrevue"
+      callToActionText="CATCH UP ON PAST SHOWS!"
       heading=""
       tint
       showDownBtn
@@ -53,7 +53,7 @@ const IndexPage = () => (
           <div className={styles.aboutUsImageContainer}>
             <img
               src={AboutUsImage}
-              alt="Charlie and the Internship Lottery exec team"
+              alt="Scooby-Doo and the Dubious Scoop exec team"
               className={styles.aboutUsImage}
             />
           </div>
