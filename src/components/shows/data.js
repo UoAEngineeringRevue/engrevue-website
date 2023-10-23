@@ -1,4 +1,4 @@
-import revue2022 from "../../assets/images/previous/2023.png"
+import revue2023 from "../../assets/images/previous/2023.png"
 import revue2022 from "../../assets/images/previous/2022.png"
 import revue2021 from "../../assets/images/previous/2021.jpg"
 import revue2020 from "../../assets/images/previous/2020.jpg"
