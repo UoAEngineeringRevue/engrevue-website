@@ -18,7 +18,7 @@ class ShowViewer extends React.Component {
   }
 
   render() {
-    const YEAR_AFTER_LATEST_SHOW = "2023"
+    const YEAR_AFTER_LATEST_SHOW = "2024"
     const YEAR_BEFORE_FIRST_SHOW = "2007"
 
     const landSection = this.state.showSelected ? styles.hide : styles.view
