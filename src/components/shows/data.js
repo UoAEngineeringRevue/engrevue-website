@@ -15,7 +15,7 @@ import revue2010 from "../../assets/images/previous/2010.jpg"
 import revue2009 from "../../assets/images/previous/2009.gif"
 import revue2008 from "../../assets/images/previous/2008.gif"
 
-import revue2023Cast from "../../assets/images/previous/2022/cast_2023.jpg"
+import revue2023Cast from "../../assets/images/previous/2023/cast_2023.jpg"
 import revue2022Cast from "../../assets/images/previous/2022/cast_2022.jpg"
 import revue2020Cast from "../../assets/images/previous/2020/cast_2020.jpg"
 import revue2019Cast from "../../assets/images/previous/2019/cast_2019.jpg"
