@@ -16,7 +16,7 @@ exports.createPages = ({ actions }) => {
   })
   createRedirect({
     fromPath: "/video",
-    toPath: "https://youtu.be/2r9s5W3sh_s",
+    toPath: "https://www.youtube.com/watch?v=2r9s5W3sh_s",
     isPermanent: true,
     redirectInBrowser: true,
     force: true,
