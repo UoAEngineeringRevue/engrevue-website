@@ -14,6 +14,13 @@ exports.createPages = ({ actions }) => {
     redirectInBrowser: true,
     force: true,
   })
+  createRedirect({
+    fromPath: "/video",
+    toPath: "https://youtu.be/2r9s5W3sh_s",
+    isPermanent: true,
+    redirectInBrowser: true,
+    force: true,
+  })
   // createRedirect({
   //   fromPath: "/tickets",
   //   toPath: "http://www.iticket.co.nz/events/2023/aug/engineering-revue",
