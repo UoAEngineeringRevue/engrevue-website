@@ -30,8 +30,8 @@ const IndexPage = () => (
       background={RevueBg}
       color="white"
       logo={`${RevueLogo}`}
-      callToActionLink="https://www.youtube.com/c/engineeringrevue"
-      callToActionText="CATCH UP ON PAST SHOWS!"
+      callToActionLink="https://www.iticket.co.nz/events/2024/aug/phineas-and-ferb"
+      callToActionText="Buy Tickets"
       heading=""
       tint
       showDownBtn
