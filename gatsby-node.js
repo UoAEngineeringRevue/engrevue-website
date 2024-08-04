@@ -7,6 +7,13 @@ exports.createPages = ({ actions }) => {
     redirectInBrowser: true,
     force: true,
   })
+      createRedirect({
+    fromPath: "/lecture",
+    toPath: "https://www.canva.com/design/DAGM4R5kKPQ/e-Py2AdNzHGmpZ6H_E6bfg/edit?utm_content=DAGM4R5kKPQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+    isPermanent: true,
+    redirectInBrowser: true,
+    force: true,
+  })
  // createRedirect({
  //   fromPath: "/crew",
  //   toPath: "https://forms.gle/HUXL5Xg3xZCihPJi9",
