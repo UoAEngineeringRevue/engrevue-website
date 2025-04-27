@@ -7,9 +7,9 @@ exports.createPages = ({ actions }) => {
   //   redirectInBrowser: true,
   //   force: true,
   // })
-      createRedirect({
+  createRedirect({
     fromPath: "/lecture",
-    toPath: "https://www.canva.com/design/DAGl0TyH9Ms/RZWwIG8ThBjX25nK-PohcA/view?utm_content=DAGl0TyH9Ms&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6afd9725e6,
+    toPath: "https://www.canva.com/design/DAGl0TyH9Ms/RZWwIG8ThBjX25nK-PohcA/view?utm_content=DAGl0TyH9Ms&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6afd9725e6",
     isPermanent: true,
     redirectInBrowser: true,
     force: true,
