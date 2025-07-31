@@ -13,7 +13,7 @@ import RevueBg from "../assets/images/index/tspss-bg.png"
 //import RevueLogo from "../assets/images/index/revue-logo.png"
 import RevueLogo from "../assets/images/index/tspss-logo.png"
 //import AboutUsImage from "../assets/images/index/2022-exec.jpg"
-import AboutUsImage from "../assets/images/index/2023-exec.jpeg"
+import AboutUsImage from "../assets/images/index/REVUE-512.jpg"
 
 const IndexPage = () => (
   <Layout>
