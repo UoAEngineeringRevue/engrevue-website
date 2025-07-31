@@ -30,7 +30,7 @@ const IndexPage = () => (
       background={RevueBg}
       color="white"
       logo={`${RevueLogo}`}
-      callToActionLink="https://www.iticket.co.nz/events/2024/aug/phineas-and-ferb"
+      callToActionLink="https://www.iticket.co.nz/events/2025/sep/toy-story-parts-sold-separately"
       callToActionText="Buy Tickets"
       heading=""
       tint
@@ -55,7 +55,7 @@ const IndexPage = () => (
           <div className={styles.aboutUsImageContainer}>
             <img
               src={AboutUsImage}
-              alt="Scooby-Doo and the Dubious Scoop exec team"
+              alt="Phineas and Ferb exec team"
               className={styles.aboutUsImage}
             />
           </div>
