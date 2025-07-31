@@ -15,19 +15,19 @@ exports.createPages = ({ actions }) => {
     force: true,
   })
  createRedirect({
-   fromPath: "/crew",
-   toPath: "https://forms.gle/bHDsf4osiec4uNZ98",
+   fromPath: "/tickets",
+   toPath: "https://www.iticket.co.nz/events/2025/sep/toy-story-parts-sold-separately",
    isPermanent: true,
    redirectInBrowser: true,
    force: true,
  })
-  createRedirect({
-    fromPath: "/cast",
-    toPath: "https://forms.gle/vgZ2csiwE7USrhsC9",
-    isPermanent: true,
-    redirectInBrowser: true,
-    force: true,
-  })
+  // createRedirect({
+  //   fromPath: "/cast",
+  //   toPath: "https://forms.gle/vgZ2csiwE7USrhsC9",
+  //   isPermanent: true,
+  //   redirectInBrowser: true,
+  //   force: true,
+  // })
   createRedirect({
     fromPath: "/links",
     toPath: "https://linktr.ee/engrevue",
