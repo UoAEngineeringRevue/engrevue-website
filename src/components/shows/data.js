@@ -1,3 +1,6 @@
+// Posters
+import revue2025 from "../../assets/images/previous/2025.jpg"
+import revue2024 from "../../assets/images/previous/2024.jpg"
 import revue2023 from "../../assets/images/previous/2023.png"
 import revue2022 from "../../assets/images/previous/2022.png"
 import revue2021 from "../../assets/images/previous/2021.jpg"
@@ -15,6 +18,10 @@ import revue2010 from "../../assets/images/previous/2010.jpg"
 import revue2009 from "../../assets/images/previous/2009.gif"
 import revue2008 from "../../assets/images/previous/2008.gif"
 
+
+// Cast photos
+import revue2025Cast from "../../assets/images/previous/2025/cast_2025.jpg"
+import revue2024Cast from "../../assets/images/previous/2024/cast_2024.jpg"
 import revue2023Cast from "../../assets/images/previous/2023/cast_2023.jpg"
 import revue2022Cast from "../../assets/images/previous/2022/cast_2022.jpg"
 import revue2020Cast from "../../assets/images/previous/2020/cast_2020.jpg"
@@ -25,6 +32,10 @@ import revue2016Cast from "../../assets/images/previous/2016/cast_2016.jpg"
 
 import curtains from "../../assets/images/watch/curtains.jpg"
 
+
+// Programmes
+import programme2025 from "../../assets/images/previous/2025/programme.pdf"
+import programme2024 from "../../assets/images/previous/2024/programme.pdf"
 import programme2023 from "../../assets/images/previous/2023/programme.pdf"
 import programme2022 from "../../assets/images/previous/2022/programme.pdf"
 import programme2020 from "../../assets/images/previous/2020/programme.pdf"
@@ -53,6 +64,53 @@ const data = {
         'programme': 'null'
     }
     */
+
+2025: {
+    "cover-image": curtains,
+    poster: revue2025,                // image import of show's poster
+    "cast-picture": revue2025Cast,    // image import of cast photo from show week
+    // Text
+    title: "TOY STORY: PARTS SOLD SEPARATELY",
+    subtitle: "Auckland Engineering Revue 2025",
+    subtitle1: "Engineering Revue 2025",
+    "catch-phrase": "I told Andy to move his things to the attic before going back to uni!",
+    location: "SkyCity Theatre",
+    director: "Sama Kattaya",
+    producer: "Ashley Jubelag",
+    blurb: `The toys thought that they had friends for life in each other, but they realize playtime is over when their 
+            best friend, Andy, disappears and rides off to the University of Auckland to study engineering! They must 
+            team up and figure out a plan to get there, blend in, and most importantly, bring Andy back home.
+            But, when they finally have a handle on their task, they must face off against perils beyond their imagination. 
+            Will the toys be able to overcome all the challenges that come between them and Andy? Will they fly through it 
+            all and be successful in their mission? And will they all make it out of this in one piece, or will they lose 
+            parts of themselves in the process!`,
+    quote: `"Ah, yes. William Lee, that’s me" - William Lee (actually)`,
+    // Resources
+    programme: programme2025,         // file import of show's programme pdf
+  },
+
+2024: {
+    "cover-image": curtains,
+    poster: revue2024,                // image import of show's poster
+    "cast-picture": revue2024Cast,    // image import of cast photo from show week
+    // Text
+    title: "PHINEAS AND FERB: ENGINEERING WITH A CHANCE OF FAILURE",
+    subtitle: "Auckland Engineering Revue 2024",
+    subtitle1: "Engineering Revue 2024",
+    "catch-phrase": "MOM! PHINEAS AND FERB ARE MAKING A REVUE AGAIN!",
+    location: "SkyCity Theatre",
+    director: "Rishi Shukla",
+    producer: "Bernadette Yafar",
+    blurb: `Phineas, Ferb and the gang know what they’re gonna do today as they try their hand at solving the cost of living crisis, 
+            with a chance of winning a sweet one-hundred thousand dollars in a challenge run by the charming, witty, handsome and 
+            overall good guy, Dr Doofenshmirtz.  Between trying not to get busted by their older sister Candace, Phineas and Ferb’s 
+            group mates always disappearing, and a mysterious Agent P looking out for people who aren’t up to any good… will 
+            Dr. Doofenshmirtz be impressed by Phineas and their 303 team and award them first place, or will this competition 
+            cost them more than they anticipated?`,
+    quote: `"This truly was one of the shows of all time" - Audience (probably)`,
+    // Resources
+    programme: programme2024,         // file import of show's programme pdf
+  },
 
 2023: {
     "cover-image": curtains,

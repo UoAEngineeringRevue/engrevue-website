@@ -30,8 +30,8 @@ const IndexPage = () => (
       background={RevueBg}
       color="white"
       logo={`${RevueLogo}`}
-      callToActionLink="https://www.iticket.co.nz/events/2025/sep/toy-story-parts-sold-separately"
-      callToActionText="Get Tickets"
+      //callToActionLink="https://www.iticket.co.nz/events/2025/sep/toy-story-parts-sold-separately"
+      //callToActionText="Get Tickets"
       heading=""
       tint
       showDownBtn
@@ -55,7 +55,7 @@ const IndexPage = () => (
           <div className={styles.aboutUsImageContainer}>
             <img
               src={AboutUsImage}
-              alt="Phineas and Ferb exec team"
+              alt="Toy Story exec team"
               className={styles.aboutUsImage}
             />
           </div>

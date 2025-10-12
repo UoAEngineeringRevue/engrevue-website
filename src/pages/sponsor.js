@@ -7,6 +7,7 @@ import Banner from "../components/Banner"
 
 import picture1 from "../assets/images/sponsor/Saturday-23.jpg"
 import picture2 from "../assets/images/sponsor/DSC06330.jpg"
+import picture3 from "../assets/images/sponsor/luvenia.jpg"
 import bannerBg from "../assets/images/sponsor/DSC05963.jpg"
 
 const Sponsor = () => (
@@ -34,8 +35,9 @@ const Sponsor = () => (
               continued to grow in presence within the faculty and has quickly
               become one of the calendar highlights of the year.
               </p><p>
-              The 2022 show was very well received, with a total audience of
-              over 1500 people across our three show nights.
+              The 2025 show was very well received, with a total audience of
+              over 1500 people across our three show nights, and a sold out show on our final 
+              night!
               </p><p>
               Going into this year, the Auckland Engineering Revue aims to
               maintain its strong presence on campus, with a fantastic new cast
@@ -58,7 +60,7 @@ const Sponsor = () => (
         </div>
         <div className={styles.rowText}>
           <div class={styles.imageContainerRight}>
-            <img src={picture2} className={styles.dispImage} alt="friends" />
+            <img src={picture3} className={styles.dispImage} alt="friends" />
           </div>
           <div>
             <h1 className={styles.h2alt}> YOUR SUPPORT </h1>
