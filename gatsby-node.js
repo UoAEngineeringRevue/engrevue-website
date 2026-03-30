@@ -21,13 +21,20 @@ exports.createPages = ({ actions }) => {
    redirectInBrowser: true,
    force: true,
  })
-  // createRedirect({
-  //   fromPath: "/cast",
-  //   toPath: "https://forms.gle/vgZ2csiwE7USrhsC9",
-  //   isPermanent: true,
-  //   redirectInBrowser: true,
-  //   force: true,
-  // })
+  createRedirect({
+    fromPath: "/cast",
+    toPath: "https://forms.gle/4nQTUzx8PF8StGbP7",
+    isPermanent: true,
+    redirectInBrowser: true,
+    force: true,
+  })
+  createRedirect({
+    fromPath: "/crew",
+    toPath: "https://forms.gle/AErzF21MrGhwJCAB6",
+    isPermanent: true,
+    redirectInBrowser: true,
+    force: true,
+  })
   createRedirect({
     fromPath: "/links",
     toPath: "https://linktr.ee/engrevue",
