@@ -20,7 +20,7 @@ exports.createPages = ({ actions }) => {
    isPermanent: true,
    redirectInBrowser: true,
    force: true,
- })
+  })
   createRedirect({
     fromPath: "/cast",
     toPath: "https://forms.gle/4nQTUzx8PF8StGbP7",
