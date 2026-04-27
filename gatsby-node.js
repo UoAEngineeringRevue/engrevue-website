@@ -15,7 +15,7 @@ exports.createPages = ({ actions }) => {
     force: true,
   })
  createRedirect({
-   fromPath: "/lecture211",
+   fromPath: "/engsci",
    toPath: "https://canva.link/ok1urvk4vz9wnwd",
    isPermanent: true,
    redirectInBrowser: true,
