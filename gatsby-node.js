@@ -15,8 +15,8 @@ exports.createPages = ({ actions }) => {
     force: true,
   })
  createRedirect({
-   fromPath: "/tickets",
-   toPath: "https://www.iticket.co.nz/events/2025/sep/toy-story-parts-sold-separately",
+   fromPath: "/lecture211",
+   toPath: "https://canva.link/ok1urvk4vz9wnwd",
    isPermanent: true,
    redirectInBrowser: true,
    force: true,
