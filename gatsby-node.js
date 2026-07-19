@@ -2,7 +2,7 @@ exports.createPages = ({ actions }) => {
   const { createRedirect } = actions
   //   createRedirect({
   //   fromPath: "/tickets",
-  //   toPath: "http://www.iticket.co.nz/events/2024/aug/phineas-and-ferb",
+  //   toPath: "https://www.iticket.co.nz/events/2026/aug/star-wars-revenge-of-the-interns",
   //   isPermanent: true,
   //   redirectInBrowser: true,
   //   force: true,
