@@ -1,12 +1,12 @@
 exports.createPages = ({ actions }) => {
   const { createRedirect } = actions
-  //   createRedirect({
-  //   fromPath: "/tickets",
-  //   toPath: "https://www.iticket.co.nz/events/2026/aug/star-wars-revenge-of-the-interns",
-  //   isPermanent: true,
-  //   redirectInBrowser: true,
-  //   force: true,
-  // })
+  createRedirect({
+       fromPath: "/tickets",
+       toPath: "https://www.iticket.co.nz/events/2026/aug/star-wars-revenge-of-the-interns",
+       isPermanent: true,
+       redirectInBrowser: true,
+       force: true,
+   })
   createRedirect({
     fromPath: "/lecture",
     toPath: "https://canva.link/ho07o81ihzk27sp",
