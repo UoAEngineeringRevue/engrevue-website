@@ -65,13 +65,13 @@ button:hover {
 
 .nav-link--primary {
   /*background-color: #ca3c41;*/
-  background-color: #ffe801;
+  background-color: #ffd501;
   color: black;
 }
 
 .nav-link--primary:hover {
   /*background: #ad272c;*/
-  background: #ad6a27;
+  background: #c5a400;
 }
 
 @media only screen and (max-width: 910px) {

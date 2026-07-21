@@ -20,7 +20,7 @@
 
 .logo {
   padding-top: 54px;
-  max-width: 550px;
+  max-width: 600px;
   width: 100%;
   height: auto;
   margin-bottom: 26px;
@@ -59,13 +59,13 @@
   /*color: white;*/
   color: black;
   /*background-color: #ca3c41; Original Colour*/
-  background-color: #ffe801;
+  background-color: #ffd501;
   text-transform: uppercase;
 }
 
 .callToActionBtnLink:hover {
   /*background: #ad272c; Original colour*/
-  background: #ad6a27;
+  background: #c5a400;
 }
 
 .down-btn {
