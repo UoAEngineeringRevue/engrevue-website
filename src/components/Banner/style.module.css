@@ -19,11 +19,11 @@
 }
 
 .logo {
-  padding-top: 54px;
-  max-width: 600px;
+  padding-top: 10px;
+  max-width: 650px;
   width: 100%;
   height: auto;
-  margin-bottom: 26px;
+  margin-bottom: -20px;
 }
 
 .textArea {
