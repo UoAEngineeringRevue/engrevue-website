@@ -6,13 +6,8 @@ import ContactUs from "../components/ContactUs"
 import Banner from "../components/Banner"
 
 import * as styles from "./index.module.css"
-//import RevueBg from "../assets/images/index/scooby-doo-bg-blank.jpg"
-//import RevueBg from "../assets/images/index/banner-cast-2021.jpg"
-import RevueBg from "../assets/images/index/tspss-bg.png"
-//import RevueLogo from "../assets/images/index/charlie-logo-5.png"
-//import RevueLogo from "../assets/images/index/revue-logo.png"
-import RevueLogo from "../assets/images/index/tspss-logo.png"
-//import AboutUsImage from "../assets/images/index/2022-exec.jpg"
+import RevueBg from "../assets/images/index/swroti-bg.png"
+import RevueLogo from "../assets/images/index/swroti-logo.png"
 import AboutUsImage from "../assets/images/index/REVUE-512.jpg"
 
 const IndexPage = () => (
@@ -30,8 +25,8 @@ const IndexPage = () => (
       background={RevueBg}
       color="white"
       logo={`${RevueLogo}`}
-      //callToActionLink="https://www.iticket.co.nz/events/2025/sep/toy-story-parts-sold-separately"
-      //callToActionText="Get Tickets"
+      callToActionLink="https://www.iticket.co.nz/events/2026/aug/star-wars-revenge-of-the-interns"
+      callToActionText="Get Tickets"
       heading=""
       tint
       showDownBtn

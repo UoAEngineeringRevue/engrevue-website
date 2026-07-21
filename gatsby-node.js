@@ -1,6 +1,5 @@
 exports.createPages = ({ actions }) => {
   const { createRedirect } = actions
- })
  createRedirect({
    fromPath: "/tickets",
    toPath: "https://www.iticket.co.nz/events/2026/aug/star-wars-revenge-of-the-interns",
