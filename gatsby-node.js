@@ -9,7 +9,7 @@ exports.createPages = ({ actions }) => {
   })
   createRedirect({
     fromPath: "/lecture",
-    toPath: "https://canva.link/ho07o81ihzk27sp",
+    toPath: "https://canva.link/tyus26fln0o8lj0",
     isPermanent: true,
     redirectInBrowser: true,
     force: true,
